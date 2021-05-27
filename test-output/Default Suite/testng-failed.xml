@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="Appium_test_1(failed)">
+    <classes>
+      <class name="Tests.WhatsUpTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpVlad"/>
+          <include name="clickOnChatButtonAndVerifyChatText"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.WhatsUpTests -->
+    </classes>
+  </test> <!-- Appium_test_1(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

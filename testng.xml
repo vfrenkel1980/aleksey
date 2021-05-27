@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WhatsUpT ests">
+    <test name="android">
+        <classes>
+            <class name="Tests.WhatsUpTests">
+<!--                <methods>-->
+<!--                    <include name="tearDown"/>-->
+<!--                    <include name="verifyStatusText"/>-->
+<!--                    <include name="clickOnChatButtonAndVerifyChatText"/>-->
+<!--                    <include name="verifyCallsText"/>-->
+<!--                    <include name="verifyMyStatusTextAfterClickingOnStatusButton"/>-->
+<!--                    <include name="clickOnMenuAndVerifyContent_ChatPage"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
