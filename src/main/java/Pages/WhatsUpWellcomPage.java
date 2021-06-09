@@ -1,10 +1,10 @@
 package Pages;
 
+import Utils.TestUtilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import java.util.ArrayList;
@@ -20,17 +20,17 @@ public class WhatsUpWellcomPage extends BasePage {
 //    int i;
 
 
-    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"СТАТУС\")")
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"STATUS\")")
     public AndroidElement statusText;
 
-    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"ЗВОНКИ\")")
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"CALLS\")")
     public AndroidElement callsText;
 
-    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"ЧАТЫ\")")
+    @AndroidFindBy(uiAutomator = "new UiSelector().textContains(\"CHATS\")")
     public AndroidElement chatText;
 
 
-    @AndroidFindBy(xpath ="//android.widget.ImageView[@content-desc=\"Ещё\"]")
+    @AndroidFindBy(xpath ="//android.widget.ImageView[@content-desc=\"More options\"]")
     public AndroidElement menuButton;
 
 
@@ -49,18 +49,23 @@ public class WhatsUpWellcomPage extends BasePage {
 //    {
 //        statusText.click();
 //    }
-////
-//    public WhatsUpWellcomPage click_ChatTextFromOtherpage() {
-//        System.out.println("click to chatText");  //change to log.info after to use logger
-//        Assert.assertTrue(click(chatText)," click to status text is faild");
 //
-//        return  new WhatsUpWellcomPage(driver);
-//    }
+    public WhatsUpWellcomPage click_ChatTextFromOtherpage() {
+        System.out.println("click to chatText");  //change to log.info after to use logger
+        Assert.assertTrue(click(chatText)," click to chat text is faild");
 
-    public void click_ChatTextFromOtherpage() {
-        log.info("clicking  to chatText" +  text(chatText)   );
-        Assert.assertTrue(click(chatText)," click to status text is faild");
+        return  new WhatsUpWellcomPage(driver,log);
     }
+
+
+    public WhatsUpCallPage click_CallsTextFromOtherpage() {
+        System.out.println("click to callsText");
+        Assert.assertTrue(click(callsText)," click to chat text is faild");
+
+        return  new WhatsUpCallPage(driver,log);
+    }
+
+
 
 
 
@@ -98,13 +103,17 @@ public class WhatsUpWellcomPage extends BasePage {
 
 
     public  List<String> getTextOfOptions(int  size){
-        List <String >  temp = new ArrayList<>();
-        for(int i=1;i <= size ;) {
-            AndroidElement element= (AndroidElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
-            temp.add(element.getText());
-            i = i + 1;
-        }
-       return temp;
+        List <String >  listOfOptions = new ArrayList<>();
+        listOfOptions = TestUtilities.getListOfOptionsFromMenu(size);
+
+//        for(int i=1;i <= size ;) {
+//            AndroidElement element= (AndroidElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+//            sleep(1500);
+//           // waitForVisibilityOf (element);
+//            temp.add(element.getText());
+//            i = i + 1;
+        //}
+       return listOfOptions;
     }
 
 

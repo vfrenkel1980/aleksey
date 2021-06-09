@@ -3,13 +3,16 @@ package Utils;
 import Pages.BaseTest;
 //import org.apache.logging.log4j.core.util.FileUtils;
 //import org.apache.logging.log4j.core.util.FileUtils;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.apache.commons.io.FileUtils;
-import org.testng.IClass;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -72,5 +75,23 @@ public class TestUtilities  {
                 .collect(Collectors.toList());
         return differences;
     }
+
+
+    public static void AndroidBack  () {
+        BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+    }
+
+
+    public static  List<String> getListOfOptionsFromMenu(int  size){
+        List <String >  temp = new ArrayList<>();
+
+        for(int i=1;i <= size ;) {
+            AndroidElement element= (AndroidElement) BaseTest.getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+            temp.add(element.getText());
+            i = i + 1;
+        }
+        return temp;
+    }
+
 
 }

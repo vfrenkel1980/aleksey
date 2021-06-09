@@ -9,6 +9,8 @@
           <include name="setUpVlad"/>
           <include name="clickOnChatButtonAndVerifyChatText"/>
           <include name="setup"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
         </methods>
       </class> <!-- Tests.WhatsUpTests -->
     </classes>
