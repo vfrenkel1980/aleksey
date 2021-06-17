@@ -69,7 +69,14 @@ public class BasePage {
     }
 
     protected void  type (WebElement el,String text){
-        waitForVisibilityOf(el,5);
+       // waitForVisibilityOf(el,5);
+        
+        el.sendKeys(text);
+
+    }
+
+    protected void  cleanAntType (WebElement el,String text){
+        el.clear();
         el.sendKeys(text);
     }
 
