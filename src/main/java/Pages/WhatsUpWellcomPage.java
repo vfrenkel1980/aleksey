@@ -5,6 +5,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.util.ArrayList;
@@ -34,21 +36,30 @@ public class WhatsUpWellcomPage extends BasePage {
     public AndroidElement menuButton;
 
 
+    @AndroidFindBy(xpath ="//android.widget.TextView[@content-desc=\"Search\"]")
+    public AndroidElement searchIcon;
 
-    // '" + location[i] + "'
-  // String xpath = "//*[@id='switch-account-dropdown_listbox']//li["
-  //         + SelUtils.xpathEqualsIgnoreCaseAndSpace(expectedAccount) + "]";
-
-    //@AndroidFindBy(xpath ="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[\'" + i + \"']/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView")
-    //public AndroidElement listOptions;
+    @AndroidFindBy(id ="com.whatsapp:id/search_input")
+    public AndroidElement searchInput;
 
 
+    @AndroidFindBy(id ="com.whatsapp:id/search_contact_token")
+    public AndroidElement searchedText;
+
+    @AndroidFindBy(xpath ="//android.widget.ImageButton[@content-desc=\"Back\"]")
+    public AndroidElement backButton;
 
 
-//    public void clickOnStatus()
-//    {
-//        statusText.click();
-//    }
+
+
+
+//     @AndroidFindBy(xpath ="//android.widget.EditText[contains(text(),'Sear')]")
+//     public AndroidElement searchInput;
+
+
+    ///hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.EditText
+
+
 //
     public WhatsUpWellcomPage click_ChatTextFromOtherpage() {
         System.out.println("click to chatText");  //change to log.info after to use logger
@@ -94,7 +105,7 @@ public class WhatsUpWellcomPage extends BasePage {
         return text(chatText);
     }
 
-    public void clickOnMenuFromChatPage() {
+    public void clickOnMenu(){
         Assert.assertTrue(click(menuButton)," click on menu failed");
 
 
@@ -117,12 +128,69 @@ public class WhatsUpWellcomPage extends BasePage {
     }
 
 
+    public  void clickOnSearchButtonFromChatSectionAndTypeText(String text)
+    {
+
+        log.info("clicking on statusIcon " +  text(searchIcon));
+        Assert.assertTrue(click(searchIcon)," click on icon failed");
+       // AndroidElement = driver.findElement(By.id(""));
+       // text(searchInput);
+       // click(searchInput);
+       // text(searchInput);
+        log.info("typing text into searchIcon" +  text(searchInput));
+        type(searchInput,text);
+    }
+
 //    public void clickOnMenuFromChatPage() {
 //
 //        System.out.println("click on menu from chat page");  //change to log.info after to use logger
 //        Assert.assertTrue(click(menuButton)," click on menu is failed");
 //
 //    }
+
+//
+//    public List <WebElement> findSearchresults()
+//    {
+////        List <WebElement>  searchResults = new ArrayList<>();
+////        searchResults = findAll(By.id("ffff"));
+////
+////
+////
+////        return searchResults
+//
+//
+//        List < WebElement>  listOfOptions = new ArrayList<>();
+//        listOfOptions = findAll(By.id("com.whatsapp:id/conversations_row_contact_name"));
+//
+////        for(int i=1;i <= size ;) {
+////            AndroidElement element= (AndroidElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+////            sleep(1500);
+////           // waitForVisibilityOf (element);
+////            temp.add(element.getText());
+////            i = i + 1;
+//        //}
+//        return listOfOptions;
+//
+//
+//
+//    }
+
+    public String  findSearchresults()
+    {
+       String result= text(searchedText);
+
+        return result;
+
+    }
+
+    public void  clickOnBackButtonInSearch()
+    {
+        click(backButton);
+
+    }
+
+
+
 
 
 }

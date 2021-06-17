@@ -71,8 +71,8 @@ public class BasePage {
     protected void  type (WebElement el,String text){
         waitForVisibilityOf(el,5);
         el.sendKeys(text);
-
     }
+
 
     protected void waitForVisibilityOf(WebElement element, Integer... timeOutInSeconds) {
         int attempts = 0;
@@ -137,9 +137,11 @@ public class BasePage {
         return driver.findElement( locator);
     }
 
-    protected List<WebElement>  findAll(By locator) {
+    protected List <WebElement>  findAll(By locator) {
         return driver.findElements(locator);
     }
+
+
 
 //    protected Alert ddd()
 //    {

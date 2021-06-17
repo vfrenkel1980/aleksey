@@ -77,8 +77,10 @@ public class TestUtilities  {
     }
 
 
-    public static void AndroidBack  () {
-        BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+    public static void AndroidBack  (int howMuch) {
+        for(int i=1 ;i<= howMuch ;i++) {
+            BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+        }
     }
 
 

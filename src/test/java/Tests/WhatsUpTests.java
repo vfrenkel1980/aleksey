@@ -5,22 +5,14 @@ import Pages.WhatsUpCallPage;
 import Pages.WhatsUpStatusPage;
 import Pages.WhatsUpWellcomPage;
 import Utils.TestUtilities;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
 import io.qameta.allure.Description;
-import listeners.AllureListener;
-import listeners.MyListener;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import java.util.Arrays;
 import java.util.List;
 
-//@Listeners({ AllureListener.class })
+
 public class WhatsUpTests  extends BaseTest {
 
     WhatsUpStatusPage statusPage;
@@ -33,8 +25,6 @@ public class WhatsUpTests  extends BaseTest {
         statusPage=new WhatsUpStatusPage(getDriver(),log);
     }
 
-
-////
     @Test
     @Description ("Verify Status is  presented ")
     public void verifyStatusText()  {
@@ -42,7 +32,7 @@ public class WhatsUpTests  extends BaseTest {
         String actualText = statusPage.getTitleOfCurrentPage();
         Assert.assertEquals(actualText,"STATUS","the content is not as expected");
    }
-////
+
     @Test
     @Description ("Verify Calls is  presented ")
     public void verifyCallsText()  {
@@ -51,51 +41,47 @@ public class WhatsUpTests  extends BaseTest {
         Assert.assertEquals(actualText,"CALLS","the content is not as expected");
 
     }
-////
-////
+
     @Test ()
     @Description ("Verify MY STATUS is  presented when clicking on chat button")
     public void verifyMyStatusTextAfterClickingOnStatusButton()  {
-        //wellcomePage.click_StatusText();
+        wellcomePage.click_StatusText();
         String expectedMyStatusTextText = statusPage.getMyStatusText();
         Assert.assertEquals(expectedMyStatusTextText,"My status","the content is not as expected");
 
     }
-////
-////
+
     @Test ()
     @Description ("Verify CHATS is  presented when clicking on chat button")
     public void clickOnChatButtonAndVerifyChatText()  {
         wellcomePage.click_ChatTextFromOtherpage();
         String actualChatText = wellcomePage.text_Chats();
-        //TestUtilities.AndroidBack();
         Assert.assertEquals(actualChatText,"CHATS","the content is not as expected");
 
     }
-//
+
     @Test ()
     @Description (" Verify content of  menu from  Chat page ")
     public void clickOnMenuAndVerifyContent_ChatPage() {
         log.info("starting test clickOnMenuAndVerifyContent_ChatPage ");
         wellcomePage.click_ChatTextFromOtherpage();
-        wellcomePage.clickOnMenuFromChatPage();
+        wellcomePage.clickOnMenu();
         List<String> expectedMenuOptions = Arrays.asList("New group","New broadcast","WhatsApp Web","Starred messages","Settings");
         List<String> actualOptions = wellcomePage.getTextOfOptions(5);
-        TestUtilities.AndroidBack();
+        TestUtilities.AndroidBack(1);
         Assert.assertTrue(TestUtilities.compareTwoStringLists2(expectedMenuOptions,actualOptions).isEmpty());
 
     }
-//
-//
+
     @Test ()
     @Description (" Verify content of  menu from  Status page ")
     public void clickOnMenuAndVerifyContent_StatusPage() {
         log.info("clickOnMenuAndVerifyContent_StatusPage ");
         List<String> expectedMenuOptions = Arrays.asList("Status privacy","Settings");
         wellcomePage.click_StatusText();
-        statusPage.clickOnMenuFromStatusPage();
+        wellcomePage.clickOnMenu();;
         List<String> actualOptions = statusPage.getTextOfOptions(2);
-        TestUtilities.AndroidBack();
+        TestUtilities.AndroidBack(2);
         Assert.assertTrue(TestUtilities.compareTwoStringLists2(expectedMenuOptions,actualOptions).isEmpty());
 
     }
@@ -107,13 +93,27 @@ public class WhatsUpTests  extends BaseTest {
         log.info("clickOnMenuAndVerifyContent_CallsPage ");
         List<String> expectedMenuOptions = Arrays.asList("Clear call log","Settings");
         callsPage=wellcomePage.click_CallsTextFromOtherpage();
-        callsPage.clickOnMenuFromCallsPage();
+        wellcomePage.clickOnMenu();
         List<String> actualOptions = callsPage.getTextOfOptions(2);
-        TestUtilities.AndroidBack();
-       // TestUtilities.AndroidBack();
+        TestUtilities.AndroidBack(2);
         Assert.assertTrue(TestUtilities.compareTwoStringLists2(expectedMenuOptions,actualOptions).isEmpty());
 
     }
+
+
+    @Test ()
+    @Description (" Verify search button works properly ")
+    public void clickOnSearchButton_ChatPage() {
+        String inputText = "Omry";
+        log.info("clickOnSearchButton_ChatPage ");
+        wellcomePage.clickOnSearchButtonFromChatSectionAndTypeText(inputText);
+        String actual = wellcomePage.findSearchresults();
+        wellcomePage.clickOnBackButtonInSearch();
+        Assert.assertTrue(actual.contains(inputText),"searched text " + inputText + "isnt presented");
+
+
+    }
+
 
 
 }

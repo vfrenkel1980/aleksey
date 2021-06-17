@@ -22,10 +22,6 @@ public class WhatsUpStatusPage extends BasePage{
 
     @AndroidFindBy(uiAutomator = "new UiSelector().textMatches(\"STATUS\")")
     public AndroidElement statusText;
-    //android.widget.ImageView[@content-desc="More options"]
-    @AndroidFindBy(xpath ="//android.widget.ImageView[@content-desc=\"More options\"]")
-    public AndroidElement menuButton;
-
 
     public String getMyStatusText() {
         log.info("get text of my Status" + text(myStatusText));
@@ -41,12 +37,6 @@ public class WhatsUpStatusPage extends BasePage{
     }
 
 
-    public void clickOnMenuFromStatusPage() {
-
-        log.info("click on menu from status page");
-        Assert.assertTrue(click(menuButton)," click on menu is failed");
-
-    }
 
 
     public List<String> getTextOfOptions(int  size) {

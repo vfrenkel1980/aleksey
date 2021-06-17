@@ -16,18 +16,6 @@ public class WhatsUpCallPage  extends  BasePage {
         super(driver,log);
     }
 
-    @AndroidFindBy(xpath ="//android.widget.ImageView[@content-desc=\"More options\"]")
-    public AndroidElement menuButton;
-
-
-    public void clickOnMenuFromCallsPage() {
-
-        log.info("click on menu from calls page");
-        Assert.assertTrue(click(menuButton)," click on menu is failed");
-
-    }
-
-
 
     public List<String> getTextOfOptions(int  size) {
         List <String >  listOfOptions = new ArrayList<>();
