@@ -25,8 +25,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     public void setUpVlad()
     {
         wellcomePage= new WhatsUpWellcomPage(getDriver(), log);
-        //statusPage=new WhatsUpStatusPage(getDriver(),log);
-        //callsPage=new WhatsUpCallPage(getDriver(),log);
+
     }
 
 

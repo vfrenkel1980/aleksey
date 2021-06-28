@@ -20,7 +20,6 @@ public class VertIcalScrolling extends BaseTest {
     public void setUpVlad()
     {
         wellcomePage= new WhatsUpWellcomPage(getDriver(), log);
-        //statusPage=new WhatsUpStatusPage(getDriver(),log);
     }
 
 
