@@ -46,7 +46,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     @Test()
     @Description(" Verify search button works properly status page")
     public void clickOnSearchButton_StatusPage() throws InterruptedException {
-        String inputText = "Liora";
+        String inputText = "Lior";
         log.info("clickOnSearchButton_StatusPage ");
         statusPage=wellcomePage.click_StatusText();
         callsPage=new WhatsUpCallPage(getDriver(),log);
@@ -85,7 +85,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     @Test()
     @Description(" Verify search button works properly calls page")
     public void clickOnSearchButton_CallsPage() throws InterruptedException {
-        String inputText = "Пусечка";
+        String inputText = "Omry";
         log.info("clickOnSearchButton_CallsPage ");
         callsPage=wellcomePage.click_CallsTextFromOtherpage();
         callsPage.clickOnSearchButtonFromCallsSectionAndTypeText(inputText);
