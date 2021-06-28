@@ -5,7 +5,7 @@
         <classes>
              <class name="Tests.WhatsUpTests"> </class>
              <class name="Tests.WhatsUpSearchTests"> </class>
-             <class name="Tests.VertIcalScrolling"></class>
+             <class name="Tests.VertIcalScrolling"> </class>
          </classes>
      </test>
  </suite>
