@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -29,6 +30,7 @@ public class BaseTest {
     public static ThreadLocal<AndroidDriver> tdriver = new ThreadLocal<AndroidDriver>();
     private static AppiumDriverLocalService server;
     public static AppiumServer appium = new AppiumServer();
+    protected  SoftAssert softAssert =new SoftAssert();
 
 
     // protected SoftAssert softAssert;
@@ -107,6 +109,9 @@ public class BaseTest {
         }
 
     }
+
+
+
 }
 
 

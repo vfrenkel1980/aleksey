@@ -23,6 +23,15 @@ public class WhatsUpStatusPage extends BasePage{
     @AndroidFindBy(uiAutomator = "new UiSelector().textMatches(\"STATUS\")")
     public AndroidElement statusText;
 
+
+    @AndroidFindBy(xpath ="//android.widget.TextView[@content-desc=\"Search\"]")
+    public AndroidElement searchIcon;
+
+    @AndroidFindBy(id ="com.whatsapp:id/search_src_text")
+    public AndroidElement searchInput;
+
+
+
     public String getMyStatusText() {
         log.info("get text of my Status" + text(myStatusText));
         Assert.assertTrue(getTextElement(myStatusText)," click to status text is faild");
@@ -51,6 +60,16 @@ public class WhatsUpStatusPage extends BasePage{
 //            i = i + 1;
         //}
         return listOfOptions;
+    }
+
+
+    public  void clickOnSearchButtonFromChatSectionAndTypeText(String text)
+    {
+
+        log.info("clicking on statusIcon " +  text(searchIcon));
+        Assert.assertTrue(click(searchIcon)," click on icon failed");
+        log.info("typing text into searchIcon" +  text(searchInput));
+        type(searchInput,text);
     }
 
 }

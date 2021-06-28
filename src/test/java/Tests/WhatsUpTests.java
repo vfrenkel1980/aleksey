@@ -101,20 +101,6 @@ public class WhatsUpTests  extends BaseTest {
     }
 
 
-    @Test ()
-    @Description (" Verify search button works properly ")
-    public void clickOnSearchButton_ChatPage() {
-        String inputText = "Omry";
-        log.info("clickOnSearchButton_ChatPage ");
-        wellcomePage.clickOnSearchButtonFromChatSectionAndTypeText(inputText);
-        String actual = wellcomePage.findSearchresults();
-        wellcomePage.clickOnBackButtonInSearch();
-        Assert.assertTrue(actual.contains(inputText),"searched text " + inputText + "isnt presented");
-
-
-    }
-
-
 
 }
 

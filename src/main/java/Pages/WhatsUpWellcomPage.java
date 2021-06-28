@@ -46,9 +46,13 @@ public class WhatsUpWellcomPage extends BasePage {
     @AndroidFindBy(id ="com.whatsapp:id/search_contact_token")
     public AndroidElement searchedText;
 
-    @AndroidFindBy(xpath ="//android.widget.ImageButton[@content-desc=\"Back\"]")
-    public AndroidElement backButton;
+   @AndroidFindBy(xpath ="//android.widget.ImageButton[@content-desc=\"Back\"]")
+   public AndroidElement backButton;
 
+
+    @AndroidFindBy(id ="com.whatsapp:id/conversation_contact_name")
+    public AndroidElement conversation_contact_name;
+  //  com.whatsapp:id/conversation_contact_name
 
 
 
@@ -92,6 +96,17 @@ public class WhatsUpWellcomPage extends BasePage {
         return text(statusText);
     }
 
+    public String text_() {
+        //System.out.println("get text to statusText");  //change to log.info after to use logger
+        Assert.assertTrue(getTextElement(statusText)," click to status text is faild");
+        return text(statusText);
+    }
+
+    public String getConversation_Contact_Name() {
+        Assert.assertTrue(getTextElement(conversation_contact_name)," click to status text is faild");
+        return text(conversation_contact_name);
+    }
+
 
     public String text_Calls() {
        // System.out.println("get text to callText");  //change to log.info after to use logger
@@ -128,15 +143,28 @@ public class WhatsUpWellcomPage extends BasePage {
     }
 
 
+    public  void clickOnSearchButtonFromCallsSectionAndTypeText(String text)
+    {
+
+        log.info("clicking on statusIcon " +  text(searchIcon));
+        Assert.assertTrue(click(searchIcon)," click on icon failed");
+        // AndroidElement = driver.findElement(By.id(""));
+        // text(searchInput);
+        // click(searchInput);
+        // text(searchInput);
+        log.info("typing text into searchIcon" +  text(searchInput));
+        type(searchInput,text);
+    }
+
+
+
+
+
     public  void clickOnSearchButtonFromChatSectionAndTypeText(String text)
     {
 
         log.info("clicking on statusIcon " +  text(searchIcon));
         Assert.assertTrue(click(searchIcon)," click on icon failed");
-       // AndroidElement = driver.findElement(By.id(""));
-       // text(searchInput);
-       // click(searchInput);
-       // text(searchInput);
         log.info("typing text into searchIcon" +  text(searchInput));
         type(searchInput,text);
     }

@@ -3,16 +3,9 @@
 <suite name="WhatsUpTests">
     <test name="android">
         <classes>
-            <class name="Tests.WhatsUpTests">
-<!--                <methods>-->
-<!--                    <include name="tearDown"/>-->
-<!--                    <include name="verifyStatusText"/>-->
-<!--                    <include name="clickOnChatButtonAndVerifyChatText"/>-->
-<!--                    <include name="verifyCallsText"/>-->
-<!--                    <include name="verifyMyStatusTextAfterClickingOnStatusButton"/>-->
-<!--                    <include name="clickOnMenuAndVerifyContent_ChatPage"/>-->
-<!--                </methods>-->
-            </class>
-        </classes>
-    </test>
-</suite>
+             <class name="Tests.WhatsUpTests"> </class>
+             <class name="Tests.WhatsUpSearchTests"> </class>
+             <class name="Tests.VertIcalScrolling"></class> 
+         </classes>
+     </test>
+ </suite>

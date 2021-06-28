@@ -70,7 +70,7 @@ public class BasePage {
 
     protected void  type (WebElement el,String text){
        // waitForVisibilityOf(el,5);
-        
+
         el.sendKeys(text);
 
     }
@@ -157,6 +157,11 @@ public class BasePage {
 //        wait.until(ExpectedCondition.alertIsPresent());
 //        return new driver.switchTo().alert();
 //
+//    }
+
+
+//    protected void   scrollToElement(By locator) {
+//        return driver.findElements(locator);
 //    }
 
 
