@@ -17,8 +17,11 @@ import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Locale;
+
 @Listeners({ MyListener.class })
 public class BaseTest {
 
@@ -81,14 +84,14 @@ public class BaseTest {
         this.testSuiteName = ctx.getCurrentXmlTest().getSuite().getName();
         String temp = ctx.getSuite().getName();
         this.testName = testName;
-        // this.testMethodName = method.getName();
+       // this.testMethodName =handleTestMethodName(getClass().getMethod(ctx.getName()));
 
         tdriver.set(driver);
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-      }
+        }
         return getDriver();
 
 
@@ -97,6 +100,18 @@ public class BaseTest {
     public static synchronized AndroidDriver getDriver() {
         return tdriver.get();
     }
+
+
+
+//    public String handleTestMethodName(Method method)
+//    {
+//       // testMethodName = method.getName();
+//
+//        //String result =testMethodName;
+//
+//        return method.getName();
+//
+//    }
 
 
     @AfterClass(alwaysRun = true)
