@@ -1,9 +1,9 @@
 package Tests;
 
 import Pages.BaseTest;
-import Pages.WhatsUpCallPage;
-import Pages.WhatsUpStatusPage;
-import Pages.WhatsUpWellcomPage;
+import Pages.whatsappPages.WhatsUpCallPage;
+import Pages.whatsappPages.WhatsUpStatusPage;
+import Pages.whatsappPages.WhatsUpWellcomPage;
 import Utils.TestUtilities;
 import io.qameta.allure.Description;
 import org.testng.Assert;
@@ -38,6 +38,8 @@ public class VertIcalScrolling extends BaseTest {
 
 
     }
+
+
 
 
 

@@ -1,17 +1,19 @@
 package Pages;
-import Utils.TestUtilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.apache.logging.log4j.Logger;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+import java.io.FileReader;
 import java.util.List;
 
 import static java.time.Duration.ofSeconds;
@@ -19,11 +21,11 @@ import static java.time.Duration.ofSeconds;
 public class BasePage {
 
 
-    protected AndroidDriver driver;
+    protected WebDriver driver;
     protected Logger log;
 
 
-    public BasePage(AndroidDriver driver ,Logger log) {
+    public BasePage(WebDriver driver ,Logger log) {
         this.driver = BaseTest.getDriver();
         this.log = log;
         PageFactory.initElements(new AppiumFieldDecorator(driver, ofSeconds(10)),this);
@@ -67,6 +69,20 @@ public class BasePage {
         }
         return false;
     }
+
+    protected boolean mytype(WebElement el, String text) {
+        if (el == null)
+            return false;
+        try {
+            el.sendKeys(text);
+            sleep(1000);
+            return true;
+        } catch (Exception e) {
+            log.error("type(): FAILED\n" + e.getMessage());
+        }
+        return false;
+    }
+
 
     protected void  type (WebElement el,String text){
        // waitForVisibilityOf(el,5);
@@ -139,6 +155,8 @@ public class BasePage {
     }
 
 
+
+
     protected WebElement find (By locator)
     {
         return driver.findElement( locator);
@@ -163,6 +181,32 @@ public class BasePage {
 //    protected void   scrollToElement(By locator) {
 //        return driver.findElements(locator);
 //    }
+
+
+
+    protected void  switchToIframe (WebElement el) {
+        //driver.switchTo().frame(driver.findElement(By.name("iFrameTitle")));
+        log.info("swich to frame :"+" "+ el);
+        driver.switchTo().frame(el);
+
+    }
+
+//
+//    protected JSONObject getDataFile(String dataFileName) {
+//        String dataFilePath = "src/test/resources/";
+//        JSONObject testObject = null;
+//
+//        try {
+//            FileReader reader = new FileReader(dataFilePath + dataFileName);
+//            JSONParser jsonParser = new JSONParser();
+//            JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+//            testObject = (JSONObject) jsonObject;
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
+//        return testObject;
+//    }
+
 
 
 

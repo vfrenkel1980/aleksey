@@ -1,11 +1,13 @@
-package Pages;
+package Pages.whatsappPages;
 
+import Pages.BasePage;
 import Utils.TestUtilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -14,10 +16,9 @@ import java.util.List;
 
 public class WhatsUpWellcomPage extends BasePage {
 
-    public WhatsUpWellcomPage(AndroidDriver driver, Logger log) {
+    public WhatsUpWellcomPage(WebDriver driver, Logger log) {
         super(driver, log);
     }
-
 //    private
 //    int i;
 
@@ -53,6 +54,16 @@ public class WhatsUpWellcomPage extends BasePage {
     @AndroidFindBy(id ="com.whatsapp:id/conversation_contact_name")
     public AndroidElement conversation_contact_name;
   //  com.whatsapp:id/conversation_contact_name
+
+
+    @AndroidFindBy(id ="com.whatsapp:id/entry")
+    public AndroidElement typeMessage;
+
+     @AndroidFindBy(id ="com.whatsapp:id/send")
+     public AndroidElement sendMessage;
+
+    @AndroidFindBy(id ="com.whatsapp:id/message_text")
+    public AndroidElement messagesText;
 
 
 
@@ -142,6 +153,37 @@ public class WhatsUpWellcomPage extends BasePage {
        return listOfOptions;
     }
 
+//    public  List<String> getTextOfOptions(WebElement element){
+//        List <String >  listOfOptions = new ArrayList<>();
+//        listOfOptions = TestUtilities.getListOfOptionsFromSentMessagesArea(messagesText);
+//
+////        for(int i=1;i <= size ;) {
+////            AndroidElement element= (AndroidElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+////            sleep(1500);
+////           // waitForVisibilityOf (element);
+////            temp.add(element.getText());
+////            i = i + 1;
+//        //}
+//        return listOfOptions;
+//    }
+
+
+    public List<String> findSearchResults()
+    {
+        List <WebElement>  searchResultsWebEL = new ArrayList<>();
+        searchResultsWebEL = findAll(By.id("com.whatsapp:id/message_text"));
+
+
+        List <String>  searchResultsWebText = new ArrayList<>();
+        searchResultsWebText = TestUtilities.convertFromWebElentsToString(searchResultsWebEL);
+
+        return searchResultsWebText;
+
+    }
+
+
+
+
 
     public  void clickOnSearchButtonFromCallsSectionAndTypeText(String text)
     {
@@ -167,6 +209,7 @@ public class WhatsUpWellcomPage extends BasePage {
         Assert.assertTrue(click(searchIcon)," click on icon failed");
         log.info("typing text into searchIcon" +  text(searchInput));
         type(searchInput,text);
+        click(sendMessage);
     }
 
 //    public void clickOnMenuFromChatPage() {
@@ -218,6 +261,24 @@ public class WhatsUpWellcomPage extends BasePage {
     }
 
 
+    public void clickOnTypeMessage( String text) {
+
+       log.info("clicking on statusIcon " +  text(typeMessage));
+       Assert.assertTrue(click(typeMessage)," click on icon failed");
+       log.info("typing text into searchIcon" +  text(typeMessage));
+
+       type(typeMessage,text);
+       click(sendMessage);
+
+
+    }
+
+    public String getTextInputMessage( WebElement element) {
+
+       return  text(element);
+
+
+    }
 
 
 

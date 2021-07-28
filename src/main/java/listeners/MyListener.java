@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -17,7 +18,7 @@ public class MyListener implements ITestListener {
 
     // Text attachments for Allure
     @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshotPNG(AppiumDriver driver) {
+    public byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
@@ -53,9 +54,9 @@ public class MyListener implements ITestListener {
     public void onTestSuccess(ITestResult iTestResult) {
         System.out.println("I am in onTestSuccess method " + getTestMethodName(iTestResult) + " succeed");
         Object testClass = iTestResult.getInstance();
-        AppiumDriver driver =  BaseTest.getDriver();
+       WebDriver driver =  BaseTest.getDriver();
         // Allure ScreenShotRobot and SaveTestLog
-        if (driver instanceof AppiumDriver) {
+        if (driver instanceof WebDriver) {
             System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
             saveScreenshotPNG(driver);
         }
@@ -68,9 +69,9 @@ public class MyListener implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
         Object testClass = iTestResult.getInstance();
-        AppiumDriver driver =  BaseTest.getDriver();
+        WebDriver driver =  BaseTest.getDriver();
         // Allure ScreenShotRobot and SaveTestLog
-        if (driver instanceof AppiumDriver) {
+        if (driver instanceof WebDriver) {
             System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
             saveScreenshotPNG(driver);
         }

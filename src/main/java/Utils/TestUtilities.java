@@ -1,60 +1,44 @@
 package Utils;
 
+import DataProvider.JSONReader;
 import Pages.BasePage;
+//import org.apache.logging.log4j.core.util.FileUtils;
+//import org.apache.logging.log4j.core.util.FileUtils;
 import Pages.BaseTest;
-//import org.apache.logging.log4j.core.util.FileUtils;
-//import org.apache.logging.log4j.core.util.FileUtils;
 import io.appium.java_client.*;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.logging.log4j.Logger;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.*;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 
 
-import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class TestUtilities extends BasePage {
 
 
-    public TestUtilities(AndroidDriver driver, Logger log) {
+    public TestUtilities(WebDriver driver, Logger log) {
         super(driver, log);
     }
 
-    public static void takeScreenshot(String fileName) {
-            File scrFile = BaseTest.getDriver().getScreenshotAs(OutputType.FILE);
-            String path = System.getProperty("user.dir")
-                    + File.separator + "test-output"
-                    + File.separator + "screenshots"
-                    + File.separator + getTodaysDate()
-                    + File.separator + BaseTest.testSuiteName
-                    + File.separator + BaseTest.testName
-                    + File.separator + BaseTest.testMethodName
-                + File.separator + getSystemTime()
-                + " " + fileName + ".png";
-        try {
-            FileUtils.copyFile(scrFile, new File(path));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
+
 
     /** Todays date in yyyyMMdd format */
     private static String getTodaysDate() {
@@ -97,7 +81,8 @@ public class TestUtilities extends BasePage {
 
     public static void AndroidBack  (int howMuch) {
         for(int i=1 ;i<= howMuch ;i++) {
-            BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+//            BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+            ((AndroidDriver) BaseTest.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
         }
     }
 
@@ -112,6 +97,17 @@ public class TestUtilities extends BasePage {
         }
         return temp;
     }
+
+//    public static  List<String> getListOfOptionsFromSentMessagesArea(WebElement element){
+//        List <String >  temp = new ArrayList<>();
+//
+//            AndroidElement element= (AndroidElement) BaseTest.getDriver().findElement(element));
+//            temp.add(element.getText());
+//
+//        return temp;
+//    }
+
+
 
 
     public static  List<String> convertFromWebElentsToString( List<WebElement> lst){
@@ -162,12 +158,6 @@ public class TestUtilities extends BasePage {
     }
 
 
-
-
-
-
-
-
     public static void scrollToText_AndroidEmpty(String text) throws InterruptedException {
             for (int i = 0; i < 2; i++) { // 2 tries to make tap
                 try {
@@ -184,6 +174,11 @@ public class TestUtilities extends BasePage {
 
             }
         }
+
+
+
+
+
 
 
 
