@@ -1,0 +1,12 @@
+[INFO ] 2021-07-19 13:50:22,810 Redmi6.setup() - Redmi6
+[INFO ] 2021-07-19 13:50:22,810 Redmi6.createDriver() - Create driver for android
+[INFO ] 2021-07-19 13:50:43,297 Redmi6.loginPositivTest() - verify login with user name and password works fine 
+[INFO ] 2021-07-19 13:50:43,297 Redmi6.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-19 13:50:47,223 Redmi6.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-07-19 13:50:49,152 Redmi6.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-07-19 13:50:56,476 Redmi6.setup() - Redmi6
+[INFO ] 2021-07-19 13:50:56,476 Redmi6.createDriver() - Create driver for android
+[INFO ] 2021-07-19 13:51:13,612 Redmi6.loginNegativeTest() - verify login with user name and password works fine 
+[INFO ] 2021-07-19 13:51:13,612 Redmi6.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-19 13:51:19,946 Redmi6.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-07-19 13:51:21,216 Redmi6.clickOnLoginButton() -  clciking on login button

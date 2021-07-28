@@ -1,0 +1,4 @@
+[INFO ] 2021-06-30 20:49:14,004 android.setup() - WhatsUpTests
+[INFO ] 2021-06-30 20:49:26,525 android.clickOnContactAndSendMessage() - verify sending message works properly 
+[INFO ] 2021-06-30 20:49:29,284 android.clickOnTypeMessage() - clicking on statusIcon Type a message
+[INFO ] 2021-06-30 20:49:31,305 android.clickOnTypeMessage() - typing text into searchIconType a message

@@ -1,0 +1,23 @@
+[INFO ] 2021-06-27 15:43:00,954 android.setup() - WhatsUpTests
+[INFO ] 2021-06-27 15:43:22,609 android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-06-27 15:43:27,845 android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-06-27 15:43:34,265 android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-06-27 15:43:34,627 android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-27 15:43:39,010 android.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-06-27 15:43:40,472 android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-27 15:43:42,908 android.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-06-27 15:43:43,536 android.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-06-27 15:43:43,537 android.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-06-27 15:43:45,022 android.setup() - WhatsUpTests
+[INFO ] 2021-06-27 15:43:57,448 android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-06-27 15:44:00,243 android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-27 15:44:02,765 android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-06-27 15:44:18,431 android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-06-27 15:44:19,116 android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-27 15:44:21,749 android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-06-27 15:44:26,184 android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-06-27 15:44:26,686 android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-27 15:44:28,433 android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-27 15:44:30,558 android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-06-27 15:44:34,101 android.setup() - WhatsUpTests
+[INFO ] 2021-06-27 15:44:46,511 android.scrollTestDown() - verify scrolling to buttom works properly 

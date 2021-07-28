@@ -1,0 +1,6 @@
+2021-05-30 16:17:17:416 [Appium] Welcome to Appium v1.19.1
+2021-05-30 16:17:17:417 [Appium] Non-default server args:
+2021-05-30 16:17:17:417 [Appium]   address: 127.0.0.1
+2021-05-30 16:17:17:417 [Appium]   logFile: E:\Appium_test_1\log\2021-05-30_16-17-15 android Log.txt
+2021-05-30 16:17:17:417 [Appium]   localTimezone: true
+2021-05-30 16:17:17:439 [Appium] Appium REST http interface listener started on 127.0.0.1:4723

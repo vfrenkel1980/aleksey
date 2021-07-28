@@ -1,0 +1,54 @@
+2021-05-27 11:36:11:209 [Appium] Welcome to Appium v1.19.1
+2021-05-27 11:36:11:210 [Appium] Non-default server args:
+2021-05-27 11:36:11:211 [Appium]   address: 127.0.0.1
+2021-05-27 11:36:11:211 [Appium]   logFile: E:\Appium_test_1\log\2021-05-27_11-36-06 android Log.txt
+2021-05-27 11:36:11:212 [Appium]   localTimezone: true
+2021-05-27 11:36:11:246 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2021-05-27 11:36:11:785 [HTTP] --> GET /wd/hub/status
+2021-05-27 11:36:11:786 [HTTP] {}
+2021-05-27 11:36:11:789 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-27 11:36:11:792 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-27 11:36:11:803 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-27 11:36:11:804 [HTTP] 
+2021-05-27 11:37:00:065 [HTTP] --> GET /wd/hub/status
+2021-05-27 11:37:00:066 [HTTP] {}
+2021-05-27 11:37:00:066 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-27 11:37:00:089 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-27 11:37:00:093 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-27 11:37:00:094 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-27 11:37:00:096 [HTTP] <-- GET /wd/hub/status 200 36 ms - 68
+2021-05-27 11:37:00:096 [HTTP] 

@@ -1,0 +1,11 @@
+[INFO ] 2021-06-14 22:42:42,295 Surefire test.setup() - WhatsUpTests
+[INFO ] 2021-06-14 22:42:59,510 Surefire test.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-06-14 22:43:01,786 Surefire test.clickOnMenuFromCallsPage() - click on menu from calls page
+[INFO ] 2021-06-14 22:43:04,221 Surefire test.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-06-14 22:43:10,843 Surefire test.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-06-14 22:43:11,326 Surefire test.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-14 22:43:13,642 Surefire test.clickOnMenuFromStatusPage() - click on menu from status page
+[INFO ] 2021-06-14 22:43:15,560 Surefire test.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-06-14 22:43:16,710 Surefire test.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-06-14 22:43:17,976 Surefire test.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-06-14 22:43:17,976 Surefire test.getTitleOfCurrentPage() - get text of current page

@@ -1,0 +1,11 @@
+[INFO ] 2021-05-19 14:33:18,574 Appium_test_1.setup() - started  appium test_1
+[INFO ] 2021-05-19 14:33:34,332 Appium_test_1.clickOnChatButtonAndVerifyChatText() - starting test clickOnChatButtonAndVerifyChatText 
+[INFO ] 2021-05-19 14:33:37,727 Appium_test_1.click_ChatTextFromOtherpage() - clicking  to chatTextЧАТЫ
+[INFO ] 2021-05-19 14:33:42,700 Appium_test_1.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-05-19 14:33:43,815 Appium_test_1.verifyMyStatusTextAfterClickingOnStatusButton() - starting test verifyMyStatusTextAfterClickingOnStatusButton 
+[INFO ] 2021-05-19 14:33:44,709 Appium_test_1.click_StatusText() - clicking to statusText СТАТУС
+[INFO ] 2021-05-19 14:33:48,752 Appium_test_1.getMyStatusText() - get text of my StatusМой статус
+[INFO ] 2021-05-19 14:33:49,858 Appium_test_1.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-05-19 14:33:49,859 Appium_test_1.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-05-19 14:33:50,834 Appium_test_1.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-05-19 14:33:51,183 Appium_test_1.click_ChatTextFromOtherpage() - clicking  to chatTextЧАТЫ

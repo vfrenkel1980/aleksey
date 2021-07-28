@@ -1,0 +1,28 @@
+[INFO ] 2021-07-28 12:36:20,892 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-07-28 12:36:20,892 Redmi6.setup() - Redmi6
+[INFO ] 2021-07-28 12:36:20,900 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[INFO ] 2021-07-28 12:36:20,900 Redmi6.createDriver() - Create driver for android
+[INFO ] 2021-07-28 12:36:31,204 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
+[INFO ] 2021-07-28 12:36:31,444 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-07-28 12:36:31,884 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-07-28 12:36:32,268 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-28 12:36:32,956 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-07-28 12:36:33,092 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
+[INFO ] 2021-07-28 12:36:39,262 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-07-28 12:36:39,262 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[INFO ] 2021-07-28 12:36:40,895 Redmi6.loginPositivеTest() - verify login with user name and password works fine 
+[INFO ] 2021-07-28 12:36:40,895 Redmi6.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-28 12:36:45,155 Redmi6.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-07-28 12:36:47,003 Redmi6.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-07-28 12:36:47,603 Bank Tfaxot Site.loginNegativeTest() - verify error message is correct when typing incorrect password 
+[INFO ] 2021-07-28 12:36:47,603 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-07-28 12:36:48,019 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-07-28 12:36:48,659 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-28 12:36:49,387 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-07-28 12:36:49,596 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
+[INFO ] 2021-07-28 12:36:53,908 Redmi6.setup() - Redmi6
+[INFO ] 2021-07-28 12:36:53,916 Redmi6.createDriver() - Create driver for android
+[INFO ] 2021-07-28 12:37:12,811 Redmi6.loginNegativeTest() - verify error message is correct when typing incorrect password
+[INFO ] 2021-07-28 12:37:12,819 Redmi6.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-28 12:37:16,588 Redmi6.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-07-28 12:37:18,316 Redmi6.clickOnLoginButton() -  clciking on login button

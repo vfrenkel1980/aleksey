@@ -1,0 +1,27 @@
+[INFO ] 2021-05-27 15:12:13,880 Appium_test_1.onStart() - [TEST Appium_test_1 STARTED]
+[INFO ] 2021-05-27 15:12:13,927 Appium_test_1.setup() - WhatsUpTests
+[INFO ] 2021-05-27 15:19:58,403 Appium_test_1.setup() - Cause is  :java.lang.reflect.InvocationTargetException
+[INFO ] 2021-05-27 15:19:58,405 Appium_test_1.setup() - Cause is  :Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 install -r C:\\Users\\Vlad\\AppData\\Local\\Temp\\2021427-9020-4s3tur.ekyp\\appium-uiautomator2-server-v4.12.2.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\Vlad\AppData\Local\Temp\2021427-9020-4s3tur.ekyp\appium-uiautomator2-server-v4.12.2.apk: 
+Exception occurred while executing:
+android.os.ParcelableException: java.io.IOException: Requested internal only, but not enough space
+	at android.util.ExceptionUtils.wrap(ExceptionUtils.java:34)
+	at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:413)
+	at com.android.server.pm.PackageManagerShellCommand.doCreateSession(PackageManagerShellCommand.java:2418)
+	at com.android.server.pm.PackageManagerShellCommand.runInstall(PackageManagerShellCommand.java:907)
+	at com.'; Code: '1'
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 install -r C:\\Users\\Vlad\\AppData\\Local\\Temp\\2021427-9020-4s3tur.ekyp\\appium-uiautomator2-server-v4.12.2.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\Vlad\AppData\Local\Temp\2021427-9020-4s3tur.ekyp\appium-uiautomator2-server-v4.12.2.apk: 
+Exception occurred while executing:
+android.os.ParcelableException: java.io.IOException: Requested internal only, but not enough space
+	at android.util.ExceptionUtils.wrap(ExceptionUtils.java:34)
+	at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:413)
+	at com.android.server.pm.PackageManagerShellCommand.doCreateSession(PackageManagerShellCommand.java:2418)
+	at com.android.server.pm.PackageManagerShellCommand.runInstall(PackageManagerShellCommand.java:907)
+	at com.'; Code: '1'
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver

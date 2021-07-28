@@ -1,0 +1,49 @@
+[INFO ] 2021-07-15 10:58:35,440 Redmi6.setup() - Redmi6
+[INFO ] 2021-07-15 10:58:35,451 Redmi6.createDriver() - Create driver for android
+[INFO ] 2021-07-15 10:58:47,061 Redmi6.createDriver() - Cause is  :java.lang.reflect.InvocationTargetException
+[INFO ] 2021-07-15 10:58:47,062 Redmi6.createDriver() - Cause is  :Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity -S' exited with code 255'; Stderr: 'Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity } from null (pid=32268, uid=2000) not exported from uid 10023
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity } from null (pid=32268, uid=2000) not exported from uid 10023
+	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1868)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:763)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:556)
+	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1231)
+	at com.android.server.am.ActivityStarter.execute(ActivityStarter.java:495)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:5556)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:474)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:161)
+	at android.os.ShellCommand.exec(ShellCommand.java:103)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:16802)
+	at android.os.Binder.shellCommand(Binder.java:634)
+	at android.os.Binder.onTransact(Binder.java:532)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3478)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3420)
+	at android.os.Binder.execTransact(Binder.java:731)'; Code: '255'
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity -S' exited with code 255'; Stderr: 'Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity } from null (pid=32268, uid=2000) not exported from uid 10023
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.startup.StartupLocalizationSelectionActivity } from null (pid=32268, uid=2000) not exported from uid 10023
+	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1868)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:763)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:556)
+	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1231)
+	at com.android.server.am.ActivityStarter.execute(ActivityStarter.java:495)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:5556)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:474)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:161)
+	at android.os.ShellCommand.exec(ShellCommand.java:103)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:16802)
+	at android.os.Binder.shellCommand(Binder.java:634)
+	at android.os.Binder.onTransact(Binder.java:532)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3478)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3420)
+	at android.os.Binder.execTransact(Binder.java:731)'; Code: '255'
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+[INFO ] 2021-07-15 10:58:52,267 Redmi6.verifyStatusText() - starting first amazon test
+[ERROR] 2021-07-15 10:58:52,447 Redmi6.tearDown() - Error quit the driver

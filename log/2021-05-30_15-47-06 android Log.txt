@@ -1,0 +1,114 @@
+2021-05-30 15:47:08:642 [Appium] Welcome to Appium v1.19.1
+2021-05-30 15:47:08:643 [Appium] Non-default server args:
+2021-05-30 15:47:08:644 [Appium]   address: 127.0.0.1
+2021-05-30 15:47:08:644 [Appium]   logFile: E:\Appium_test_1\log\2021-05-30_15-47-06 android Log.txt
+2021-05-30 15:47:08:644 [Appium]   localTimezone: true
+2021-05-30 15:47:08:665 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2021-05-30 15:57:27:742 [HTTP] --> GET /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8/screenshot
+2021-05-30 15:57:27:743 [HTTP] {}
+2021-05-30 15:57:27:773 [GENERIC (2544642b)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2021-05-30 15:57:27:773 [GENERIC (2544642b)]     at asyncHandler (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:246:15)
+2021-05-30 15:57:27:773 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:439:15
+2021-05-30 15:57:27:773 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:27:774 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:137:13)
+2021-05-30 15:57:27:774 [GENERIC (2544642b)]     at Route.dispatch (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:112:3)
+2021-05-30 15:57:27:775 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:27:775 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:281:22
+2021-05-30 15:57:27:775 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:354:14)
+2021-05-30 15:57:27:775 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:410:3)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:275:10)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at logger (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at trim_prefix (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:317:13)
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:7
+2021-05-30 15:57:27:776 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:335:12)
+2021-05-30 15:57:27:780 [GENERIC (2544642b)] Destroying socket connection
+2021-05-30 15:57:27:781 [HTTP] <-- GET /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8/screenshot 404 37 ms - 2442
+2021-05-30 15:57:27:781 [HTTP] 
+2021-05-30 15:57:29:534 [HTTP] --> GET /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8/screenshot
+2021-05-30 15:57:29:534 [HTTP] {}
+2021-05-30 15:57:29:536 [GENERIC (2544642b)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2021-05-30 15:57:29:536 [GENERIC (2544642b)]     at asyncHandler (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:246:15)
+2021-05-30 15:57:29:536 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:439:15
+2021-05-30 15:57:29:536 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:536 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:137:13)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at Route.dispatch (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:112:3)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:281:22
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:354:14)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:410:3)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:275:10)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at logger (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+2021-05-30 15:57:29:537 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:538 [GENERIC (2544642b)]     at trim_prefix (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:317:13)
+2021-05-30 15:57:29:538 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:7
+2021-05-30 15:57:29:538 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:335:12)
+2021-05-30 15:57:29:538 [GENERIC (2544642b)] Destroying socket connection
+2021-05-30 15:57:29:539 [HTTP] <-- GET /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8/screenshot 404 5 ms - 2442
+2021-05-30 15:57:29:539 [HTTP] 
+2021-05-30 15:57:29:553 [HTTP] --> DELETE /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8
+2021-05-30 15:57:29:553 [HTTP] {}
+2021-05-30 15:57:29:554 [GENERIC (2544642b)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2021-05-30 15:57:29:554 [GENERIC (2544642b)]     at asyncHandler (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:246:15)
+2021-05-30 15:57:29:554 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:439:15
+2021-05-30 15:57:29:554 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:554 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:137:13)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at Route.dispatch (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:112:3)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:281:22
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:354:14)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at param (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:410:3)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at next (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:275:10)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at logger (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+2021-05-30 15:57:29:555 [GENERIC (2544642b)]     at Layer.handle [as handle_request] (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+2021-05-30 15:57:29:556 [GENERIC (2544642b)]     at trim_prefix (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:317:13)
+2021-05-30 15:57:29:556 [GENERIC (2544642b)]     at C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:7
+2021-05-30 15:57:29:556 [GENERIC (2544642b)]     at Function.process_params (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:335:12)
+2021-05-30 15:57:29:556 [GENERIC (2544642b)] Destroying socket connection
+2021-05-30 15:57:29:558 [HTTP] <-- DELETE /wd/hub/session/2544642b-66bf-4186-8078-f9c8bb09a1f8 404 3 ms - 2442
+2021-05-30 15:57:29:558 [HTTP] 
+2021-05-30 16:08:24:707 [HTTP] --> GET /wd/hub/status
+2021-05-30 16:08:24:708 [HTTP] {}
+2021-05-30 16:08:24:708 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-30 16:08:24:724 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-30 16:08:24:728 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-30 16:08:24:728 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-30 16:08:24:729 [HTTP] <-- GET /wd/hub/status 200 24 ms - 68
+2021-05-30 16:08:24:731 [HTTP] 

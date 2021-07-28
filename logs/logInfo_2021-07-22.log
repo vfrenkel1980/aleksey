@@ -1,0 +1,3 @@
+[INFO ] 2021-07-22 07:07:52,243 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-07-22 07:07:52,259 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[INFO ] 2021-07-22 07:09:08,824 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site

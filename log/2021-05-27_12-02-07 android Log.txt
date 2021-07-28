@@ -1,0 +1,163 @@
+2021-05-27 12:02:10:284 [Appium] Welcome to Appium v1.19.1
+2021-05-27 12:02:10:286 [Appium] Non-default server args:
+2021-05-27 12:02:10:286 [Appium]   address: 127.0.0.1
+2021-05-27 12:02:10:287 [Appium]   logFile: E:\Appium_test_1\log\2021-05-27_12-02-07 android Log.txt
+2021-05-27 12:02:10:287 [Appium]   localTimezone: true
+2021-05-27 12:02:10:317 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2021-05-27 12:02:10:917 [HTTP] --> GET /wd/hub/status
+2021-05-27 12:02:10:918 [HTTP] {}
+2021-05-27 12:02:10:921 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-27 12:02:10:923 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-27 12:02:10:933 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-27 12:02:10:934 [HTTP] 
+2021-05-27 12:02:11:987 [HTTP] Request idempotency key: d7b205bb-3651-4969-88a8-9018f33d45d4
+2021-05-27 12:02:12:008 [HTTP] --> POST /wd/hub/session
+2021-05-27 12:02:12:008 [HTTP] {"desiredCapabilities":{"appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","noReset":true,"newCommandTimeout":60,"platformVersion":"9","platformName":"android","udid":"0c5a84557d33","deviceName":"xiaomi","fullReset":false},"capabilities":{"firstMatch":[{"appium:appActivity":"com.whatsapp.HomeActivity","appium:appPackage":"com.whatsapp","appium:deviceName":"xiaomi","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"platformName":"android","appium:platformVersion":"9","appium:udid":"0c5a84557d33"}]}}
+2021-05-27 12:02:12:009 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","noReset":true,"newCommandTimeout":60,"platformVersion":"9","platformName":"android","udid":"0c5a84557d33","deviceName":"xiaomi","fullReset":false},null,{"firstMatch":[{"appium:appActivity":"com.whatsapp.HomeActivity","appium:appPackage":"com.whatsapp","appium:deviceName":"xiaomi","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"platformName":"android","appium:platformVersion":"9","appium:udid":"0c5a84557d33"}]}]
+2021-05-27 12:02:12:010 [BaseDriver] Event 'newSessionRequested' logged at 1622106132009 (12:02:12 GMT+0300 (Moscow Standard Time))
+2021-05-27 12:02:12:018 [Appium] 
+2021-05-27 12:02:12:019 [Appium] ======================================================================
+2021-05-27 12:02:12:019 [Appium]   DEPRECATION WARNING:
+2021-05-27 12:02:12:019 [Appium] 
+2021-05-27 12:02:12:019 [Appium]   The 'automationName' capability was not provided in the desired 
+2021-05-27 12:02:12:019 [Appium]   capabilities for this Android session
+2021-05-27 12:02:12:020 [Appium] 
+2021-05-27 12:02:12:020 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2021-05-27 12:02:12:020 [Appium]   UiAutomator2 Driver
+2021-05-27 12:02:12:020 [Appium] 
+2021-05-27 12:02:12:020 [Appium]   The next major version of Appium (2.x) will **require** the 
+2021-05-27 12:02:12:021 [Appium]   'automationName' capability to be set for all sessions on all 
+2021-05-27 12:02:12:021 [Appium]   platforms
+2021-05-27 12:02:12:021 [Appium] 
+2021-05-27 12:02:12:021 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2021-05-27 12:02:12:021 [Appium]   'automationName=UiAutomator1'
+2021-05-27 12:02:12:022 [Appium] 
+2021-05-27 12:02:12:022 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2021-05-27 12:02:12:022 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2021-05-27 12:02:12:022 [Appium] 
+2021-05-27 12:02:12:022 [Appium]   For more information about drivers, please visit 
+2021-05-27 12:02:12:022 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2021-05-27 12:02:12:023 [Appium]   'Drivers' menu
+2021-05-27 12:02:12:023 [Appium] 
+2021-05-27 12:02:12:023 [Appium] ======================================================================
+2021-05-27 12:02:12:023 [Appium] 
+2021-05-27 12:02:12:564 [Appium] Appium v1.19.1 creating new AndroidUiautomator2Driver (v1.59.0) session
+2021-05-27 12:02:12:570 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-05-27 12:02:12:570 [BaseDriver] Creating session with W3C capabilities: {
+2021-05-27 12:02:12:571 [BaseDriver]   "alwaysMatch": {
+2021-05-27 12:02:12:571 [BaseDriver]     "platformName": "android",
+2021-05-27 12:02:12:571 [BaseDriver]     "appium:appActivity": "com.whatsapp.HomeActivity",
+2021-05-27 12:02:12:572 [BaseDriver]     "appium:appPackage": "com.whatsapp",
+2021-05-27 12:02:12:572 [BaseDriver]     "appium:deviceName": "xiaomi",
+2021-05-27 12:02:12:572 [BaseDriver]     "appium:fullReset": false,
+2021-05-27 12:02:12:572 [BaseDriver]     "appium:newCommandTimeout": 60,
+2021-05-27 12:02:12:573 [BaseDriver]     "appium:noReset": true,
+2021-05-27 12:02:12:573 [BaseDriver]     "appium:platformVersion": "9",
+2021-05-27 12:02:12:573 [BaseDriver]     "appium:udid": "0c5a84557d33"
+2021-05-27 12:02:12:573 [BaseDriver]   },
+2021-05-27 12:02:12:574 [BaseDriver]   "firstMatch": [
+2021-05-27 12:02:12:574 [BaseDriver]     {}
+2021-05-27 12:02:12:574 [BaseDriver]   ]
+2021-05-27 12:02:12:575 [BaseDriver] }
+2021-05-27 12:02:12:585 [BaseDriver] Session created with session id: 24dc77bc-7d6c-42bf-a513-5b844f5baf78
+2021-05-27 12:02:12:585 [UiAutomator2] Starting 'com.whatsapp' directly on the device
+2021-05-27 12:02:12:600 [ADB] Found 1 'build-tools' folders under 'C:\Users\Vlad\AppData\Local\Android\Sdk' (newest first):
+2021-05-27 12:02:12:601 [ADB]     C:/Users/Vlad/AppData/Local/Android/Sdk/build-tools/30.0.2
+2021-05-27 12:02:12:602 [ADB] Using 'adb.exe' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-27 12:02:12:603 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-27 12:02:12:641 [AndroidDriver] Retrieving device list
+2021-05-27 12:02:12:641 [ADB] Trying to find a connected android device
+2021-05-27 12:02:12:642 [ADB] Getting connected devices
+2021-05-27 12:02:12:668 [ADB] Connected devices: [{"udid":"0c5a84557d33","state":"device"}]
+2021-05-27 12:02:12:668 [AndroidDriver] Using device: 0c5a84557d33
+2021-05-27 12:02:12:671 [ADB] Using 'adb.exe' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-27 12:02:12:671 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-27 12:02:12:704 [ADB] Setting device id to 0c5a84557d33
+2021-05-27 12:02:12:705 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell getprop ro.build.version.sdk'
+2021-05-27 12:02:12:802 [ADB] Current device property 'ro.build.version.sdk': 28
+2021-05-27 12:02:12:803 [ADB] Getting device platform version
+2021-05-27 12:02:12:803 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell getprop ro.build.version.release'
+2021-05-27 12:02:12:891 [ADB] Current device property 'ro.build.version.release': 9
+2021-05-27 12:02:12:891 [ADB] Device API level: 28
+2021-05-27 12:02:12:891 [UiAutomator2] Relaxing hidden api policy
+2021-05-27 12:02:12:892 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2021-05-27 12:02:13:190 [AndroidDriver] No app sent in, not parsing package/activity
+2021-05-27 12:02:13:192 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 wait-for-device'
+2021-05-27 12:02:13:227 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell echo ping'
+2021-05-27 12:02:13:295 [AndroidDriver] Pushing settings apk to device...
+2021-05-27 12:02:13:296 [ADB] Getting install status for io.appium.settings
+2021-05-27 12:02:13:297 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.settings'
+2021-05-27 12:02:13:411 [ADB] 'io.appium.settings' is installed
+2021-05-27 12:02:13:411 [ADB] Getting package info for 'io.appium.settings'
+2021-05-27 12:02:13:412 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.settings'
+2021-05-27 12:02:13:563 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.2.1' >= '3.2.1')
+2021-05-27 12:02:13:564 [ADB] There is no need to install/upgrade 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2021-05-27 12:02:13:564 [ADB] Getting IDs of all 'io.appium.settings' processes
+2021-05-27 12:02:13:565 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell 'pgrep --help; echo $?''
+2021-05-27 12:02:13:658 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2021-05-27 12:02:13:858 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2021-05-27 12:02:13:860 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell appops set io.appium.settings android:mock_location allow'
+2021-05-27 12:02:14:014 [Logcat] Starting logs capture with command: C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 logcat -v threadtime
+2021-05-27 12:02:14:117 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2021-05-27 12:02:14:117 [ADB] Forwarding system: 8200 to device: 6790
+2021-05-27 12:02:14:118 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 forward tcp:8200 tcp:6790'
+2021-05-27 12:02:14:164 [ADB] Getting install status for io.appium.uiautomator2.server
+2021-05-27 12:02:14:165 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.uiautomator2.server'
+2021-05-27 12:02:14:305 [ADB] 'io.appium.uiautomator2.server' is not installed
+2021-05-27 12:02:14:305 [ADB] App 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk' is not installed
+2021-05-27 12:02:14:305 [UiAutomator2] io.appium.uiautomator2.server installation state: notInstalled
+2021-05-27 12:02:14:307 [ADB] Checking app cert for C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk
+2021-05-27 12:02:14:313 [ADB] Using 'apksigner.jar' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\build-tools\30.0.2\lib\apksigner.jar'
+2021-05-27 12:02:14:316 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.15.0.apk
+2021-05-27 12:02:15:020 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-27 12:02:15:020 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-27 12:02:15:020 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-27 12:02:15:020 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-27 12:02:15:020 [ADB] 
+2021-05-27 12:02:15:021 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.15.0.apk'
+2021-05-27 12:02:15:021 [ADB] 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk' is signed with the default certificate
+2021-05-27 12:02:15:021 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2021-05-27 12:02:15:022 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.uiautomator2.server.test'
+2021-05-27 12:02:15:237 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2021-05-27 12:02:15:237 [ADB] Checking app cert for C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-27 12:02:15:238 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-27 12:02:15:900 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-27 12:02:15:901 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-27 12:02:15:902 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-27 12:02:15:902 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-27 12:02:15:902 [ADB] 
+2021-05-27 12:02:15:903 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2021-05-27 12:02:15:903 [ADB] 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2021-05-27 12:02:15:903 [UiAutomator2] Server packages are going to be (re)installed
+2021-05-27 12:02:15:905 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 version'
+2021-05-27 12:02:15:934 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 features'
+2021-05-27 12:02:15:969 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 help'
+2021-05-27 12:02:16:000 [ADB] The application at 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2021-05-27 12:02:16:001 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 install -r C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk'
+2021-05-27 12:02:16:349 [UiAutomator2] Deleting UiAutomator2 session
+2021-05-27 12:02:16:350 [UiAutomator2] Deleting UiAutomator2 server session
+2021-05-27 12:02:16:351 [WD Proxy] Matched '/' to command name 'deleteSession'
+2021-05-27 12:02:16:353 [UiAutomator2] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2021-05-27 12:02:16:353 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell am force-stop com.whatsapp'
+2021-05-27 12:02:16:484 [Logcat] Stopping logcat capture
+2021-05-27 12:02:16:490 [ADB] Removing forwarded port socket connection: 8200 
+2021-05-27 12:02:16:491 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 forward --remove tcp:8200'
+2021-05-27 12:02:16:515 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2021-05-27 12:02:16:515 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2021-05-27 12:02:16:804 [BaseDriver] Event 'newSessionStarted' logged at 1622106136804 (12:02:16 GMT+0300 (Moscow Standard Time))
+2021-05-27 12:02:16:805 [W3C] Encountered internal error running command: Error executing adbExec. Original error: 'Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 install -r C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.15.0.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk: 
+2021-05-27 12:02:16:805 [W3C] Exception occurred while executing:
+2021-05-27 12:02:16:805 [W3C] android.os.ParcelableException: java.io.IOException: Requested internal only, but not enough space
+2021-05-27 12:02:16:805 [W3C] 	at android.util.ExceptionUtils.wrap(ExceptionUtils.java:34)
+2021-05-27 12:02:16:806 [W3C] 	at com.android.server.pm.PackageInstallerService.createSession(PackageInstallerService.java:413)
+2021-05-27 12:02:16:806 [W3C] 	at com.android.server.pm.PackageManagerShellCommand.doCreateSession(PackageManagerShellCommand.java:2418)
+2021-05-27 12:02:16:806 [W3C] 	at com.android.server.pm.PackageManagerShellCommand.runInstall(PackageManagerShellCommand.java:907)
+2021-05-27 12:02:16:807 [W3C] 	at com.'; Code: '1'
+2021-05-27 12:02:16:807 [W3C] Error: Command 'C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 install -r C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.15.0.apk' exited with code 1
+2021-05-27 12:02:16:807 [W3C]     at ChildProcess.<anonymous> (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\teen_process\lib\exec.js:113:19)
+2021-05-27 12:02:16:807 [W3C]     at ChildProcess.emit (events.js:315:20)
+2021-05-27 12:02:16:808 [W3C]     at maybeClose (internal/child_process.js:1048:16)
+2021-05-27 12:02:16:808 [W3C]     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+2021-05-27 12:02:16:872 [W3C] Destroying socket connection
+2021-05-27 12:02:16:873 [HTTP] <-- POST /wd/hub/session 500 4864 ms - 2753
+2021-05-27 12:02:16:874 [HTTP] 

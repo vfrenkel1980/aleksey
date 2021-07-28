@@ -1,0 +1,3 @@
+[INFO ] 2021-07-13 22:48:08,449 Amazon Site.setup() - Amazon Site
+[INFO ] 2021-07-13 22:48:08,459 Amazon Site.createDriver() - Create driver: chrome
+[INFO ] 2021-07-13 22:48:17,984 Amazon Site.openAmazonSite() - starting test openAmazonSite 

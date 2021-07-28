@@ -1,0 +1,7 @@
+[INFO ] 2021-06-03 21:12:10,545 android.setup() - WhatsUpTests
+[INFO ] 2021-06-03 21:12:23,065 android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-06-03 21:12:34,391 android.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-06-03 21:12:35,483 android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-03 21:12:37,820 android.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-06-03 21:12:38,441 android.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-06-03 21:12:38,445 android.getTitleOfCurrentPage() - get text of current page

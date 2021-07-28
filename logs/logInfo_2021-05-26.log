@@ -1,0 +1,6 @@
+[INFO ] 2021-05-26 12:00:00,759 Appium_test_1.onStart() - [TEST Appium_test_1 STARTED]
+[INFO ] 2021-05-26 12:00:00,819 Appium_test_1.setup() - WhatsUpTests
+[INFO ] 2021-05-26 12:00:14,070 Appium_test_1.onTestStart() - [Starting clickOnChatButtonAndVerifyChatText]
+[INFO ] 2021-05-26 12:00:16,934 Appium_test_1.click_ChatTextFromOtherpage() - clicking  to chatTextЧАТЫ
+[INFO ] 2021-05-26 12:00:20,791 Appium_test_1.onTestFailure() - [Test clickOnChatButtonAndVerifyChatText failed]
+[INFO ] 2021-05-26 12:00:23,260 Appium_test_1.onFinish() - [ALL Default Suite FINISHED]

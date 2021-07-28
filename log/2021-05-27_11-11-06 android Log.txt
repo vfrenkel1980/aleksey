@@ -1,0 +1,13 @@
+2021-05-27 11:11:12:386 [Appium] Welcome to Appium v1.19.1
+2021-05-27 11:11:12:388 [Appium] Non-default server args:
+2021-05-27 11:11:12:389 [Appium]   address: 127.0.0.1
+2021-05-27 11:11:12:390 [Appium]   port: 4721
+2021-05-27 11:11:12:390 [Appium]   logFile: E:\Appium_test_1\log\2021-05-27_11-11-06 android Log.txt
+2021-05-27 11:11:12:391 [Appium]   localTimezone: true
+2021-05-27 11:11:12:445 [Appium] Appium REST http interface listener started on 127.0.0.1:4721
+2021-05-27 11:11:12:574 [HTTP] --> GET /wd/hub/status
+2021-05-27 11:11:12:575 [HTTP] {}
+2021-05-27 11:11:12:578 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-27 11:11:12:580 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-27 11:11:12:591 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-27 11:11:12:591 [HTTP] 

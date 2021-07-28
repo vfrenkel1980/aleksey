@@ -1,0 +1,8 @@
+[INFO ] 2021-06-20 23:16:45,710 android.setup() - WhatsUpTests
+[INFO ] 2021-06-20 23:16:59,131 android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-06-20 23:17:02,116 android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-20 23:17:03,995 android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-06-20 23:17:16,893 android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.xpath: //android.widget.ImageButton[@content-desc="Back"]}) (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2021-06-20 23:17:28,047 android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.xpath: //android.widget.ImageButton[@content-desc="Back"]}) (tried for 10 second(s) with 500 milliseconds interval)

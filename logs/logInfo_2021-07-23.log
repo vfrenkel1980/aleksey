@@ -1,0 +1,8 @@
+[INFO ] 2021-07-23 11:53:45,471 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-07-23 11:53:45,471 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[INFO ] 2021-07-23 11:53:56,917 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
+[INFO ] 2021-07-23 11:53:57,176 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-07-23 11:53:57,716 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-07-23 11:53:57,988 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-07-23 11:53:58,740 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-07-23 11:53:58,982 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button

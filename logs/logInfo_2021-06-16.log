@@ -1,0 +1,11 @@
+[INFO ] 2021-06-16 17:59:19,551 android.setup() - WhatsUpTests
+[INFO ] 2021-06-16 17:59:35,526 android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-06-16 17:59:37,590 android.clickOnMenuFromCallsPage() - click on menu from calls page
+[INFO ] 2021-06-16 17:59:39,918 android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-06-16 17:59:45,606 android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-06-16 17:59:46,009 android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-16 17:59:48,369 android.clickOnMenuFromStatusPage() - click on menu from status page
+[INFO ] 2021-06-16 17:59:50,373 android.clickOnSearchButton_ChatPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-06-16 17:59:51,389 android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-16 17:59:54,824 android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-06-16 18:00:24,021 android.tearDown() - Error quit the driver

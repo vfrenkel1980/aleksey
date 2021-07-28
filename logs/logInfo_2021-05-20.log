@@ -1,0 +1,7 @@
+[INFO ] 2021-05-20 18:21:08,877 Appium_test_1.setup() - started  appium test_1
+[INFO ] 2021-05-20 18:21:11,697 Appium_test_1.setup() - Cause is  :java.net.ConnectException: Connection refused: connect
+[INFO ] 2021-05-20 18:21:11,697 Appium_test_1.setup() - Cause is  :Connection refused: connect
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '192.168.43.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+[ERROR] 2021-05-20 18:22:26,668 Appium_test_1.tearDown() - Error quit the driver

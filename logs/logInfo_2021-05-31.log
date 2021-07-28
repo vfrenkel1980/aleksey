@@ -1,0 +1,13 @@
+[INFO ] 2021-05-31 13:49:01,897 Appium_test_1.setup() - WhatsUpTests
+[INFO ] 2021-05-31 13:49:23,382 Appium_test_1.setup() - Cause is  :java.lang.reflect.InvocationTargetException
+[INFO ] 2021-05-31 13:49:23,398 Appium_test_1.setup() - Cause is  :Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20149ms.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20149ms.
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HOME-PC', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: AndroidDriver
+[ERROR] 2021-05-31 13:49:29,070 Appium_test_1.tearDown() - Error quit the driver

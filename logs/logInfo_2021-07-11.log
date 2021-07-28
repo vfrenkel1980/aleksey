@@ -1,0 +1,32 @@
+[INFO ] 2021-07-11 17:33:40,149 android poco.setup() - android poco
+[INFO ] 2021-07-11 17:33:56,268 android poco.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-07-11 17:34:01,536 android poco.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-07-11 17:34:08,804 android poco.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-07-11 17:34:09,241 android poco.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-07-11 17:34:14,511 android poco.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-07-11 17:34:16,324 android poco.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-07-11 17:34:18,172 android poco.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-07-11 17:34:18,843 android poco.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-07-11 17:34:18,843 android poco.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-07-11 17:34:20,234 android poco.setup() - android poco
+[INFO ] 2021-07-11 17:34:31,070 android poco.clickOnContactAndSendMessage() - verify sending message works properly 
+[INFO ] 2021-07-11 17:34:32,398 android poco.clickOnTypeMessage() - clicking on statusIcon Type a message
+[INFO ] 2021-07-11 17:34:34,414 android poco.clickOnTypeMessage() - typing text into searchIconType a message
+[INFO ] 2021-07-11 17:34:39,634 android poco.setup() - android poco
+[INFO ] 2021-07-11 17:34:50,690 android poco.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-07-11 17:34:53,377 android poco.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-07-11 17:34:55,534 android poco.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-07-11 17:35:08,777 android poco.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-07-11 17:35:09,870 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-07-11 17:35:12,980 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-07-11 17:35:24,474 android poco.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2021-07-11 17:35:35,071 android poco.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
+[INFO ] 2021-07-11 17:35:36,478 android poco.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-07-11 17:35:37,790 android poco.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-07-11 17:35:39,650 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-07-11 17:35:41,905 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-07-11 17:35:44,907 android poco.clickOnSearchButton_StatusPage() - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[INFO ] 2021-07-11 17:35:45,686 android poco.setup() - android poco
+[INFO ] 2021-07-11 17:35:56,651 android poco.scrollTestDown() - verify scrolling to buttom works properly 

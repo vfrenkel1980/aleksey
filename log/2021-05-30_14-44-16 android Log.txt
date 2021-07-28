@@ -1,0 +1,234 @@
+2021-05-30 14:44:18:010 [Appium] Welcome to Appium v1.19.1
+2021-05-30 14:44:18:011 [Appium] Non-default server args:
+2021-05-30 14:44:18:011 [Appium]   address: 127.0.0.1
+2021-05-30 14:44:18:011 [Appium]   logFile: E:\Appium_test_1\log\2021-05-30_14-44-16 android Log.txt
+2021-05-30 14:44:18:012 [Appium]   localTimezone: true
+2021-05-30 14:44:18:033 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2021-05-30 14:44:18:175 [HTTP] --> GET /wd/hub/status
+2021-05-30 14:44:18:175 [HTTP] {}
+2021-05-30 14:44:18:177 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-30 14:44:18:178 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-30 14:44:18:182 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2021-05-30 14:44:18:182 [HTTP] 
+2021-05-30 14:44:52:198 [HTTP] Request idempotency key: 3eda6112-3aeb-4f10-946e-77fdcb48bf85
+2021-05-30 14:44:52:210 [HTTP] --> POST /wd/hub/session
+2021-05-30 14:44:52:210 [HTTP] {"desiredCapabilities":{"appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","noReset":true,"newCommandTimeout":60,"platformVersion":"9","platformName":"android","udid":"0c5a84557d33","deviceName":"xiaomi","fullReset":false},"capabilities":{"firstMatch":[{"appium:appActivity":"com.whatsapp.HomeActivity","appium:appPackage":"com.whatsapp","appium:deviceName":"xiaomi","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"platformName":"android","appium:platformVersion":"9","appium:udid":"0c5a84557d33"}]}}
+2021-05-30 14:44:52:211 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","noReset":true,"newCommandTimeout":60,"platformVersion":"9","platformName":"android","udid":"0c5a84557d33","deviceName":"xiaomi","fullReset":false},null,{"firstMatch":[{"appium:appActivity":"com.whatsapp.HomeActivity","appium:appPackage":"com.whatsapp","appium:deviceName":"xiaomi","appium:fullReset":false,"appium:newCommandTimeout":60,"appium:noReset":true,"platformName":"android","appium:platformVersion":"9","appium:udid":"0c5a84557d33"}]}]
+2021-05-30 14:44:52:211 [BaseDriver] Event 'newSessionRequested' logged at 1622375092211 (14:44:52 GMT+0300 (Moscow Standard Time))
+2021-05-30 14:44:52:217 [Appium] 
+2021-05-30 14:44:52:217 [Appium] ======================================================================
+2021-05-30 14:44:52:217 [Appium]   DEPRECATION WARNING:
+2021-05-30 14:44:52:217 [Appium] 
+2021-05-30 14:44:52:217 [Appium]   The 'automationName' capability was not provided in the desired 
+2021-05-30 14:44:52:218 [Appium]   capabilities for this Android session
+2021-05-30 14:44:52:218 [Appium] 
+2021-05-30 14:44:52:218 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2021-05-30 14:44:52:218 [Appium]   UiAutomator2 Driver
+2021-05-30 14:44:52:218 [Appium] 
+2021-05-30 14:44:52:218 [Appium]   The next major version of Appium (2.x) will **require** the 
+2021-05-30 14:44:52:218 [Appium]   'automationName' capability to be set for all sessions on all 
+2021-05-30 14:44:52:218 [Appium]   platforms
+2021-05-30 14:44:52:218 [Appium] 
+2021-05-30 14:44:52:219 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2021-05-30 14:44:52:219 [Appium]   'automationName=UiAutomator1'
+2021-05-30 14:44:52:219 [Appium] 
+2021-05-30 14:44:52:220 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2021-05-30 14:44:52:220 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2021-05-30 14:44:52:220 [Appium] 
+2021-05-30 14:44:52:220 [Appium]   For more information about drivers, please visit 
+2021-05-30 14:44:52:220 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2021-05-30 14:44:52:220 [Appium]   'Drivers' menu
+2021-05-30 14:44:52:220 [Appium] 
+2021-05-30 14:44:52:220 [Appium] ======================================================================
+2021-05-30 14:44:52:221 [Appium] 
+2021-05-30 14:44:52:577 [Appium] Appium v1.19.1 creating new AndroidUiautomator2Driver (v1.59.0) session
+2021-05-30 14:44:52:580 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-05-30 14:44:52:580 [BaseDriver] Creating session with W3C capabilities: {
+2021-05-30 14:44:52:580 [BaseDriver]   "alwaysMatch": {
+2021-05-30 14:44:52:581 [BaseDriver]     "platformName": "android",
+2021-05-30 14:44:52:581 [BaseDriver]     "appium:appActivity": "com.whatsapp.HomeActivity",
+2021-05-30 14:44:52:581 [BaseDriver]     "appium:appPackage": "com.whatsapp",
+2021-05-30 14:44:52:581 [BaseDriver]     "appium:deviceName": "xiaomi",
+2021-05-30 14:44:52:581 [BaseDriver]     "appium:fullReset": false,
+2021-05-30 14:44:52:582 [BaseDriver]     "appium:newCommandTimeout": 60,
+2021-05-30 14:44:52:582 [BaseDriver]     "appium:noReset": true,
+2021-05-30 14:44:52:584 [BaseDriver]     "appium:platformVersion": "9",
+2021-05-30 14:44:52:584 [BaseDriver]     "appium:udid": "0c5a84557d33"
+2021-05-30 14:44:52:584 [BaseDriver]   },
+2021-05-30 14:44:52:585 [BaseDriver]   "firstMatch": [
+2021-05-30 14:44:52:585 [BaseDriver]     {}
+2021-05-30 14:44:52:585 [BaseDriver]   ]
+2021-05-30 14:44:52:586 [BaseDriver] }
+2021-05-30 14:44:52:597 [BaseDriver] Session created with session id: e4dcb75b-efb1-4360-914e-f8d316c7556f
+2021-05-30 14:44:52:598 [UiAutomator2] Starting 'com.whatsapp' directly on the device
+2021-05-30 14:44:52:606 [ADB] Found 1 'build-tools' folders under 'C:\Users\Vlad\AppData\Local\Android\Sdk' (newest first):
+2021-05-30 14:44:52:606 [ADB]     C:/Users/Vlad/AppData/Local/Android/Sdk/build-tools/30.0.2
+2021-05-30 14:44:52:607 [ADB] Using 'adb.exe' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-30 14:44:52:607 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-30 14:44:52:628 [AndroidDriver] Retrieving device list
+2021-05-30 14:44:52:628 [ADB] Trying to find a connected android device
+2021-05-30 14:44:52:629 [ADB] Getting connected devices
+2021-05-30 14:44:52:645 [ADB] Connected devices: [{"udid":"0c5a84557d33","state":"device"}]
+2021-05-30 14:44:52:645 [AndroidDriver] Using device: 0c5a84557d33
+2021-05-30 14:44:52:647 [ADB] Using 'adb.exe' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-30 14:44:52:647 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-30 14:44:52:664 [ADB] Setting device id to 0c5a84557d33
+2021-05-30 14:44:52:664 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell getprop ro.build.version.sdk'
+2021-05-30 14:44:52:778 [ADB] Current device property 'ro.build.version.sdk': 28
+2021-05-30 14:44:52:778 [ADB] Getting device platform version
+2021-05-30 14:44:52:778 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell getprop ro.build.version.release'
+2021-05-30 14:44:52:853 [ADB] Current device property 'ro.build.version.release': 9
+2021-05-30 14:44:52:853 [ADB] Device API level: 28
+2021-05-30 14:44:52:853 [UiAutomator2] Relaxing hidden api policy
+2021-05-30 14:44:52:854 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2021-05-30 14:44:53:246 [AndroidDriver] No app sent in, not parsing package/activity
+2021-05-30 14:44:53:247 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 wait-for-device'
+2021-05-30 14:44:53:264 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell echo ping'
+2021-05-30 14:44:53:307 [AndroidDriver] Pushing settings apk to device...
+2021-05-30 14:44:53:308 [ADB] Getting install status for io.appium.settings
+2021-05-30 14:44:53:308 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.settings'
+2021-05-30 14:44:53:428 [ADB] 'io.appium.settings' is installed
+2021-05-30 14:44:53:429 [ADB] Getting package info for 'io.appium.settings'
+2021-05-30 14:44:53:429 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.settings'
+2021-05-30 14:44:53:517 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.2.1' >= '3.2.1')
+2021-05-30 14:44:53:518 [ADB] There is no need to install/upgrade 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2021-05-30 14:44:53:518 [ADB] Getting IDs of all 'io.appium.settings' processes
+2021-05-30 14:44:53:518 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell 'pgrep --help; echo $?''
+2021-05-30 14:44:53:608 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2021-05-30 14:44:53:733 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2021-05-30 14:44:53:734 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell appops set io.appium.settings android:mock_location allow'
+2021-05-30 14:44:53:867 [Logcat] Starting logs capture with command: C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 0c5a84557d33 logcat -v threadtime
+2021-05-30 14:44:53:955 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2021-05-30 14:44:53:956 [ADB] Forwarding system: 8200 to device: 6790
+2021-05-30 14:44:53:956 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 forward tcp:8200 tcp:6790'
+2021-05-30 14:44:53:976 [ADB] Getting install status for io.appium.uiautomator2.server
+2021-05-30 14:44:53:976 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.uiautomator2.server'
+2021-05-30 14:44:54:091 [ADB] 'io.appium.uiautomator2.server' is installed
+2021-05-30 14:44:54:091 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2021-05-30 14:44:54:091 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.uiautomator2.server'
+2021-05-30 14:44:54:188 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.15.0' >= '4.15.0')
+2021-05-30 14:44:54:188 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2021-05-30 14:44:54:188 [ADB] Checking app cert for C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk
+2021-05-30 14:44:54:192 [ADB] Using 'apksigner.jar' from 'C:\Users\Vlad\AppData\Local\Android\Sdk\build-tools\30.0.2\lib\apksigner.jar'
+2021-05-30 14:44:54:193 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.15.0.apk
+2021-05-30 14:44:54:532 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-30 14:44:54:532 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-30 14:44:54:532 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-30 14:44:54:532 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-30 14:44:54:532 [ADB] 
+2021-05-30 14:44:54:533 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.15.0.apk'
+2021-05-30 14:44:54:533 [ADB] 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk' is signed with the default certificate
+2021-05-30 14:44:54:533 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2021-05-30 14:44:54:533 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys package io.appium.uiautomator2.server.test'
+2021-05-30 14:44:54:628 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2021-05-30 14:44:54:629 [ADB] Checking app cert for C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-30 14:44:54:629 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Vlad\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\Vlad\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-30 14:44:54:920 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-30 14:44:54:920 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-30 14:44:54:920 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-30 14:44:54:920 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-30 14:44:54:921 [ADB] 
+2021-05-30 14:44:54:921 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2021-05-30 14:44:54:921 [ADB] 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2021-05-30 14:44:54:921 [UiAutomator2] Server packages are not going to be (re)installed
+2021-05-30 14:44:54:924 [UiAutomator2] Waiting up to 30000ms for services to be available
+2021-05-30 14:44:54:924 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell pm list instrumentation'
+2021-05-30 14:44:55:029 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2021-05-30 14:44:55:029 [UiAutomator2] No app capability. Assuming it is already on the device
+2021-05-30 14:44:55:030 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2021-05-30 14:44:55:149 [UiAutomator2] The following obsolete sessions are still running: [null]
+2021-05-30 14:44:55:149 [UiAutomator2] Cleaning up the obsolete sessions
+2021-05-30 14:44:56:217 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell am force-stop io.appium.uiautomator2.server.test'
+2021-05-30 14:44:56:399 [UiAutomator2] Starting UIAutomator2 server 4.15.0
+2021-05-30 14:44:56:399 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.15.0.apk' and test from 'C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2021-05-30 14:44:56:399 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2021-05-30 14:44:56:399 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","0c5a84557d33","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2021-05-30 14:44:57:407 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:44:57:409 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:44:57:465 [WD Proxy] socket hang up
+2021-05-30 14:44:58:472 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:44:58:472 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:44:58:477 [WD Proxy] socket hang up
+2021-05-30 14:44:59:486 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:44:59:487 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:44:59:491 [WD Proxy] socket hang up
+2021-05-30 14:45:00:502 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:45:00:502 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:45:00:507 [WD Proxy] socket hang up
+2021-05-30 14:45:01:169 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2021-05-30 14:45:01:518 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:45:01:519 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:45:01:525 [WD Proxy] socket hang up
+2021-05-30 14:45:02:534 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:45:02:534 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:45:02:539 [WD Proxy] socket hang up
+2021-05-30 14:45:03:550 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-30 14:45:03:551 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-30 14:45:03:802 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2021-05-30 14:45:03:802 [UiAutomator2] The initialization of the instrumentation process took 7403ms
+2021-05-30 14:45:03:803 [WD Proxy] Matched '/session' to command name 'createSession'
+2021-05-30 14:45:03:803 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"xiaomi","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33"},"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"0c5a84557d33","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33","deviceUDID":"0c5a84557d33"}],"alwaysMatch":{}}}
+2021-05-30 14:45:03:884 [WD Proxy] Got response with status 200: {"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"xiaomi","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33"},"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"0c5a84557d33","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33","deviceUDID":"0c5a84557d33"}],"alwaysMatch":{}},"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885"}}
+2021-05-30 14:45:03:885 [WD Proxy] Determined the downstream protocol as 'W3C'
+2021-05-30 14:45:03:895 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/e98590db-6094-4eaa-b79e-8f5cdf8a1885/appium/device/info] with no body
+2021-05-30 14:45:04:102 [WD Proxy] Got response with status 200: {"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885","value":{"androidId":"d497fe64d394fbd0","apiVersion":"28","bluetooth":{"state":"OFF"},"brand":"xiaomi","carrierName":"GOLAN T","displayDensity":320,"locale":"ru_RU","manufacturer":"Xiaomi","model":"Redmi 6A","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30062,"linkUpstreamBandwidthKbps":0,"networkCapabilities":"NET_CAPABILITY_SUPL,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"internet.golantelecom.net.il","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"}],"platformVersion":"9","realDisplaySize":"720x1440","timeZone":"Asia/Jerusalem"}}
+2021-05-30 14:45:04:102 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell dumpsys window'
+2021-05-30 14:45:04:299 [AndroidDriver] Screen already unlocked, doing nothing
+2021-05-30 14:45:04:299 [UiAutomator2] Starting 'com.whatsapp/com.whatsapp.HomeActivity and waiting for 'com.whatsapp/com.whatsapp.HomeActivity'
+2021-05-30 14:45:04:299 [ADB] Running 'C:\Users\Vlad\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 0c5a84557d33 shell am start -W -n com.whatsapp/com.whatsapp.HomeActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2021-05-30 14:45:06:888 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/e98590db-6094-4eaa-b79e-8f5cdf8a1885/appium/device/pixel_ratio] with no body
+2021-05-30 14:45:06:958 [WD Proxy] Got response with status 200: {"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885","value":2}
+2021-05-30 14:45:06:960 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2021-05-30 14:45:06:961 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/e98590db-6094-4eaa-b79e-8f5cdf8a1885/appium/device/system_bars] with no body
+2021-05-30 14:45:07:025 [WD Proxy] Got response with status 200: {"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885","value":{"statusBar":48}}
+2021-05-30 14:45:07:026 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2021-05-30 14:45:07:026 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/e98590db-6094-4eaa-b79e-8f5cdf8a1885/window/current/size] with no body
+2021-05-30 14:45:07:078 [WD Proxy] Got response with status 200: {"sessionId":"e98590db-6094-4eaa-b79e-8f5cdf8a1885","value":{"height":1344,"width":720}}
+2021-05-30 14:45:07:079 [Appium] New AndroidUiautomator2Driver session created successfully, session e4dcb75b-efb1-4360-914e-f8d316c7556f added to master session list
+2021-05-30 14:45:07:079 [BaseDriver] Event 'newSessionStarted' logged at 1622375107079 (14:45:07 GMT+0300 (Moscow Standard Time))
+2021-05-30 14:45:07:080 [W3C (e4dcb75b)] Cached the protocol value 'W3C' for the new session e4dcb75b-efb1-4360-914e-f8d316c7556f
+2021-05-30 14:45:07:081 [W3C (e4dcb75b)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"xiaomi","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33"},"platformName":"android","appActivity":"com.whatsapp.HomeActivity","appPackage":"com.whatsapp","deviceName":"0c5a84557d33","fullReset":false,"newCommandTimeout":60,"noReset":true,"platformVersion":"9","udid":"0c5a84557d33","deviceUDID":"0c5a84557d33","deviceApiLevel":28,"deviceScreenSize":"720x1440","deviceScreenDensity":320,"deviceModel":"Redmi 6A","deviceManufacturer":"Xiaomi","pixelRatio":2,"statBarHeight":48,"viewportRect":{"left":0,"top":48,"width":720,"height":1296}}}
+2021-05-30 14:45:07:084 [HTTP] <-- POST /wd/hub/session 200 14872 ms - 979
+2021-05-30 14:45:07:084 [HTTP] 
+2021-05-30 14:45:56:384 [HTTP] --> GET /wd/hub/status
+2021-05-30 14:45:56:384 [HTTP] {}
+2021-05-30 14:45:56:385 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-30 14:45:56:403 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-30 14:45:56:407 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (internal/net.js:54:25)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at Socket.Writable.write (_stream_writable.js:303:10)
+    at Console.log (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at addChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\Vlad\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+2021-05-30 14:45:56:407 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.19.1"}}
+2021-05-30 14:45:56:409 [HTTP] <-- GET /wd/hub/status 200 29 ms - 68
+2021-05-30 14:45:56:409 [HTTP] 

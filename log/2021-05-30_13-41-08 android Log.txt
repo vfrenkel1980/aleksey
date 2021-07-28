@@ -1,0 +1,1 @@
+2021-05-30 13:41:11:140 [Appium] Welcome to Appium v1.19.1

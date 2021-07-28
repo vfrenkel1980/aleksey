@@ -1,0 +1,22 @@
+[INFO ] 2021-06-28 13:01:13,928 Surefire test.setup() - WhatsUpTests
+[INFO ] 2021-06-28 13:01:26,187 Surefire test.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-06-28 13:01:29,082 Surefire test.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-28 13:01:31,492 Surefire test.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-06-28 13:01:45,478 Surefire test.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-06-28 13:01:46,030 Surefire test.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-28 13:01:48,627 Surefire test.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-06-28 13:01:53,880 Surefire test.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-06-28 13:01:54,385 Surefire test.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-28 13:01:56,244 Surefire test.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-06-28 13:01:58,005 Surefire test.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-06-28 13:02:00,469 Surefire test.clickOnSearchButton_StatusPage() - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[INFO ] 2021-06-28 13:02:01,189 Surefire test.setup() - WhatsUpTests
+[INFO ] 2021-06-28 13:02:16,763 Surefire test.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-06-28 13:02:21,543 Surefire test.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-06-28 13:02:28,059 Surefire test.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-06-28 13:02:28,435 Surefire test.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-28 13:02:33,040 Surefire test.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-06-28 13:02:34,563 Surefire test.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-06-28 13:02:36,338 Surefire test.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-06-28 13:02:37,002 Surefire test.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-06-28 13:02:37,002 Surefire test.getTitleOfCurrentPage() - get text of current page
