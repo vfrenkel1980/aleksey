@@ -1,0 +1,26 @@
+[INFO ] 2021-10-11 15:04:05,706 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-10-11 15:04:05,716 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-10-11 15:04:06,464 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome=94 in cache (valid until 15:29:07 11/10/2021 MSK)
+[DEBUG] 2021-10-11 15:04:06,465 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome94=94.0.4606.61 in cache (valid until 14:29:07 12/10/2021 MSK)
+[INFO ] 2021-10-11 15:04:06,467 WebDriverManager.resolveDriverVersion() - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
+[DEBUG] 2021-10-11 15:04:06,500 WebDriverManager.manage() - Driver chromedriver 94.0.4606.61 found in cache
+[INFO ] 2021-10-11 15:04:06,501 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\94.0.4606.61\chromedriver.exe
+[INFO ] 2021-10-11 15:04:17,030 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
+[INFO ] 2021-10-11 15:04:17,288 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-10-11 15:04:17,895 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-10-11 15:04:18,200 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-11 15:04:19,003 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-10-11 15:04:19,227 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
+[INFO ] 2021-10-11 15:04:25,757 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-10-11 15:04:25,757 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-10-11 15:04:25,765 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome=94 in cache (valid until 15:29:07 11/10/2021 MSK)
+[DEBUG] 2021-10-11 15:04:25,766 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome94=94.0.4606.61 in cache (valid until 14:29:07 12/10/2021 MSK)
+[INFO ] 2021-10-11 15:04:25,767 WebDriverManager.resolveDriverVersion() - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
+[DEBUG] 2021-10-11 15:04:25,770 WebDriverManager.manage() - Driver chromedriver 94.0.4606.61 found in cache
+[INFO ] 2021-10-11 15:04:25,771 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\94.0.4606.61\chromedriver.exe
+[INFO ] 2021-10-11 15:04:34,427 Bank Tfaxot Site.loginNegativeTest() - verify error message is correct when typing incorrect password 
+[INFO ] 2021-10-11 15:04:34,432 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-10-11 15:04:35,035 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-10-11 15:04:35,305 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-11 15:04:35,482 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-10-11 15:04:35,663 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button

@@ -1,0 +1,27 @@
+[INFO ] 2021-10-18 11:00:36,946 Whats up android.setup() - Whats up android
+[INFO ] 2021-10-18 11:00:36,956 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:01:20,469 Whats up android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-10-18 11:01:28,170 Whats up android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-10-18 11:01:38,136 Whats up android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-10-18 11:01:38,602 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-10-18 11:01:44,047 Whats up android.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-10-18 11:01:46,010 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-10-18 11:01:48,792 Whats up android.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-10-18 11:01:50,388 Whats up android.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-10-18 11:01:50,389 Whats up android.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-10-18 11:01:51,716 Whats up android.setup() - Whats up android
+[INFO ] 2021-10-18 11:01:51,716 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:02:04,617 Whats up android.clickOnContactAndSendMessage() - verify sending message works properly 
+[INFO ] 2021-10-18 11:02:33,110 Whats up android.clickOnTypeMessage() - clicking on statusIcon Message
+[INFO ] 2021-10-18 11:02:36,545 Whats up android.clickOnTypeMessage() - typing text into searchIconMessage
+[INFO ] 2021-10-18 11:02:42,302 Whats up android.setup() - Whats up android
+[INFO ] 2021-10-18 11:02:42,303 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:02:53,864 Whats up android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-10-18 11:02:57,819 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-10-18 11:03:02,425 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-10-18 11:03:16,831 Whats up android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-10-18 11:03:17,967 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-10-18 11:03:32,666 Whats up android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-10-18 11:03:45,192 Whats up android.setup() - Whats up android
+[INFO ] 2021-10-18 11:03:45,193 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:03:57,866 Whats up android.scrollTestDown() - verify scrolling to buttom works properly 
