@@ -1,64 +1,12 @@
-[INFO ] 2021-07-28 12:44:36,934 Bank Tfaxot Site.setup() - Bank Tfaxot Site
-[INFO ] 2021-07-28 12:44:36,934 android poco.setup() - android poco
-[INFO ] 2021-07-28 12:44:36,934 Redmi6.setup() - Redmi6
-[INFO ] 2021-07-28 12:44:36,950 Bank Tfaxot Site.createDriver() - Create driver: chrome
-[INFO ] 2021-07-28 12:44:36,950 Redmi6.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:44:36,950 android poco.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:44:46,812 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
-[INFO ] 2021-07-28 12:44:47,044 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
-[INFO ] 2021-07-28 12:44:47,472 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
-[INFO ] 2021-07-28 12:44:47,753 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
-[INFO ] 2021-07-28 12:44:48,399 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
-[INFO ] 2021-07-28 12:44:48,519 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
-[INFO ] 2021-07-28 12:44:53,926 Bank Tfaxot Site.setup() - Bank Tfaxot Site
-[INFO ] 2021-07-28 12:44:53,926 Bank Tfaxot Site.createDriver() - Create driver: chrome
-[INFO ] 2021-07-28 12:44:59,345 Redmi6.loginPositivеTest() - verify login with user name and password works fine 
-[INFO ] 2021-07-28 12:44:59,345 Redmi6.type_user_ID() -  type user id: 5651575200
-[INFO ] 2021-07-28 12:44:59,516 android poco.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
-[INFO ] 2021-07-28 12:45:02,229 Bank Tfaxot Site.loginNegativeTest() - verify error message is correct when typing incorrect password 
-[INFO ] 2021-07-28 12:45:02,229 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
-[INFO ] 2021-07-28 12:45:02,691 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
-[INFO ] 2021-07-28 12:45:03,027 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
-[INFO ] 2021-07-28 12:45:03,541 Redmi6.type_user_pass() -  type user pass: genris1990
-[INFO ] 2021-07-28 12:45:03,715 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1999
-[INFO ] 2021-07-28 12:45:03,859 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
-[INFO ] 2021-07-28 12:45:05,454 android poco.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
-[INFO ] 2021-07-28 12:45:05,766 Redmi6.clickOnLoginButton() -  clciking on login button
-[INFO ] 2021-07-28 12:45:12,044 Redmi6.setup() - Redmi6
-[INFO ] 2021-07-28 12:45:12,044 Redmi6.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:45:15,591 android poco.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
-[INFO ] 2021-07-28 12:45:16,052 android poco.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-07-28 12:45:21,506 android poco.verifyCallsText() - starting test verifyCallsText 
-[INFO ] 2021-07-28 12:45:23,193 android poco.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-07-28 12:45:26,921 android poco.getMyStatusText() - get text of my StatusMy status
-[INFO ] 2021-07-28 12:45:27,936 android poco.verifyStatusText() - starting test verifyStatusText 
-[INFO ] 2021-07-28 12:45:27,936 android poco.getTitleOfCurrentPage() - get text of current page
-[INFO ] 2021-07-28 12:45:29,287 Redmi6.loginNegativeTest() - verify error message is correct when typing incorrect password
-[INFO ] 2021-07-28 12:45:29,287 Redmi6.type_user_ID() -  type user id: 5651575200
-[INFO ] 2021-07-28 12:45:29,412 android poco.setup() - android poco
-[INFO ] 2021-07-28 12:45:29,412 android poco.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:45:33,046 Redmi6.type_user_pass() -  type user pass: genris1999
-[INFO ] 2021-07-28 12:45:34,280 Redmi6.clickOnLoginButton() -  clciking on login button
-[INFO ] 2021-07-28 12:45:41,172 android poco.clickOnContactAndSendMessage() - verify sending message works properly 
-[INFO ] 2021-07-28 12:45:54,431 android poco.clickOnTypeMessage() - clicking on statusIcon Type a message
-[INFO ] 2021-07-28 12:45:57,616 android poco.clickOnTypeMessage() - typing text into searchIconType a message
-[INFO ] 2021-07-28 12:46:05,183 android poco.setup() - android poco
-[INFO ] 2021-07-28 12:46:05,183 android poco.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:46:16,546 android poco.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
-[INFO ] 2021-07-28 12:46:20,090 android poco.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
-[INFO ] 2021-07-28 12:46:23,200 android poco.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
-[INFO ] 2021-07-28 12:46:39,253 android poco.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
-[INFO ] 2021-07-28 12:46:40,543 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
-[INFO ] 2021-07-28 12:46:44,158 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
-[ERROR] 2021-07-28 12:46:57,014 android poco.click() - click(): FAILED
-Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
-[ERROR] 2021-07-28 12:47:07,046 android poco.click() - click(): FAILED
-Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
-[INFO ] 2021-07-28 12:47:09,189 android poco.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
-[INFO ] 2021-07-28 12:47:10,430 android poco.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-07-28 12:47:13,313 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
-[INFO ] 2021-07-28 12:47:16,384 android poco.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
-[ERROR] 2021-07-28 12:47:19,230 android poco.clickOnSearchButton_StatusPage() - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-[INFO ] 2021-07-28 12:47:20,476 android poco.setup() - android poco
-[INFO ] 2021-07-28 12:47:20,476 android poco.createDriver() - Create driver for android
-[INFO ] 2021-07-28 12:47:32,323 android poco.scrollTestDown() - verify scrolling to buttom works properly 
+[INFO ] 2021-10-18 11:21:14,493 Bank Tfaxot Android.setup() - Bank Tfaxot Android
+[INFO ] 2021-10-18 11:21:14,503 Bank Tfaxot Android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:21:36,611 Bank Tfaxot Android.loginPositivеTest() - verify login with user name and password works fine 
+[INFO ] 2021-10-18 11:21:36,612 Bank Tfaxot Android.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-18 11:21:42,918 Bank Tfaxot Android.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-10-18 11:21:44,494 Bank Tfaxot Android.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-10-18 11:21:57,234 Bank Tfaxot Android.setup() - Bank Tfaxot Android
+[INFO ] 2021-10-18 11:21:57,235 Bank Tfaxot Android.createDriver() - Create driver for android
+[INFO ] 2021-10-18 11:22:14,880 Bank Tfaxot Android.loginNegativeTest() - verify error message is correct when typing incorrect password
+[INFO ] 2021-10-18 11:22:14,887 Bank Tfaxot Android.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-18 11:22:21,759 Bank Tfaxot Android.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-10-18 11:22:22,932 Bank Tfaxot Android.clickOnLoginButton() -  clciking on login button
