@@ -1,27 +1,138 @@
-[INFO ] 2021-10-18 11:00:36,946 Whats up android.setup() - Whats up android
-[INFO ] 2021-10-18 11:00:36,956 Whats up android.createDriver() - Create driver for android
-[INFO ] 2021-10-18 11:01:20,469 Whats up android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
-[INFO ] 2021-10-18 11:01:28,170 Whats up android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
-[INFO ] 2021-10-18 11:01:38,136 Whats up android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
-[INFO ] 2021-10-18 11:01:38,602 Whats up android.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-10-18 11:01:44,047 Whats up android.verifyCallsText() - starting test verifyCallsText 
-[INFO ] 2021-10-18 11:01:46,010 Whats up android.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-10-18 11:01:48,792 Whats up android.getMyStatusText() - get text of my StatusMy status
-[INFO ] 2021-10-18 11:01:50,388 Whats up android.verifyStatusText() - starting test verifyStatusText 
-[INFO ] 2021-10-18 11:01:50,389 Whats up android.getTitleOfCurrentPage() - get text of current page
-[INFO ] 2021-10-18 11:01:51,716 Whats up android.setup() - Whats up android
-[INFO ] 2021-10-18 11:01:51,716 Whats up android.createDriver() - Create driver for android
-[INFO ] 2021-10-18 11:02:04,617 Whats up android.clickOnContactAndSendMessage() - verify sending message works properly 
-[INFO ] 2021-10-18 11:02:33,110 Whats up android.clickOnTypeMessage() - clicking on statusIcon Message
-[INFO ] 2021-10-18 11:02:36,545 Whats up android.clickOnTypeMessage() - typing text into searchIconMessage
-[INFO ] 2021-10-18 11:02:42,302 Whats up android.setup() - Whats up android
-[INFO ] 2021-10-18 11:02:42,303 Whats up android.createDriver() - Create driver for android
-[INFO ] 2021-10-18 11:02:53,864 Whats up android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
-[INFO ] 2021-10-18 11:02:57,819 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
-[INFO ] 2021-10-18 11:03:02,425 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
-[INFO ] 2021-10-18 11:03:16,831 Whats up android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
-[INFO ] 2021-10-18 11:03:17,967 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
-[INFO ] 2021-10-18 11:03:32,666 Whats up android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
-[INFO ] 2021-10-18 11:03:45,192 Whats up android.setup() - Whats up android
-[INFO ] 2021-10-18 11:03:45,193 Whats up android.createDriver() - Create driver for android
-[INFO ] 2021-10-18 11:03:57,866 Whats up android.scrollTestDown() - verify scrolling to buttom works properly 
+[INFO ] 2021-10-18 13:31:23,606 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-10-18 13:31:23,616 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-10-18 13:31:24,413 ResolutionCache.checkValidity() - Removing resolution chrome=94 from cache (expired on 2021-10-18T11:42:49.000+0300)
+[DEBUG] 2021-10-18 13:31:24,441 InternalHttpClient.doExecute() - ex-00000001: preparing request execution
+[DEBUG] 2021-10-18 13:31:24,457 RequestAddCookies.process() - Cookie spec selected: strict
+[DEBUG] 2021-10-18 13:31:24,474 RequestAuthCache.process() - Auth cache not set in the context
+[DEBUG] 2021-10-18 13:31:24,474 ProtocolExec.execute() - ex-00000001: target auth state: UNCHALLENGED
+[DEBUG] 2021-10-18 13:31:24,477 ProtocolExec.execute() - ex-00000001: proxy auth state: UNCHALLENGED
+[DEBUG] 2021-10-18 13:31:24,478 ConnectExec.execute() - ex-00000001: acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2021-10-18 13:31:24,478 InternalHttpClient.acquireEndpoint() - ex-00000001: acquiring endpoint (3 MINUTES)
+[DEBUG] 2021-10-18 13:31:24,483 PoolingHttpClientConnectionManager.lease() - ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] 2021-10-18 13:31:24,494 PoolingHttpClientConnectionManager.get() - ex-00000001: endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2021-10-18 13:31:24,537 PoolingHttpClientConnectionManager.get() - ex-00000001: acquired ep-00000000
+[DEBUG] 2021-10-18 13:31:24,538 InternalHttpClient.acquireEndpoint() - ex-00000001: acquired endpoint ep-00000000
+[DEBUG] 2021-10-18 13:31:24,538 ConnectExec.execute() - ex-00000001: opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2021-10-18 13:31:24,540 InternalHttpClient.connectEndpoint() - ep-00000000: connecting endpoint (30 SECONDS)
+[DEBUG] 2021-10-18 13:31:24,541 PoolingHttpClientConnectionManager.connect() - ep-00000000: connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] 2021-10-18 13:31:24,562 DefaultHttpClientConnectionOperator.connect() - http-outgoing-0: connecting to raw.githubusercontent.com/185.199.110.133:443
+[DEBUG] 2021-10-18 13:31:24,562 SSLConnectionSocketFactory.connectSocket() - Connecting socket to raw.githubusercontent.com/185.199.110.133:443 with timeout 30 SECONDS
+[DEBUG] 2021-10-18 13:31:24,685 SSLConnectionSocketFactory.createLayeredSocket() - Enabled protocols: [TLSv1.2]
+[DEBUG] 2021-10-18 13:31:24,685 SSLConnectionSocketFactory.createLayeredSocket() - Enabled cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2021-10-18 13:31:24,687 SSLConnectionSocketFactory.createLayeredSocket() - Starting handshake
+[DEBUG] 2021-10-18 13:31:25,026 SSLConnectionSocketFactory.verifySession() - Secure session established
+[DEBUG] 2021-10-18 13:31:25,027 SSLConnectionSocketFactory.verifySession() -  negotiated protocol: TLSv1.2
+[DEBUG] 2021-10-18 13:31:25,027 SSLConnectionSocketFactory.verifySession() -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+[DEBUG] 2021-10-18 13:31:25,027 SSLConnectionSocketFactory.verifySession() -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG] 2021-10-18 13:31:25,028 SSLConnectionSocketFactory.verifySession() -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+[DEBUG] 2021-10-18 13:31:25,028 SSLConnectionSocketFactory.verifySession() -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+[DEBUG] 2021-10-18 13:31:25,034 DefaultHttpClientConnectionOperator.connect() - http-outgoing-0: connection established 192.168.1.15:52910<->185.199.110.133:443
+[DEBUG] 2021-10-18 13:31:25,034 PoolingHttpClientConnectionManager.connect() - ep-00000000: connected http-outgoing-0
+[DEBUG] 2021-10-18 13:31:25,034 InternalHttpClient.connectEndpoint() - ep-00000000: endpoint connected
+[DEBUG] 2021-10-18 13:31:25,036 MainClientExec.execute() - ex-00000001: executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2021-10-18 13:31:25,038 InternalHttpClient.execute() - ep-00000000: start execution ex-00000001
+[DEBUG] 2021-10-18 13:31:25,038 PoolingHttpClientConnectionManager.execute() - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+[DEBUG] 2021-10-18 13:31:25,039 headers.onRequestSubmitted() - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2021-10-18 13:31:25,040 headers.onRequestSubmitted() - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2021-10-18 13:31:25,040 headers.onRequestSubmitted() - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2021-10-18 13:31:25,040 headers.onRequestSubmitted() - http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] 2021-10-18 13:31:25,040 headers.onRequestSubmitted() - http-outgoing-0 >> connection: keep-alive
+[DEBUG] 2021-10-18 13:31:25,041 headers.onRequestSubmitted() - http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] 2021-10-18 13:31:25,041 wire.wire() - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,042 wire.wire() - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,042 wire.wire() - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,042 wire.wire() - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,042 wire.wire() - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,043 wire.wire() - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,043 wire.wire() - http-outgoing-0 >> "[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,131 wire.wire() - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,131 wire.wire() - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,132 wire.wire() - http-outgoing-0 << "Content-Length: 728[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,132 wire.wire() - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,132 wire.wire() - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,133 wire.wire() - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,134 wire.wire() - http-outgoing-0 << "ETag: W/"f670816d6bfbef80584dadbb549bb9c4ccd5de869d5b63cc2a694a74613014b5"[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,134 wire.wire() - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,134 wire.wire() - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,135 wire.wire() - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,135 wire.wire() - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,135 wire.wire() - http-outgoing-0 << "X-GitHub-Request-Id: 3D72:7CE6:36FC3A:3B933F:615502B1[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,135 wire.wire() - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,136 wire.wire() - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,136 wire.wire() - http-outgoing-0 << "Date: Mon, 18 Oct 2021 10:24:17 GMT[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,136 wire.wire() - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,137 wire.wire() - http-outgoing-0 << "X-Served-By: cache-hhn4047-HHN[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,137 wire.wire() - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,137 wire.wire() - http-outgoing-0 << "X-Cache-Hits: 2[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,138 wire.wire() - http-outgoing-0 << "X-Timer: S1634552658.554736,VS0,VE0[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,138 wire.wire() - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,138 wire.wire() - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,138 wire.wire() - http-outgoing-0 << "X-Fastly-Request-ID: 545c713413f90941646780bfc5a8ab9dcc9ef4fd[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,139 wire.wire() - http-outgoing-0 << "Expires: Mon, 18 Oct 2021 10:29:17 GMT[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,140 wire.wire() - http-outgoing-0 << "Source-Age: 181[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,140 wire.wire() - http-outgoing-0 << "[\r][\n]"
+[DEBUG] 2021-10-18 13:31:25,148 headers.onResponseReceived() - http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] 2021-10-18 13:31:25,149 headers.onResponseReceived() - http-outgoing-0 << Connection: keep-alive
+[DEBUG] 2021-10-18 13:31:25,149 headers.onResponseReceived() - http-outgoing-0 << Content-Length: 728
+[DEBUG] 2021-10-18 13:31:25,149 headers.onResponseReceived() - http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] 2021-10-18 13:31:25,150 headers.onResponseReceived() - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] 2021-10-18 13:31:25,150 headers.onResponseReceived() - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] 2021-10-18 13:31:25,150 headers.onResponseReceived() - http-outgoing-0 << ETag: W/"f670816d6bfbef80584dadbb549bb9c4ccd5de869d5b63cc2a694a74613014b5"
+[DEBUG] 2021-10-18 13:31:25,151 headers.onResponseReceived() - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] 2021-10-18 13:31:25,152 headers.onResponseReceived() - http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] 2021-10-18 13:31:25,152 headers.onResponseReceived() - http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] 2021-10-18 13:31:25,152 headers.onResponseReceived() - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] 2021-10-18 13:31:25,152 headers.onResponseReceived() - http-outgoing-0 << X-GitHub-Request-Id: 3D72:7CE6:36FC3A:3B933F:615502B1
+[DEBUG] 2021-10-18 13:31:25,153 headers.onResponseReceived() - http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] 2021-10-18 13:31:25,153 headers.onResponseReceived() - http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] 2021-10-18 13:31:25,153 headers.onResponseReceived() - http-outgoing-0 << Date: Mon, 18 Oct 2021 10:24:17 GMT
+[DEBUG] 2021-10-18 13:31:25,153 headers.onResponseReceived() - http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] 2021-10-18 13:31:25,154 headers.onResponseReceived() - http-outgoing-0 << X-Served-By: cache-hhn4047-HHN
+[DEBUG] 2021-10-18 13:31:25,154 headers.onResponseReceived() - http-outgoing-0 << X-Cache: HIT
+[DEBUG] 2021-10-18 13:31:25,155 headers.onResponseReceived() - http-outgoing-0 << X-Cache-Hits: 2
+[DEBUG] 2021-10-18 13:31:25,155 headers.onResponseReceived() - http-outgoing-0 << X-Timer: S1634552658.554736,VS0,VE0
+[DEBUG] 2021-10-18 13:31:25,155 headers.onResponseReceived() - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+[DEBUG] 2021-10-18 13:31:25,155 headers.onResponseReceived() - http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] 2021-10-18 13:31:25,156 headers.onResponseReceived() - http-outgoing-0 << X-Fastly-Request-ID: 545c713413f90941646780bfc5a8ab9dcc9ef4fd
+[DEBUG] 2021-10-18 13:31:25,156 headers.onResponseReceived() - http-outgoing-0 << Expires: Mon, 18 Oct 2021 10:29:17 GMT
+[DEBUG] 2021-10-18 13:31:25,156 headers.onResponseReceived() - http-outgoing-0 << Source-Age: 181
+[DEBUG] 2021-10-18 13:31:25,170 MainClientExec.execute() - ex-00000001: connection can be kept alive for 3 MINUTES
+[DEBUG] 2021-10-18 13:31:25,211 wire.wire() - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]Mn[0xffffff82][0xffffffa5]$Fv([0xffffffed]~[0xfffffffd]l[0xffffffe7]c$u[0x6]k[0xffffffe8][l_[0xffffff9f]s|[0xffffffef]q|;[0xffffffe0][0xfffffff0]([0xffffffa2][0xffffffb1]'[0xffffffc1][0xffffffa3][0x9]}[0xffffffa0][0x12][[0x1d][0xffffffb8]]1[0x9]>[0xb][0x11]\[0x1e]'[0xffffff94][0xffffffc5][0x12][0xffffff92][0xffffff95][0x1e]d[0xffffffa1][0x9][0xffffff87][0x7][0x4]|Bw[0xffffff93][0xffffffa0][0x7],6[0xffffffcb]r[0xffffff85]a[0xffffffa8][0x7]\x(t[0xffffff90][0xffffff87][0x9][0xffffffba][0xffffff89]Y|D![0x19]Wk>[0xffffffa0][0xfffffffa][0xe][0x4]b[0xc][0xf][0xffffff82]o[0xffffffa5]ZP[0xffffff94][0xffffffa7][0xffffffce]J[0xfffffff0][0x8][0xffffffbb]p[0xffffffcd][0x4][0xfffffffa][0xfffffffc][0xffffffa9][0xb][0xffffffb3]5[\n]"
+[DEBUG] 2021-10-18 13:31:25,211 wire.wire() - http-outgoing-0 << "[0xffffffda][0xffffff85][0xffffffb1][0x17][0xffffffa8]Y[0xffffffb3][0xffffffca]6[0xffffffd1][0xffffff99][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]c[0x12][0x16][0x7] [0xffffff9f]e[0xffffff82][0xffffff91][0xffffff84][0xffffffd3][0x1f],[0xfffffff6][0x14]j[0x17]&,[0xffffffde]([0xffffff98])ua[0xffffffb6]<k)[0xffffff8e][0xffffff94][0xffffffa2][0xffffff95][0x1d][0xffffffa3][0xffffffef][0xffffff9a]a[0x7f][0xffffff9b]n[0xffffffe8][0xffffffbf]{?t#[0xffffffaf][0xffffffaf]N[0x5][0x3][0x7][0xffffffb6][0x11]sMJL[0x1a][0xffffffb6]+[0xffffffc5][0x7]1[0xffffff8d]p[0xffffffd8]>[0xffffff99]/f7[0xffffff8b][0xffffffd1][0xfffffff4][0xfffffffa][0xffffffeb]d[0xffffffbc]<[0xfffffffd][0xfffffff9][0xfffffff1][0xffffffc3][0xffffffd9]'2$[0xffffffe4][0xffffff84][0xffffff90][0x1b][0xffffffce][0xffffff83][0x10][0x9]Iy[0x8][0x19][0xffffffad][0xffffffd7]!s[0xffffff95]>[0x1e][0x13][0xffffff92][0xffffffb1])[0xfffffff8]6[0x4][0xffffff98][0xffffffc0]}[0xffffff96][0xffffff90][0xffffffc1]#[\r]7[0xfffffff5][0xffffffa2][0xffffffce][0xf][0x14]5[0xffffff99]9[0xffffffa3][0xffffffc9]h>[0xffffffff]<[0xffffffba][0x1d][0xffffffbd][0xffffffa5][0xffffff9e][0xffffff8b]W$[0xffffffe9]-[0xfffffff5]\[0xe][0x17][0xffffffe3][0x1b][0xfffffff8]~7^[0xfffffffc][0xffffff82]/[0xffffffdf][0xffffff9c];[0xffffffb2][0xffffffe4]~[0xffffffb2][0xffffffa5][0x2]s[0xffffffb6][0xffffff8c][0xffffffec]jr[0xffffff85][0xffffffd4]5x[0xffffffb9][0x17][U[0xffffffd0]P;F[0xfffffffb] 0[{[0xffffffe9]4[0xfffffff4]zu[0x1b]"[0xffffffea][0xffffffea][0xfffffff0][0xffffffc1][0xffffffce]A[0xffffffe4] [0xffffffe5][0xffffffcd][0xffffffcc][0xffffffd6][0xffffffa7][0xffffffeb][0xfffffff5][0xffffffc0]Q[0xffffff97]H[0xffffffb9]U[0xe][0xffffff94][0x17]g[0xffffffcb]r[0xffffffc0].[0xffffffba][0xffffffb2]h[0xffffffe6][0xfffffffe][0xffffff82][0xffffffc8]O[0xffffffc7][0xffffffcd]L[0xffffff9a][0xffffffe7][0x7f][0xffffffca][0x7f][0xffffffb3]0[0xffffffa4]9[0x9]!9[0xfffffffa][0xffffffbe][0xffffffa4][0xffffffbf]Pq[0xffffffa8]+k[0xffffffaf][0xffffffca][0xfffffff1][0xffffffa4]\[0xffffffec][0x18][0xffffffa0]]v@FR%kk[0xf]8[0x1b][0xffffffa1][0xffffffff] [0xfffffff7][0xffffffd5][0xffffffca][0xffffffe6][0xfffffff8][0xffffff85][0x17][0xffffffb2][0x9][0xffffffe8]=[0xffffffbe][0xc][0xffffffb2][0xffffffd6]?c[0xffffffb1]U~[0x17]K[0x15][[0xffffffff][0xffffffda][\n]"
+[DEBUG] 2021-10-18 13:31:25,212 wire.wire() - http-outgoing-0 << "LT[0xffffff83]#[0xfffffffe][0xffffff8b][0xffffffa6][0xffffffcc][0x15]\[0xffffffaa]L[0x10][0xffffffa2]i*[0xffffff97]-[0xffffff92][0xffffff86]n_[0xffffffb2][0xffffffcb][0xffffff9a]^S[0xfffffff4]7[0xffffff94]sQ{[0xfffffff3][0xffffffff][0xffffff92][0x19][0xffffffae][0x7f]^}[0xffffff83]Y[0x14];[0xffffffca]w[0xfffffff6][0xfffffff4][0xffffffbc][0xffffffed][0xffffffe6][0xffffff9b]xk[0xffffffdd][0xb]VSW[[0xfffffff9][0xffffffcb][0x11]P[0xffffffba][0xfffffff8][0xffffffe6][0xffffffb5]+X[0xffffffcc][0xffffffbb][0xfffffff6][0xffffffff]n[0xffffffb0]=[0x2]s[0xffffffc1][0x3]A#I[0xffffff88][0xffffffa1] $[0xffffffa4][0xffffff9b][0xffffffd8]U[0xffffffbb][0xfffffff6][0xffffffa6][0xffffffbb]"[0xffffffa2]I[0xfffffff9][0xffffff8f]&[0xffffffe2][0xffffffd0][0xffffffe7][0xffffffc7][0xffffff96][0xffffff89][0xffffff86][0xffffffd4][0xffffff97][\r][0xffffffce][0x7f](u[0xffffff85][0xffffffbb][0xfffffff0][0xffffffa5][0x19][0xffffffda][0xffffffec][0xffffff98][0xffffffc6]Y[0xfffffffd]h8m6[0xffffff9c]U[0xffffffc1][0xfffffff2][0xffffffd6]H[0xfffffff5]W[0xffffffe5][0x17]NM[0x1c][0xffffffc7][0xffffff84]9|[0xffffff83]7[0xffffffbf][0xffffffa4][0xffffffa5][0xfffffff1][0xfffffffb]slAM[0xffffffda][0xffffffa2]ck[0xffffffa9]o[0xffffff89][\n]"
+[DEBUG] 2021-10-18 13:31:25,212 wire.wire() - http-outgoing-0 << "[0xffffffa6][0xfffffffd][0xffffffdd][0xffffff90]F,[0xffffffec][0xffffff97][0xffffffcf][0xfffffff4][0xffffffb2][0xffffff86]}[0xffffffc7]<u[0xffffff9b][0xffffffce][0xffffff8b]M[0xffffffb5][0xfffffffd][0xffffff93][0xffffff8e][0xffffffb6]:7[0xffffff97]i3[0xffffffaf]cA[0xffffffed][0xffffffc0][0xffffff92][0xfffffffa]T[0xffffffb0][0x2]^[0xffffff9a][0xffffffa1][0x1d]<[\r][0xffffffb5]A[0xffffffa7]+;[0xffffffc0][0x7f][0x0][0xffffffb2]$|[0xffffff88][0x1d][\r][0x0][0x0]"
+[DEBUG] 2021-10-18 13:31:25,217 InternalHttpClient.releaseEndpoint() - ep-00000000: releasing valid endpoint
+[DEBUG] 2021-10-18 13:31:25,217 PoolingHttpClientConnectionManager.release() - ep-00000000: releasing endpoint
+[DEBUG] 2021-10-18 13:31:25,218 PoolingHttpClientConnectionManager.release() - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] 2021-10-18 13:31:25,219 PoolingHttpClientConnectionManager.release() - ep-00000000: connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2021-10-18 13:31:25,220 VersionDetector.getBrowserVersionFromTheShell() - Detecting chrome version using online commands.properties
+[DEBUG] 2021-10-18 13:31:25,228 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-10-18 13:31:25,476 Shell.runAndWaitArray() - Result: 
+[DEBUG] 2021-10-18 13:31:25,478 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%LOCALAPPDATA:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-10-18 13:31:25,598 Shell.runAndWaitArray() - Result: 
+[DEBUG] 2021-10-18 13:31:25,599 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-10-18 13:31:25,699 Shell.runAndWaitArray() - Result: Version=94.0.4606.81
+[DEBUG] 2021-10-18 13:31:25,701 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome94=94.0.4606.61 in cache (valid until 10:42:49 19/10/2021 MSK)
+[INFO ] 2021-10-18 13:31:25,702 WebDriverManager.resolveDriverVersion() - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
+[DEBUG] 2021-10-18 13:31:25,704 ResolutionCache.putValueInResolutionCacheIfEmpty() - Storing resolution chrome=94 in cache (valid until 14:31:25 18/10/2021 MSK)
+[DEBUG] 2021-10-18 13:31:25,740 WebDriverManager.manage() - Driver chromedriver 94.0.4606.61 found in cache
+[INFO ] 2021-10-18 13:31:25,741 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\94.0.4606.61\chromedriver.exe
+[INFO ] 2021-10-18 13:31:37,475 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
+[INFO ] 2021-10-18 13:31:37,734 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-10-18 13:31:38,224 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-10-18 13:31:38,536 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-18 13:31:38,729 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-10-18 13:31:38,901 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
+[INFO ] 2021-10-18 13:31:45,854 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-10-18 13:31:45,855 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-10-18 13:31:45,875 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome=94 in cache (valid until 14:31:25 18/10/2021 MSK)
+[DEBUG] 2021-10-18 13:31:45,878 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome94=94.0.4606.61 in cache (valid until 10:42:49 19/10/2021 MSK)
+[INFO ] 2021-10-18 13:31:45,878 WebDriverManager.resolveDriverVersion() - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
+[DEBUG] 2021-10-18 13:31:45,883 WebDriverManager.manage() - Driver chromedriver 94.0.4606.61 found in cache
+[INFO ] 2021-10-18 13:31:45,885 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\94.0.4606.61\chromedriver.exe
+[INFO ] 2021-10-18 13:31:54,693 Bank Tfaxot Site.loginNegativeTest() - verify error message is correct when typing incorrect password 
+[INFO ] 2021-10-18 13:31:54,697 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-10-18 13:31:55,160 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-10-18 13:31:55,654 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-10-18 13:31:56,305 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-10-18 13:31:56,450 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
