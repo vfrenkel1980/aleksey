@@ -38,21 +38,21 @@
     </test>
 
 
-    <test name="Bank Tfaxot Site">
-        <parameter name="browser" value="chrome"></parameter>
-        <parameter name="URL" value="https://www.mizrahi-tefahot.co.il/"></parameter>
-        <parameter name="select_phone" value="emulators"></parameter>
-        <parameter name="path" value="src/test/resources/dataHJason.json"></parameter>
-<!--    <parameter name="UDID_phone" value="7bd9500e"></parameter>-->
-<!--    <parameter name="appPackage" value="com.whatsapp"></parameter>-->
-<!--    <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>-->
-<!--    <parameter name="deviceName" value="POCO X3 Pro"></parameter>-->
+<!--    <test name="Bank Tfaxot Site">-->
+<!--        <parameter name="browser" value="chrome"></parameter>-->
+<!--        <parameter name="URL" value="https://www.mizrahi-tefahot.co.il/"></parameter>-->
+<!--        <parameter name="select_phone" value="emulators"></parameter>-->
+<!--        <parameter name="path" value="src/test/resources/dataHJason.json"></parameter>-->
+<!--&lt;!&ndash;    <parameter name="UDID_phone" value="7bd9500e"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;    <parameter name="appPackage" value="com.whatsapp"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;    <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;    <parameter name="deviceName" value="POCO X3 Pro"></parameter>&ndash;&gt;-->
 
-        <classes>
-           <class name="Tests.BankTfaxotSite.BankTfahotPositivLoginsTests"> </class>
-           <class name="Tests.BankTfaxotSite.BankTfaxotNegativLoginTests"> </class>
-        </classes>
-    </test>
+<!--        <classes>-->
+<!--           <class name="Tests.BankTfaxotSite.BankTfahotPositivLoginsTests"> </class>-->
+<!--           <class name="Tests.BankTfaxotSite.BankTfaxotNegativLoginTests"> </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 
