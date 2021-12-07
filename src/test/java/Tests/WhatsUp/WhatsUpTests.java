@@ -44,7 +44,7 @@ public class WhatsUpTests  extends BaseTest {
     }
 
     @Test ()
-    @Description ("Verify MY STATUS is  presented when clicking on chat button")
+    @Description ("Verify MY STATUS is  presented when clicking on status button")
     public void verifyMyStatusTextAfterClickingOnStatusButton()  {
         wellcomePage.click_StatusText();
         String expectedMyStatusTextText = statusPage.getMyStatusText();
