@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="WhatsUpTests" parallel="2">
-    
-    <parameter name="UDID_phone" value="192.168.1.29:5555"></parameter>
+<suite name="WhatsUpTests" parallel="1">
+
+    <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>
     <parameter name="appPackage" value="com.whatsapp"></parameter>
     <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>
     <parameter name="deviceName" value="POCO X3 Pro"></parameter>
+    <parameter name="select_phone" value="realDevices"></parameter>
 
     <test name="android poco">
         <classes>
@@ -17,18 +18,18 @@
      </test>
 
 
-    <parameter name="UDID_phone" value="192.168.1.21:5555"></parameter>
-    <parameter name="appPackage" value="com.amazon.mShop.android.shopping"></parameter>
-    <parameter name="appActivity" value="com.amazon.mShop.home.web.MShopWebGatewayMigrationActivity"></parameter>
-    <parameter name="deviceName" value="Redmi 6"></parameter>
-    <test name="android redmi">
-        <classes>
-             <class name="Tests.WhatsUpTests"> </class>
-             <class name="Tests.WhatsUpSearchTests"> </class>
-             <class name="Tests.VertIcalScrolling"> </class>
-             <class name="Tests.SendMessage"> </class>
-         </classes>
-     </test>
+<!--    <parameter name="UDID_phone" value="192.168.1.21:5555"></parameter>-->
+<!--    <parameter name="appPackage" value="com.amazon.mShop.android.shopping"></parameter>-->
+<!--    <parameter name="appActivity" value="com.amazon.mShop.home.web.MShopWebGatewayMigrationActivity"></parameter>-->
+<!--    <parameter name="deviceName" value="Redmi 6"></parameter>-->
+<!--    <test name="android redmi">-->
+<!--        <classes>-->
+<!--             <class name="Tests.WhatsUpTests"> </class>-->
+<!--             <class name="Tests.WhatsUpSearchTests"> </class>-->
+<!--             <class name="Tests.VertIcalScrolling"> </class>-->
+<!--             <class name="Tests.SendMessage"> </class>-->
+<!--         </classes>-->
+<!--     </test>-->
  </suite>
 
 
