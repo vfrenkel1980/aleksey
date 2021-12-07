@@ -20,39 +20,39 @@
 <!--     </test>-->
 
 
-    <test name="Whats up android">
-<!--        <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>-->
-        <parameter name="UDID_phone" value="7bd9500e"></parameter>
-        <parameter name="appPackage" value="com.whatsapp"></parameter>
-        <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>
-        <parameter name="deviceName" value="POCO X3 Pro"></parameter>
-        <parameter name="select_phone" value="realDevices"></parameter>
-<!--        <parameter name="browser" value="chrome"></parameter>-->
-<!--        <parameter name="URL" value="https://www.amazon.com/"></parameter>-->
-        <classes>
-            <class name="Tests.WhatsUp.WhatsUpTests"> </class>
-            <class name="Tests.WhatsUp.SendMessage"> </class>
-            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>
-            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>
-        </classes>
-    </test>
-
-
-<!--    <test name="Bank Tfaxot Site">-->
-<!--        <parameter name="browser" value="chrome"></parameter>-->
-<!--        <parameter name="URL" value="https://www.mizrahi-tefahot.co.il/"></parameter>-->
-<!--        <parameter name="select_phone" value="emulators"></parameter>-->
-<!--        <parameter name="path" value="src/test/resources/dataHJason.json"></parameter>-->
-<!--&lt;!&ndash;    <parameter name="UDID_phone" value="7bd9500e"></parameter>&ndash;&gt;-->
-<!--&lt;!&ndash;    <parameter name="appPackage" value="com.whatsapp"></parameter>&ndash;&gt;-->
-<!--&lt;!&ndash;    <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>&ndash;&gt;-->
-<!--&lt;!&ndash;    <parameter name="deviceName" value="POCO X3 Pro"></parameter>&ndash;&gt;-->
-
+<!--    <test name="Whats up android">-->
+<!--&lt;!&ndash;        <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>&ndash;&gt;-->
+<!--        <parameter name="UDID_phone" value="7bd9500e"></parameter>-->
+<!--        <parameter name="appPackage" value="com.whatsapp"></parameter>-->
+<!--        <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>-->
+<!--        <parameter name="deviceName" value="POCO X3 Pro"></parameter>-->
+<!--        <parameter name="select_phone" value="realDevices"></parameter>-->
+<!--&lt;!&ndash;        <parameter name="browser" value="chrome"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;        <parameter name="URL" value="https://www.amazon.com/"></parameter>&ndash;&gt;-->
 <!--        <classes>-->
-<!--           <class name="Tests.BankTfaxotSite.BankTfahotPositivLoginsTests"> </class>-->
-<!--           <class name="Tests.BankTfaxotSite.BankTfaxotNegativLoginTests"> </class>-->
+<!--            <class name="Tests.WhatsUp.WhatsUpTests"> </class>-->
+<!--            <class name="Tests.WhatsUp.SendMessage"> </class>-->
+<!--            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>-->
+<!--            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+
+    <test name="Bank Tfaxot Site">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="URL" value="https://www.mizrahi-tefahot.co.il/"></parameter>
+        <parameter name="select_phone" value="emulators"></parameter>
+        <parameter name="path" value="src/test/resources/dataHJason.json"></parameter>
+<!--    <parameter name="UDID_phone" value="7bd9500e"></parameter>-->
+<!--    <parameter name="appPackage" value="com.whatsapp"></parameter>-->
+<!--    <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>-->
+<!--    <parameter name="deviceName" value="POCO X3 Pro"></parameter>-->
+
+        <classes>
+           <class name="Tests.BankTfaxotSite.BankTfahotPositivLoginsTests"> </class>
+           <class name="Tests.BankTfaxotSite.BankTfaxotNegativLoginTests"> </class>
+        </classes>
+    </test>
 
 
 
