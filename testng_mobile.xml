@@ -4,7 +4,8 @@
 >
 
     <test name="Whats up android">
-        <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>
+       <!-- <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>-->
+        <parameter name="UDID_phone" value="7bd9500e"></parameter>
         <parameter name="appPackage" value="com.whatsapp"></parameter>
         <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>
         <parameter name="deviceName" value="POCO X3 Pro"></parameter>
