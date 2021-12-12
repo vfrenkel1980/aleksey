@@ -67,7 +67,7 @@ public class WhatsUpTests  extends BaseTest {
         log.info("starting test clickOnMenuAndVerifyContent_ChatPage ");
         wellcomePage.click_ChatTextFromOtherpage();
         wellcomePage.clickOnMenu();
-        List<String> expectedMenuOptions = Arrays.asList("New groups","New broadcast","Linked devices","Starred messages","Settings");
+        List<String> expectedMenuOptions = Arrays.asList("New group","New broadcast","Linked devices","Starred messages","Settings");
         List<String> actualOptions = wellcomePage.getTextOfOptions(5);
         TestUtilities.AndroidBack(1);
         //Assert.assertTrue(TestUtilities.compareTwoStringLists2(expectedMenuOptions,actualOptions).isEmpty());
