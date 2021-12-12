@@ -1,11 +1,5 @@
-[INFO ] 2021-12-09 12:32:30,468 Bank Tfaxot Site.setup() - Bank Tfaxot Site
-[INFO ] 2021-12-09 12:32:33,047 Bank Tfaxot Site.createDriver() - Create driver: chrome
-[DEBUG] 2021-12-09 12:32:43,638 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome=96 in cache (valid until 12:40:25 09/12/2021 MSK)
-[DEBUG] 2021-12-09 12:32:43,642 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome96=96.0.4664.45 in cache (valid until 11:40:25 10/12/2021 MSK)
-[INFO ] 2021-12-09 12:32:43,649 WebDriverManager.resolveDriverVersion() - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
-[DEBUG] 2021-12-09 12:32:43,958 WebDriverManager.manage() - Driver chromedriver 96.0.4664.45 found in cache
-[INFO ] 2021-12-09 12:32:43,965 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
-[INFO ] 2021-12-09 12:34:48,225 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
-[INFO ] 2021-12-09 12:36:22,999 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
-[INFO ] 2021-12-09 12:37:00,656 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
-[INFO ] 2021-12-09 12:41:52,257 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-12-12 14:02:56,762 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-12 14:02:56,773 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-12 14:03:10,125 Whats up android.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-12-12 14:03:12,098 Whats up android.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-12-12 14:03:12,098 Whats up android.getTitleOfCurrentPage() - get text of current page
