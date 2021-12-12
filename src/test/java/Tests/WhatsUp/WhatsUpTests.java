@@ -88,7 +88,6 @@ public class WhatsUpTests  extends BaseTest {
 
     }
 
-
     @Test ()
     @Description (" Verify content of  menu from  Status page ")
     public void clickOnMenuAndVerifyContent_CallsPage() {
