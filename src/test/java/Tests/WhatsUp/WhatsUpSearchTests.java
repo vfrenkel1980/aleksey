@@ -133,6 +133,7 @@ public class WhatsUpSearchTests  extends BaseTest {
         }
         else
         {
+            log.info("clicking  back");
             TestUtilities.AndroidBack(2);
         }
 

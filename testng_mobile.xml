@@ -15,9 +15,9 @@
         <classes>
             <class name="Tests.WhatsUp.WhatsUpTests"> </class>
             <class name="Tests.WhatsUp.SendMessage"> </class>
-<!--            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>-->
-<!--            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>-->
-<!--            <class name="Tests.WhatsUp.WhatsUpStatusTests"> </class>-->
+            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>
+            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>
+           <class name="Tests.WhatsUp.WhatsUpStatusTests"> </class>
         </classes>
     </test>
 

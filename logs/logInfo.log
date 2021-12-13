@@ -1,11 +1,25 @@
-[INFO ] 2021-12-12 14:26:40,577 Whats up android.setup() - Whats up android
-[INFO ] 2021-12-12 14:26:40,589 Whats up android.createDriver() - Create driver for android
-[INFO ] 2021-12-12 14:27:00,437 Whats up android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
-[INFO ] 2021-12-12 14:27:06,567 Whats up android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
-[INFO ] 2021-12-12 14:27:14,433 Whats up android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
-[INFO ] 2021-12-12 14:27:14,977 Whats up android.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-12-12 14:27:19,773 Whats up android.verifyCallsText() - starting test verifyCallsText 
-[INFO ] 2021-12-12 14:27:21,546 Whats up android.click_StatusText() - clicking to statusText STATUS
-[INFO ] 2021-12-12 14:27:23,863 Whats up android.getMyStatusText() - get text of my StatusMy status
-[INFO ] 2021-12-12 14:27:24,757 Whats up android.verifyStatusText() - starting test verifyStatusText 
-[INFO ] 2021-12-12 14:27:24,757 Whats up android.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-12-13 11:05:09,879 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-13 11:05:09,888 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-13 11:05:27,325 Whats up android.clickOnMenuAndVerifyContent_CallsPage() - clickOnMenuAndVerifyContent_CallsPage 
+[INFO ] 2021-12-13 11:05:31,665 Whats up android.clickOnMenuAndVerifyContent_ChatPage() - starting test clickOnMenuAndVerifyContent_ChatPage 
+[INFO ] 2021-12-13 11:05:38,398 Whats up android.clickOnMenuAndVerifyContent_StatusPage() - clickOnMenuAndVerifyContent_StatusPage 
+[INFO ] 2021-12-13 11:05:38,837 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-12-13 11:05:43,142 Whats up android.verifyCallsText() - starting test verifyCallsText 
+[INFO ] 2021-12-13 11:05:44,642 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-12-13 11:05:46,581 Whats up android.getMyStatusText() - get text of my StatusMy status
+[INFO ] 2021-12-13 11:05:47,242 Whats up android.verifyStatusText() - starting test verifyStatusText 
+[INFO ] 2021-12-13 11:05:47,242 Whats up android.getTitleOfCurrentPage() - get text of current page
+[INFO ] 2021-12-13 11:05:48,682 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-13 11:05:48,683 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-13 11:05:59,428 Whats up android.clickOnContactAndSendMessage() - verify sending message works properly 
+[INFO ] 2021-12-13 11:06:01,307 Whats up android.clickOnTypeMessage() - clicking on statusIcon Message
+[INFO ] 2021-12-13 11:06:03,215 Whats up android.clickOnTypeMessage() - typing text into searchIconMessage
+[INFO ] 2021-12-13 11:06:06,926 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-13 11:06:06,926 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-13 11:06:17,554 Whats up android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-12-13 11:06:20,021 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-13 11:06:23,005 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-12-13 11:06:33,919 Whats up android.backToFirstView() - clicking  back
+[INFO ] 2021-12-13 11:06:34,031 Whats up android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-12-13 11:06:35,077 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-13 11:06:48,855 Whats up android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
