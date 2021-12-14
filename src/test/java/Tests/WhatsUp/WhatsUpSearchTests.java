@@ -30,7 +30,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test()
+    @Test (priority=1)
     @Description(" Verify search button works properly chats page ")
     public void clickOnSearchButton_ChatsPage() throws InterruptedException {
         String searchedTextChat = "Omry";
@@ -44,7 +44,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test(priority=1)
+    @Test (priority=2)
     @Description(" Verify search button works properly status page")
     public void clickOnSearchButton_StatusPage() throws InterruptedException {
         String searchedTextStatus = "Lior";
@@ -83,7 +83,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test(priority=2)
+    @Test (priority=3)
     @Description(" Verify search button works properly calls page")
     public void clickOnSearchButton_CallsPage() throws InterruptedException {
         String searchedTextCalls = "Oz";

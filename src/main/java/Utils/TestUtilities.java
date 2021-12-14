@@ -23,6 +23,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static Pages.BaseTest.getDriver;
+
+
 //import org.apache.logging.log4j.core.util.FileUtils;
 //import org.apache.logging.log4j.core.util.FileUtils;
 
@@ -73,6 +76,15 @@ public class TestUtilities extends BasePage {
                 .filter(element -> !list2.contains(element))
                 .collect(Collectors.toList());
         return differences;
+    }
+
+
+    public static void sleepUtil(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
