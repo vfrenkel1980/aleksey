@@ -1,7 +1,6 @@
 package Utils;
 
 import Pages.BasePage;
-import Pages.BaseTest;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -30,7 +29,6 @@ import java.util.stream.Collectors;
 public class TestUtilities extends BasePage {
 
 
-    private static org.slf4j.Logger log;
 
     public TestUtilities(WebDriver driver, Logger log) {
         super(driver, log);
@@ -79,11 +77,10 @@ public class TestUtilities extends BasePage {
 
 
     public static void AndroidBack  (int howMuch) {
-        System.out.print("  howMuch  = " + howMuch);
+
         for(int i=1 ;i<= howMuch ;i++) {
-//            BaseTest.getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
             System.out.print("clicking on back button");
-            ((AndroidDriver) BaseTest.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+            ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
         }
     }
 
@@ -92,7 +89,7 @@ public class TestUtilities extends BasePage {
         List <String >  temp = new ArrayList<>();
 
         for(int i=1;i <= size ;) {
-            AndroidElement element= (AndroidElement) BaseTest.getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+            AndroidElement element= (AndroidElement) getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
             temp.add(element.getText());
             i = i + 1;
         }
@@ -124,7 +121,7 @@ public class TestUtilities extends BasePage {
 
 
     public static void scrollToText_Android(String text) throws InterruptedException {
-        AndroidElement  getElementByText= (AndroidElement) BaseTest.getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+        AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
                 ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
 
         getElementByText.click();
@@ -133,12 +130,12 @@ public class TestUtilities extends BasePage {
     }
 
     public static void scrollDown_Android() throws InterruptedException {
-        Dimension dimension = BaseTest.getDriver().manage().window().getSize();
+        Dimension dimension = getDriver().manage().window().getSize();
         int scrollStart = (int) (dimension.getHeight()* 0.999);
         int scrollEnd = (int) (dimension.getHeight() * 0.001);
 
 
-        new TouchAction((PerformsTouchActions) BaseTest.getDriver() )
+        new TouchAction((PerformsTouchActions) getDriver() )
                 .press(PointOption.point(0, scrollStart))
                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
                 .moveTo(PointOption.point(0, scrollEnd))
@@ -162,7 +159,7 @@ public class TestUtilities extends BasePage {
     public static void scrollToText_AndroidEmpty(String text) throws InterruptedException {
             for (int i = 0; i < 2; i++) { // 2 tries to make tap
                 try {
-                    AndroidElement  getElementByText= (AndroidElement) BaseTest.getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+                    AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
                             ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
                     getElementByText.click();
 
@@ -177,6 +174,7 @@ public class TestUtilities extends BasePage {
         }
 
 
+    }
 
 
 
@@ -187,4 +185,5 @@ public class TestUtilities extends BasePage {
 
 
 
-}
+
+

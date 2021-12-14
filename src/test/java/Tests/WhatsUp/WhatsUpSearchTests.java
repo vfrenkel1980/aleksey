@@ -44,7 +44,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test()
+    @Test(priority=1)
     @Description(" Verify search button works properly status page")
     public void clickOnSearchButton_StatusPage() throws InterruptedException {
         String searchedTextStatus = "Lior";
@@ -83,7 +83,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test()
+    @Test(priority=2)
     @Description(" Verify search button works properly calls page")
     public void clickOnSearchButton_CallsPage() throws InterruptedException {
         String searchedTextCalls = "Oz";
@@ -125,8 +125,9 @@ public class WhatsUpSearchTests  extends BaseTest {
 
 
     @AfterMethod
-    public void backToFirstView()
-    {
+    public void backToFirstView() throws InterruptedException {
+
+        log.info(testMethodName);
 
         if(testMethodName.equalsIgnoreCase("clickOnSearchButton_ChatsPage") || testMethodName.equalsIgnoreCase("clickOnSearchButton_StatusPage") ) {
             TestUtilities.AndroidBack(1);

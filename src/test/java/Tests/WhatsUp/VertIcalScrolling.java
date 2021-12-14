@@ -28,10 +28,10 @@ public class VertIcalScrolling extends BaseTest {
     @Test()
     @Description(" Verify scrolling to text and clicking works properly")
     public void scrollTestDown() throws InterruptedException {
-        String inputText = "Edi";
+        String inputText = "derug lovim";
         log.info("verify scrolling to buttom works properly ");
 
-        TestUtilities.scrollToText_AndroidEmpty("Edi");
+        TestUtilities.scrollToText_AndroidEmpty("derug lovim");
         String actual = wellcomePage.getConversation_Contact_Name();
         TestUtilities.AndroidBack(1);
         Assert.assertTrue(actual.contains(inputText),"searched text " + inputText + "isnt presented");
