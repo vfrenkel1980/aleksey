@@ -2,7 +2,6 @@ package Pages.whatsappPages;
 
 import Pages.BasePage;
 import Utils.TestUtilities;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.Logger;
@@ -33,39 +32,42 @@ public class WhatsUpWellcomPage extends BasePage {
     public AndroidElement chatText;
 
 
-    @AndroidFindBy(xpath ="//android.widget.ImageView[@content-desc=\"More options\"]")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"More options\"]")
     public AndroidElement menuButton;
 
 
-    @AndroidFindBy(xpath ="//android.widget.TextView[@content-desc=\"Search\"]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Search\"]")
     public AndroidElement searchIcon;
 
-    @AndroidFindBy(id ="com.whatsapp:id/search_input")
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text ='Edi']")
+    public AndroidElement searchIconLongPress;
+
+
+    @AndroidFindBy(id = "com.whatsapp:id/search_input")
     public AndroidElement searchInput;
 
 
-    @AndroidFindBy(id ="com.whatsapp:id/search_contact_token")
+    @AndroidFindBy(id = "com.whatsapp:id/search_contact_token")
     public AndroidElement searchedText;
 
-   @AndroidFindBy(xpath ="//android.widget.ImageButton[@content-desc=\"Back\"]")
-   public AndroidElement backButton;
+    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Back\"]")
+    public AndroidElement backButton;
 
 
-    @AndroidFindBy(id ="com.whatsapp:id/conversation_contact_name")
+    @AndroidFindBy(id = "com.whatsapp:id/conversation_contact_name")
     public AndroidElement conversation_contact_name;
-  //  com.whatsapp:id/conversation_contact_name
+    //  com.whatsapp:id/conversation_contact_name
 
 
-    @AndroidFindBy(id ="com.whatsapp:id/entry")
+    @AndroidFindBy(id = "com.whatsapp:id/entry")
     public AndroidElement typeMessage;
 
-     @AndroidFindBy(id ="com.whatsapp:id/send")
-     public AndroidElement sendMessage;
+    @AndroidFindBy(id = "com.whatsapp:id/send")
+    public AndroidElement sendMessage;
 
-    @AndroidFindBy(id ="com.whatsapp:id/message_text")
+    @AndroidFindBy(id = "com.whatsapp:id/message_text")
     public AndroidElement messagesText;
-
-
 
 
 //     @AndroidFindBy(xpath ="//android.widget.EditText[contains(text(),'Sear')]")
@@ -75,72 +77,75 @@ public class WhatsUpWellcomPage extends BasePage {
     ///hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.EditText
 
 
-//
+    //
     public WhatsUpWellcomPage click_ChatTextFromOtherpage() {
         System.out.println("click to chatText");  //change to log.info after to use logger
-        Assert.assertTrue(click(chatText)," click to chat text is faild");
+        Assert.assertTrue(click(chatText), " click to chat text is faild");
 
-        return  new WhatsUpWellcomPage(driver,log);
+        return new WhatsUpWellcomPage(driver, log);
     }
 
 
     public WhatsUpCallPage click_CallsTextFromOtherpage() {
         System.out.println("click to callsText");
-        Assert.assertTrue(click(callsText)," click to chat text is faild");
+        Assert.assertTrue(click(callsText), " click to chat text is faild");
 
-        return  new WhatsUpCallPage(driver,log);
+        return new WhatsUpCallPage(driver, log);
     }
-
-
-
 
 
     public WhatsUpStatusPage click_StatusText() {
-        log.info("clicking to statusText " +  text(statusText));
-        Assert.assertTrue(click(statusText)," click to status text is faild");
+        log.info("clicking to statusText " + text(statusText));
+        Assert.assertTrue(click(statusText), " click to status text is faild");
 
-        return  new WhatsUpStatusPage(driver,log);
+        return new WhatsUpStatusPage(driver, log);
     }
-   public String text_Status() {
+
+    public String text_Status() {
         //System.out.println("get text to statusText");  //change to log.info after to use logger
-        Assert.assertTrue(getTextElement(statusText)," click to status text is faild");
+        Assert.assertTrue(getTextElement(statusText), " click to status text is faild");
         return text(statusText);
     }
 
     public String text_() {
         //System.out.println("get text to statusText");  //change to log.info after to use logger
-        Assert.assertTrue(getTextElement(statusText)," click to status text is faild");
+        Assert.assertTrue(getTextElement(statusText), " click to status text is faild");
         return text(statusText);
     }
 
     public String getConversation_Contact_Name() {
-        Assert.assertTrue(getTextElement(conversation_contact_name)," click to status text is faild");
+        Assert.assertTrue(getTextElement(conversation_contact_name), " click to status text is faild");
         return text(conversation_contact_name);
     }
 
 
     public String text_Calls() {
-       // System.out.println("get text to callText");  //change to log.info after to use logger
-        Assert.assertTrue(getTextElement(callsText)," click to status text failed");
+        // System.out.println("get text to callText");  //change to log.info after to use logger
+        Assert.assertTrue(getTextElement(callsText), " click to status text failed");
         return text(callsText);
     }
 
     public String text_Chats() {
         //System.out.println("get text to callText");  //change to log.info after to use logger
-        Assert.assertTrue(getTextElement(chatText)," click to status text is faild");
+        Assert.assertTrue(getTextElement(chatText), " click to status text is faild");
         return text(chatText);
     }
 
-    public void clickOnMenu(){
-        Assert.assertTrue(click(menuButton)," click on menu failed");
-
+    public void clickOnMenu() {
+        Assert.assertTrue(click(menuButton), " click on menu failed");
 
 
     }
 
+    public void longPress(String contact) throws InterruptedException {
+        WebElement el = TestUtilities.scrollToText_andLongPress(contact);
+        Assert.assertTrue(longPress(el), " longPress  failed");
 
-    public  List<String> getTextOfOptions(int  size){
-        List <String >  listOfOptions = new ArrayList<>();
+    }
+
+
+    public List<String> getTextOfOptions(int size) {
+        List<String> listOfOptions = new ArrayList<>();
         listOfOptions = TestUtilities.getListOfOptionsFromMenu(size);
 
 //        for(int i=1;i <= size ;) {
@@ -150,7 +155,7 @@ public class WhatsUpWellcomPage extends BasePage {
 //            temp.add(element.getText());
 //            i = i + 1;
         //}
-       return listOfOptions;
+        return listOfOptions;
     }
 
 //    public  List<String> getTextOfOptions(WebElement element){
@@ -168,13 +173,12 @@ public class WhatsUpWellcomPage extends BasePage {
 //    }
 
 
-    public List<String> findSearchResults()
-    {
-        List <WebElement>  searchResultsWebEL = new ArrayList<>();
+    public List<String> findSearchResults() {
+        List<WebElement> searchResultsWebEL = new ArrayList<>();
         searchResultsWebEL = findAll(By.id("com.whatsapp:id/message_text"));
 
 
-        List <String>  searchResultsWebText = new ArrayList<>();
+        List<String> searchResultsWebText = new ArrayList<>();
         searchResultsWebText = TestUtilities.convertFromWebElentsToString(searchResultsWebEL);
 
         return searchResultsWebText;
@@ -182,33 +186,38 @@ public class WhatsUpWellcomPage extends BasePage {
     }
 
 
+    public List<String> findSearchResultsContacts() {
+        List<WebElement> searchResultsWebEL = new ArrayList<>();
+        searchResultsWebEL = findAll(By.className(("android.widget.TextView")));
 
 
+        List<String> searchResultsWebText = new ArrayList<>();
+        searchResultsWebText = TestUtilities.convertFromWebElentsToString(searchResultsWebEL);
+        //TestUtilities.CopyList(searchResultsWebText,searchResultsAggregate);
+        return searchResultsWebText;
 
-    public  void clickOnSearchButtonFromCallsSectionAndTypeText(String text)
-    {
+    }
 
-        log.info("clicking on statusIcon " +  text(searchIcon));
-        Assert.assertTrue(click(searchIcon)," click on icon failed");
+
+    public void clickOnSearchButtonFromCallsSectionAndTypeText(String text) {
+
+        log.info("clicking on statusIcon " + text(searchIcon));
+        Assert.assertTrue(click(searchIcon), " click on icon failed");
         // AndroidElement = driver.findElement(By.id(""));
         // text(searchInput);
         // click(searchInput);
         // text(searchInput);
-        log.info("typing text into searchIcon" +  text(searchInput));
-        type(searchInput,text);
+        log.info("typing text into searchIcon" + text(searchInput));
+        type(searchInput, text);
     }
 
 
+    public void clickOnSearchButtonFromChatSectionAndTypeText(String text) {
 
-
-
-    public  void clickOnSearchButtonFromChatSectionAndTypeText(String text)
-    {
-
-        log.info("clicking on statusIcon " +  text(searchIcon));
-        Assert.assertTrue(click(searchIcon)," click on icon failed");
-        log.info("typing text into searchIcon" +  text(searchInput));
-        type(searchInput,text);
+        log.info("clicking on statusIcon " + text(searchIcon));
+        Assert.assertTrue(click(searchIcon), " click on icon failed");
+        log.info("typing text into searchIcon" + text(searchInput));
+        type(searchInput, text);
         click(sendMessage);
     }
 
@@ -246,42 +255,54 @@ public class WhatsUpWellcomPage extends BasePage {
 //
 //    }
 
-    public String  findSearchresults()
-    {
-       String result= text(searchedText);
+    public String findSearchresults() {
+        String result = text(searchedText);
 
         return result;
 
     }
 
-    public void  clickOnBackButtonInSearch()
-    {
+    public void clickOnBackButtonInSearch() {
         click(backButton);
 
     }
 
 
-    public void clickOnTypeMessage( String text) {
+    public void clickOnTypeMessage(String text) {
 
-       log.info("clicking on statusIcon " +  text(typeMessage));
-       Assert.assertTrue(click(typeMessage)," click on icon failed");
-       log.info("typing text into searchIcon" +  text(typeMessage));
+        log.info("clicking on statusIcon " + text(typeMessage));
+        Assert.assertTrue(click(typeMessage), " click on icon failed");
+        log.info("typing text into searchIcon" + text(typeMessage));
 
-       type(typeMessage,text);
-       click(sendMessage);
-
-
-    }
-
-    public String getTextInputMessage( WebElement element) {
-
-       return  text(element);
+        type(typeMessage, text);
+        click(sendMessage);
 
 
     }
 
+    public String getTextInputMessage(WebElement element) {
+
+        return text(element);
 
 
+    }
+
+
+    public void getScrollUpUntilTextAndroid() throws InterruptedException {
+
+        for (int i = 0; i < 10; i++) {
+            try {
+                TestUtilities.scrollUp_Android();
+                // break;
+            } catch (Exception e) {
+                System.out.println(("find text(): FAILED\n" + e.getMessage()));
+
+            }
+
+
+        }
+
+    }
 }
 
 

@@ -1,6 +1,7 @@
 package Utils;
 
 import Pages.BasePage;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -11,15 +12,13 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,8 +32,11 @@ public class TestUtilities extends BasePage {
 
 
 
+
     public TestUtilities(WebDriver driver, Logger log) {
-        super(driver, log);
+        super(driver,log);
+
+
     }
 
 
@@ -93,8 +95,19 @@ public class TestUtilities extends BasePage {
         for(int i=1 ;i<= howMuch ;i++) {
             System.out.print("clicking on back button");
             ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+            ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.DPAD_UP));
         }
     }
+
+//    public static void AndroidUp  (int howMuch) {
+//
+//        for(int i=1 ;i<= howMuch ;i++) {
+//            System.out.print("clicking up in scrolling  ");
+//           // ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+//            ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.DPAD_UP));
+//        }
+//    }
+
 
 
     public static  List<String> getListOfOptionsFromMenu(int  size){
@@ -132,12 +145,12 @@ public class TestUtilities extends BasePage {
     }
 
 
-    public static void scrollToText_Android(String text) throws InterruptedException {
+    public static WebElement scrollToText_andLongPress(String text) throws InterruptedException {
         AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
                 ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
 
-        getElementByText.click();
 
+        return getElementByText;
 
     }
 
@@ -160,12 +173,60 @@ public class TestUtilities extends BasePage {
     }
 
 
+
+
+    public static void scrollUp_Android() throws InterruptedException {
+        Dimension dimension = getDriver().manage().window().getSize();
+
+
+        int scrollStart = dimension.height/2;
+        int scrollEnd = dimension.height -10;
+
+
+        new TouchAction((PerformsTouchActions) getDriver() )
+                .press(PointOption.point(0, scrollStart))
+                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+                .moveTo(PointOption.point(0, scrollEnd))
+                .release().perform();
+    }
+
+
     public static List <String> CopyList(List <String> sourceList,List <String > searchResultsAggregate)
     {
         searchResultsAggregate.addAll(sourceList);
         return   searchResultsAggregate;
 
     }
+
+    public static void ScrollupFlingBackward ()throws InterruptedException {
+
+
+        try {
+//            AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator(
+//                    "new UiScrollable(new UiSelector().scrollable(true)).flingBackward()"));
+
+
+           getDriver().findElement(MobileBy.AndroidUIAutomator(
+                    "new UiScrollable(new UiSelector().scrollablee(true)).flingBackward()"));
+        } catch (InvalidSelectorException e) {
+
+        }
+        //log.error("invalid  selector ");
+        }
+
+
+    public static void ScrollupFlingToBeginning ()throws InterruptedException {
+
+
+                try {
+            getDriver().findElement(MobileBy.AndroidUIAutomator(
+                    "new UiScrollable(new UiSelector().scrollable(true)).flingToBeginning(10)"));
+        } catch (InvalidSelectorException e) {
+          //  log.error("invalid  selector ");
+        }
+
+    }
+
 
 
     public static void scrollToText_AndroidEmpty(String text) throws InterruptedException {
@@ -184,6 +245,24 @@ public class TestUtilities extends BasePage {
 
             }
         }
+
+
+    public static void scroll(AppiumDriver driver){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, String> scrollObject = new HashMap<String, String>();
+        scrollObject.put("direction", "up");
+        js.executeScript("mobile: scroll", scrollObject);
+    }
+
+
+
+    public static void scrollToText2(String text) throws InterruptedException {
+        WebElement getElementByText = (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator(
+                "new UiScrollable(getChildByText("
+                        + "new UiSelector().resourceIdMatches(\"*:id/com.whatsapp:id/conversations_row_contact_name\"), \"" + text + "\")"));
+        getElementByText.click();
+
+    }
 
 
     }

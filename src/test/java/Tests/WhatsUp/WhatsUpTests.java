@@ -61,6 +61,13 @@ public class WhatsUpTests  extends BaseTest {
 
     }
 
+
+
+
+
+
+
+
     @Test ()
     @Description (" Verify content of  menu from  Chat page ")
     public void clickOnMenuAndVerifyContent_ChatPage() {
@@ -87,6 +94,7 @@ public class WhatsUpTests  extends BaseTest {
         Assert.assertTrue(TestUtilities.compareTwoStringLists2(expectedMenuOptions,actualOptions).isEmpty());
 
     }
+
 
     @Test ()
     @Description (" Verify content of  menu from  Status page ")

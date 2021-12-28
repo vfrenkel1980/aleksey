@@ -2,7 +2,6 @@ package Pages.whatsappPages;
 
 import Pages.BasePage;
 import Utils.TestUtilities;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.apache.logging.log4j.Logger;
@@ -75,6 +74,8 @@ public class WhatsUpCallPage  extends BasePage {
         TestUtilities.CopyList(searchResultsWebText,searchResultsAggregate);
 
     }
+
+
 
 
     public void  clickOnBackButtonInSearch()

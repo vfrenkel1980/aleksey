@@ -48,6 +48,7 @@ public class MobileDriverFactory {
             capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
             capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
             capabilities.setCapability("appWaitDuration",6000);
+            capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
            // capabilities.setCapability("android:exported",true);
 //        capabilities.setCapability(MobileCapabilityType.APP,"");
 //        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"");

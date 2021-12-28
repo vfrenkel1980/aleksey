@@ -1,5 +1,10 @@
 package Pages;
+
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -65,6 +70,29 @@ public class BasePage {
         }
         return false;
     }
+
+
+    protected boolean  longPress(WebElement el) {
+
+
+        try {
+            TouchAction action = new TouchAction((PerformsTouchActions) driver);
+
+            action.longPress(new LongPressOptions().withElement(new
+                    ElementOption().withElement(el))).perform();
+            return true;
+        }
+        catch (Exception e)
+        {
+            log.error("longpress (): FAILED\n" + e.getMessage());
+
+
+        }
+        return false;
+
+    }
+
+
 
     protected boolean mytype(WebElement el, String text) {
         if (el == null)
@@ -202,6 +230,8 @@ public class BasePage {
 //        }
 //        return testObject;
 //    }
+
+
 
 
 

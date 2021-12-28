@@ -4,7 +4,7 @@
 >
 
     <test name="Whats up android">
-       <!-- <parameter name="UDID_phone" value="192.168.1.16:5555"></parameter>-->
+       <!-- <parameter name="UDID_phone" value="192.168.1.15:5555"></parameter>-->
         <parameter name="UDID_phone" value="7bd9500e"></parameter>
         <parameter name="appPackage" value="com.whatsapp"></parameter>
         <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>
@@ -17,6 +17,7 @@
             <class name="Tests.WhatsUp.SendMessage"> </class>
             <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>
             <class name="Tests.WhatsUp.VertIcalScrolling"> </class>
+            <class name="Tests.WhatsUp.WhatsUpChatsTests"> </class>
         </classes>
     </test>
 
