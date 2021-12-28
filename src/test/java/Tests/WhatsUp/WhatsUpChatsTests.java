@@ -49,6 +49,7 @@ public class WhatsUpChatsTests extends BaseTest {
     public void verifylongPressWorkingProperlyContactOption() throws InterruptedException {
         String inputText = "Yuval";
         log.info("verifylongPressWorkingProperlyContactOption ");
+
         wellcomePage.longPress(inputText);
         wellcomePage.clickOnMenu();
         List<String> expectedMenuOptions = Arrays.asList("Add chat shortcut");
