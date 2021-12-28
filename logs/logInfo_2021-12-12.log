@@ -1,0 +1,9 @@
+[INFO ] 2021-12-12 19:03:55,426 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-12 19:03:57,574 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-12 19:04:12,349 Whats up android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-12-12 19:04:13,314 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-12 19:04:15,565 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-12-12 19:04:27,617 Whats up android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2021-12-12 19:04:38,731 Whats up android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)

@@ -1,0 +1,231 @@
+[INFO ] 2021-12-05 09:20:38,065 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-12-05 09:20:38,075 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-12-05 09:20:38,841 ResolutionCache.checkValidity() - Removing resolution chrome=96 from cache (expired on 2021-11-20T11:38:27.000+0300)
+[DEBUG] 2021-12-05 09:20:38,869 InternalHttpClient.doExecute() - ex-00000001: preparing request execution
+[DEBUG] 2021-12-05 09:20:38,879 RequestAddCookies.process() - Cookie spec selected: strict
+[DEBUG] 2021-12-05 09:20:38,889 RequestAuthCache.process() - Auth cache not set in the context
+[DEBUG] 2021-12-05 09:20:38,890 ProtocolExec.execute() - ex-00000001: target auth state: UNCHALLENGED
+[DEBUG] 2021-12-05 09:20:38,891 ProtocolExec.execute() - ex-00000001: proxy auth state: UNCHALLENGED
+[DEBUG] 2021-12-05 09:20:38,892 ConnectExec.execute() - ex-00000001: acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2021-12-05 09:20:38,893 InternalHttpClient.acquireEndpoint() - ex-00000001: acquiring endpoint (3 MINUTES)
+[DEBUG] 2021-12-05 09:20:38,896 PoolingHttpClientConnectionManager.lease() - ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] 2021-12-05 09:20:38,907 PoolingHttpClientConnectionManager.get() - ex-00000001: endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2021-12-05 09:20:38,951 PoolingHttpClientConnectionManager.get() - ex-00000001: acquired ep-00000000
+[DEBUG] 2021-12-05 09:20:38,952 InternalHttpClient.acquireEndpoint() - ex-00000001: acquired endpoint ep-00000000
+[DEBUG] 2021-12-05 09:20:38,952 ConnectExec.execute() - ex-00000001: opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2021-12-05 09:20:38,954 InternalHttpClient.connectEndpoint() - ep-00000000: connecting endpoint (30 SECONDS)
+[DEBUG] 2021-12-05 09:20:38,955 PoolingHttpClientConnectionManager.connect() - ep-00000000: connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] 2021-12-05 09:20:39,001 DefaultHttpClientConnectionOperator.connect() - http-outgoing-0: connecting to raw.githubusercontent.com/185.199.108.133:443
+[DEBUG] 2021-12-05 09:20:39,001 SSLConnectionSocketFactory.connectSocket() - Connecting socket to raw.githubusercontent.com/185.199.108.133:443 with timeout 30 SECONDS
+[DEBUG] 2021-12-05 09:20:39,180 SSLConnectionSocketFactory.createLayeredSocket() - Enabled protocols: [TLSv1.2]
+[DEBUG] 2021-12-05 09:20:39,181 SSLConnectionSocketFactory.createLayeredSocket() - Enabled cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2021-12-05 09:20:39,182 SSLConnectionSocketFactory.createLayeredSocket() - Starting handshake
+[DEBUG] 2021-12-05 09:20:39,530 SSLConnectionSocketFactory.verifySession() - Secure session established
+[DEBUG] 2021-12-05 09:20:39,530 SSLConnectionSocketFactory.verifySession() -  negotiated protocol: TLSv1.2
+[DEBUG] 2021-12-05 09:20:39,531 SSLConnectionSocketFactory.verifySession() -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+[DEBUG] 2021-12-05 09:20:39,532 SSLConnectionSocketFactory.verifySession() -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG] 2021-12-05 09:20:39,532 SSLConnectionSocketFactory.verifySession() -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+[DEBUG] 2021-12-05 09:20:39,533 SSLConnectionSocketFactory.verifySession() -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+[DEBUG] 2021-12-05 09:20:39,540 DefaultHttpClientConnectionOperator.connect() - http-outgoing-0: connection established 192.168.1.13:54455<->185.199.108.133:443
+[DEBUG] 2021-12-05 09:20:39,541 PoolingHttpClientConnectionManager.connect() - ep-00000000: connected http-outgoing-0
+[DEBUG] 2021-12-05 09:20:39,542 InternalHttpClient.connectEndpoint() - ep-00000000: endpoint connected
+[DEBUG] 2021-12-05 09:20:39,544 MainClientExec.execute() - ex-00000001: executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2021-12-05 09:20:39,546 InternalHttpClient.execute() - ep-00000000: start execution ex-00000001
+[DEBUG] 2021-12-05 09:20:39,547 PoolingHttpClientConnectionManager.execute() - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+[DEBUG] 2021-12-05 09:20:39,548 headers.onRequestSubmitted() - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2021-12-05 09:20:39,549 headers.onRequestSubmitted() - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2021-12-05 09:20:39,550 headers.onRequestSubmitted() - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2021-12-05 09:20:39,550 headers.onRequestSubmitted() - http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] 2021-12-05 09:20:39,551 headers.onRequestSubmitted() - http-outgoing-0 >> connection: keep-alive
+[DEBUG] 2021-12-05 09:20:39,551 headers.onRequestSubmitted() - http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] 2021-12-05 09:20:39,552 wire.wire() - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,552 wire.wire() - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,553 wire.wire() - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,554 wire.wire() - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,554 wire.wire() - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,555 wire.wire() - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,555 wire.wire() - http-outgoing-0 >> "[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,639 wire.wire() - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,640 wire.wire() - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,640 wire.wire() - http-outgoing-0 << "Content-Length: 728[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,641 wire.wire() - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,641 wire.wire() - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,642 wire.wire() - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,642 wire.wire() - http-outgoing-0 << "ETag: W/"f670816d6bfbef80584dadbb549bb9c4ccd5de869d5b63cc2a694a74613014b5"[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,643 wire.wire() - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,643 wire.wire() - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,644 wire.wire() - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,644 wire.wire() - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,645 wire.wire() - http-outgoing-0 << "X-GitHub-Request-Id: B976:AEED:32392D:36B205:61AB9839[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,645 wire.wire() - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,646 wire.wire() - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,646 wire.wire() - http-outgoing-0 << "Date: Sun, 05 Dec 2021 07:19:58 GMT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,647 wire.wire() - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,647 wire.wire() - http-outgoing-0 << "X-Served-By: cache-lhr7339-LHR[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,648 wire.wire() - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,648 wire.wire() - http-outgoing-0 << "X-Cache-Hits: 2[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,649 wire.wire() - http-outgoing-0 << "X-Timer: S1638688798.478666,VS0,VE0[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,649 wire.wire() - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,650 wire.wire() - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,650 wire.wire() - http-outgoing-0 << "X-Fastly-Request-ID: 3896ed499e645101985736f13ef7d57466897adf[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,651 wire.wire() - http-outgoing-0 << "Expires: Sun, 05 Dec 2021 07:24:58 GMT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,651 wire.wire() - http-outgoing-0 << "Source-Age: 12[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,652 wire.wire() - http-outgoing-0 << "[\r][\n]"
+[DEBUG] 2021-12-05 09:20:39,661 headers.onResponseReceived() - http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] 2021-12-05 09:20:39,662 headers.onResponseReceived() - http-outgoing-0 << Connection: keep-alive
+[DEBUG] 2021-12-05 09:20:39,662 headers.onResponseReceived() - http-outgoing-0 << Content-Length: 728
+[DEBUG] 2021-12-05 09:20:39,663 headers.onResponseReceived() - http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] 2021-12-05 09:20:39,663 headers.onResponseReceived() - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] 2021-12-05 09:20:39,664 headers.onResponseReceived() - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] 2021-12-05 09:20:39,664 headers.onResponseReceived() - http-outgoing-0 << ETag: W/"f670816d6bfbef80584dadbb549bb9c4ccd5de869d5b63cc2a694a74613014b5"
+[DEBUG] 2021-12-05 09:20:39,665 headers.onResponseReceived() - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] 2021-12-05 09:20:39,665 headers.onResponseReceived() - http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] 2021-12-05 09:20:39,666 headers.onResponseReceived() - http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] 2021-12-05 09:20:39,666 headers.onResponseReceived() - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] 2021-12-05 09:20:39,667 headers.onResponseReceived() - http-outgoing-0 << X-GitHub-Request-Id: B976:AEED:32392D:36B205:61AB9839
+[DEBUG] 2021-12-05 09:20:39,667 headers.onResponseReceived() - http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] 2021-12-05 09:20:39,668 headers.onResponseReceived() - http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] 2021-12-05 09:20:39,668 headers.onResponseReceived() - http-outgoing-0 << Date: Sun, 05 Dec 2021 07:19:58 GMT
+[DEBUG] 2021-12-05 09:20:39,669 headers.onResponseReceived() - http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] 2021-12-05 09:20:39,669 headers.onResponseReceived() - http-outgoing-0 << X-Served-By: cache-lhr7339-LHR
+[DEBUG] 2021-12-05 09:20:39,670 headers.onResponseReceived() - http-outgoing-0 << X-Cache: HIT
+[DEBUG] 2021-12-05 09:20:39,670 headers.onResponseReceived() - http-outgoing-0 << X-Cache-Hits: 2
+[DEBUG] 2021-12-05 09:20:39,671 headers.onResponseReceived() - http-outgoing-0 << X-Timer: S1638688798.478666,VS0,VE0
+[DEBUG] 2021-12-05 09:20:39,671 headers.onResponseReceived() - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+[DEBUG] 2021-12-05 09:20:39,672 headers.onResponseReceived() - http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] 2021-12-05 09:20:39,672 headers.onResponseReceived() - http-outgoing-0 << X-Fastly-Request-ID: 3896ed499e645101985736f13ef7d57466897adf
+[DEBUG] 2021-12-05 09:20:39,672 headers.onResponseReceived() - http-outgoing-0 << Expires: Sun, 05 Dec 2021 07:24:58 GMT
+[DEBUG] 2021-12-05 09:20:39,673 headers.onResponseReceived() - http-outgoing-0 << Source-Age: 12
+[DEBUG] 2021-12-05 09:20:39,686 MainClientExec.execute() - ex-00000001: connection can be kept alive for 3 MINUTES
+[DEBUG] 2021-12-05 09:20:39,726 wire.wire() - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]Mn[0xffffff82][0xffffffa5]$Fv([0xffffffed]~[0xfffffffd]l[0xffffffe7]c$u[0x6]k[0xffffffe8][l_[0xffffff9f]s|[0xffffffef]q|;[0xffffffe0][0xfffffff0]([0xffffffa2][0xffffffb1]'[0xffffffc1][0xffffffa3][0x9]}[0xffffffa0][0x12][[0x1d][0xffffffb8]]1[0x9]>[0xb][0x11]\[0x1e]'[0xffffff94][0xffffffc5][0x12][0xffffff92][0xffffff95][0x1e]d[0xffffffa1][0x9][0xffffff87][0x7][0x4]|Bw[0xffffff93][0xffffffa0][0x7],6[0xffffffcb]r[0xffffff85]a[0xffffffa8][0x7]\x(t[0xffffff90][0xffffff87][0x9][0xffffffba][0xffffff89]Y|D![0x19]Wk>[0xffffffa0][0xfffffffa][0xe][0x4]b[0xc][0xf][0xffffff82]o[0xffffffa5]ZP[0xffffff94][0xffffffa7][0xffffffce]J[0xfffffff0][0x8][0xffffffbb]p[0xffffffcd][0x4][0xfffffffa][0xfffffffc][0xffffffa9][0xb][0xffffffb3]5[\n]"
+[DEBUG] 2021-12-05 09:20:39,727 wire.wire() - http-outgoing-0 << "[0xffffffda][0xffffff85][0xffffffb1][0x17][0xffffffa8]Y[0xffffffb3][0xffffffca]6[0xffffffd1][0xffffff99][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]c[0x12][0x16][0x7] [0xffffff9f]e[0xffffff82][0xffffff91][0xffffff84][0xffffffd3][0x1f],[0xfffffff6][0x14]j[0x17]&,[0xffffffde]([0xffffff98])ua[0xffffffb6]<k)[0xffffff8e][0xffffff94][0xffffffa2][0xffffff95][0x1d][0xffffffa3][0xffffffef][0xffffff9a]a[0x7f][0xffffff9b]n[0xffffffe8][0xffffffbf]{?t#[0xffffffaf][0xffffffaf]N[0x5][0x3][0x7][0xffffffb6][0x11]sMJL[0x1a][0xffffffb6]+[0xffffffc5][0x7]1[0xffffff8d]p[0xffffffd8]>[0xffffff99]/f7[0xffffff8b][0xffffffd1][0xfffffff4][0xfffffffa][0xffffffeb]d[0xffffffbc]<[0xfffffffd][0xfffffff9][0xfffffff1][0xffffffc3][0xffffffd9]'2$[0xffffffe4][0xffffff84][0xffffff90][0x1b][0xffffffce][0xffffff83][0x10][0x9]Iy[0x8][0x19][0xffffffad][0xffffffd7]!s[0xffffff95]>[0x1e][0x13][0xffffff92][0xffffffb1])[0xfffffff8]6[0x4][0xffffff98][0xffffffc0]}[0xffffff96][0xffffff90][0xffffffc1]#[\r]7[0xfffffff5][0xffffffa2][0xffffffce][0xf][0x14]5[0xffffff99]9[0xffffffa3][0xffffffc9]h>[0xffffffff]<[0xffffffba][0x1d][0xffffffbd][0xffffffa5][0xffffff9e][0xffffff8b]W$[0xffffffe9]-[0xfffffff5]\[0xe][0x17][0xffffffe3][0x1b][0xfffffff8]~7^[0xfffffffc][0xffffff82]/[0xffffffdf][0xffffff9c];[0xffffffb2][0xffffffe4]~[0xffffffb2][0xffffffa5][0x2]s[0xffffffb6][0xffffff8c][0xffffffec]jr[0xffffff85][0xffffffd4]5x[0xffffffb9][0x17][U[0xffffffd0]P;F[0xfffffffb] 0[{[0xffffffe9]4[0xfffffff4]zu[0x1b]"[0xffffffea][0xffffffea][0xfffffff0][0xffffffc1][0xffffffce]A[0xffffffe4] [0xffffffe5][0xffffffcd][0xffffffcc][0xffffffd6][0xffffffa7][0xffffffeb][0xfffffff5][0xffffffc0]Q[0xffffff97]H[0xffffffb9]U[0xe][0xffffff94][0x17]g[0xffffffcb]r[0xffffffc0].[0xffffffba][0xffffffb2]h[0xffffffe6][0xfffffffe][0xffffff82][0xffffffc8]O[0xffffffc7][0xffffffcd]L[0xffffff9a][0xffffffe7][0x7f][0xffffffca][0x7f][0xffffffb3]0[0xffffffa4]9[0x9]!9[0xfffffffa][0xffffffbe][0xffffffa4][0xffffffbf]Pq[0xffffffa8]+k[0xffffffaf][0xffffffca][0xfffffff1][0xffffffa4]\[0xffffffec][0x18][0xffffffa0]]v@FR%kk[0xf]8[0x1b][0xffffffa1][0xffffffff] [0xfffffff7][0xffffffd5][0xffffffca][0xffffffe6][0xfffffff8][0xffffff85][0x17][0xffffffb2][0x9][0xffffffe8]=[0xffffffbe][0xc][0xffffffb2][0xffffffd6]?c[0xffffffb1]U~[0x17]K[0x15][[0xffffffff][0xffffffda][\n]"
+[DEBUG] 2021-12-05 09:20:39,727 wire.wire() - http-outgoing-0 << "LT[0xffffff83]#[0xfffffffe][0xffffff8b][0xffffffa6][0xffffffcc][0x15]\[0xffffffaa]L[0x10][0xffffffa2]i*[0xffffff97]-[0xffffff92][0xffffff86]n_[0xffffffb2][0xffffffcb][0xffffff9a]^S[0xfffffff4]7[0xffffff94]sQ{[0xfffffff3][0xffffffff][0xffffff92][0x19][0xffffffae][0x7f]^}[0xffffff83]Y[0x14];[0xffffffca]w[0xfffffff6][0xfffffff4][0xffffffbc][0xffffffed][0xffffffe6][0xffffff9b]xk[0xffffffdd][0xb]VSW[[0xfffffff9][0xffffffcb][0x11]P[0xffffffba][0xfffffff8][0xffffffe6][0xffffffb5]+X[0xffffffcc][0xffffffbb][0xfffffff6][0xffffffff]n[0xffffffb0]=[0x2]s[0xffffffc1][0x3]A#I[0xffffff88][0xffffffa1] $[0xffffffa4][0xffffff9b][0xffffffd8]U[0xffffffbb][0xfffffff6][0xffffffa6][0xffffffbb]"[0xffffffa2]I[0xfffffff9][0xffffff8f]&[0xffffffe2][0xffffffd0][0xffffffe7][0xffffffc7][0xffffff96][0xffffff89][0xffffff86][0xffffffd4][0xffffff97][\r][0xffffffce][0x7f](u[0xffffff85][0xffffffbb][0xfffffff0][0xffffffa5][0x19][0xffffffda][0xffffffec][0xffffff98][0xffffffc6]Y[0xfffffffd]h8m6[0xffffff9c]U[0xffffffc1][0xfffffff2][0xffffffd6]H[0xfffffff5]W[0xffffffe5][0x17]NM[0x1c][0xffffffc7][0xffffff84]9|[0xffffff83]7[0xffffffbf][0xffffffa4][0xffffffa5][0xfffffff1][0xfffffffb]slAM[0xffffffda][0xffffffa2]ck[0xffffffa9]o[0xffffff89][\n]"
+[DEBUG] 2021-12-05 09:20:39,727 wire.wire() - http-outgoing-0 << "[0xffffffa6][0xfffffffd][0xffffffdd][0xffffff90]F,[0xffffffec][0xffffff97][0xffffffcf][0xfffffff4][0xffffffb2][0xffffff86]}[0xffffffc7]<u[0xffffff9b][0xffffffce][0xffffff8b]M[0xffffffb5][0xfffffffd][0xffffff93][0xffffff8e][0xffffffb6]:7[0xffffff97]i3[0xffffffaf]cA[0xffffffed][0xffffffc0][0xffffff92][0xfffffffa]T[0xffffffb0][0x2]^[0xffffff9a][0xffffffa1][0x1d]<[\r][0xffffffb5]A[0xffffffa7]+;[0xffffffc0][0x7f][0x0][0xffffffb2]$|[0xffffff88][0x1d][\r][0x0][0x0]"
+[DEBUG] 2021-12-05 09:20:39,729 InternalHttpClient.releaseEndpoint() - ep-00000000: releasing valid endpoint
+[DEBUG] 2021-12-05 09:20:39,730 PoolingHttpClientConnectionManager.release() - ep-00000000: releasing endpoint
+[DEBUG] 2021-12-05 09:20:39,730 PoolingHttpClientConnectionManager.release() - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] 2021-12-05 09:20:39,731 PoolingHttpClientConnectionManager.release() - ep-00000000: connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2021-12-05 09:20:39,732 VersionDetector.getBrowserVersionFromTheShell() - Detecting chrome version using online commands.properties
+[DEBUG] 2021-12-05 09:20:39,737 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-12-05 09:20:39,886 Shell.runAndWaitArray() - Result: 
+[DEBUG] 2021-12-05 09:20:39,887 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%LOCALAPPDATA:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-12-05 09:20:39,966 Shell.runAndWaitArray() - Result: 
+[DEBUG] 2021-12-05 09:20:39,966 Shell.runAndWaitArray() - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2021-12-05 09:20:40,049 Shell.runAndWaitArray() - Result: Version=96.0.4664.45
+[DEBUG] 2021-12-05 09:20:40,051 ResolutionCache.checkValidity() - Removing resolution chrome96=96.0.4664.45 from cache (expired on 2021-11-21T10:38:27.000+0300)
+[DEBUG] 2021-12-05 09:20:40,054 InternalHttpClient.doExecute() - ex-00000002: preparing request execution
+[DEBUG] 2021-12-05 09:20:40,055 RequestAddCookies.process() - Cookie spec selected: strict
+[DEBUG] 2021-12-05 09:20:40,055 RequestAuthCache.process() - Auth cache not set in the context
+[DEBUG] 2021-12-05 09:20:40,056 ProtocolExec.execute() - ex-00000002: target auth state: UNCHALLENGED
+[DEBUG] 2021-12-05 09:20:40,056 ProtocolExec.execute() - ex-00000002: proxy auth state: UNCHALLENGED
+[DEBUG] 2021-12-05 09:20:40,056 ConnectExec.execute() - ex-00000002: acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
+[DEBUG] 2021-12-05 09:20:40,056 InternalHttpClient.acquireEndpoint() - ex-00000002: acquiring endpoint (3 MINUTES)
+[DEBUG] 2021-12-05 09:20:40,057 PoolingHttpClientConnectionManager.lease() - ex-00000002: endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 0 of 5; total allocated: 1 of 25]
+[DEBUG] 2021-12-05 09:20:40,057 PoolingHttpClientConnectionManager.get() - ex-00000002: endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+[DEBUG] 2021-12-05 09:20:40,057 PoolingHttpClientConnectionManager.get() - ex-00000002: acquired ep-00000001
+[DEBUG] 2021-12-05 09:20:40,058 InternalHttpClient.acquireEndpoint() - ex-00000002: acquired endpoint ep-00000001
+[DEBUG] 2021-12-05 09:20:40,058 ConnectExec.execute() - ex-00000002: opening connection {s}->https://chromedriver.storage.googleapis.com:443
+[DEBUG] 2021-12-05 09:20:40,058 InternalHttpClient.connectEndpoint() - ep-00000001: connecting endpoint (30 SECONDS)
+[DEBUG] 2021-12-05 09:20:40,058 PoolingHttpClientConnectionManager.connect() - ep-00000001: connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
+[DEBUG] 2021-12-05 09:20:40,146 DefaultHttpClientConnectionOperator.connect() - http-outgoing-1: connecting to chromedriver.storage.googleapis.com/142.250.185.208:443
+[DEBUG] 2021-12-05 09:20:40,146 SSLConnectionSocketFactory.connectSocket() - Connecting socket to chromedriver.storage.googleapis.com/142.250.185.208:443 with timeout 30 SECONDS
+[DEBUG] 2021-12-05 09:20:40,228 SSLConnectionSocketFactory.createLayeredSocket() - Enabled protocols: [TLSv1.2]
+[DEBUG] 2021-12-05 09:20:40,229 SSLConnectionSocketFactory.createLayeredSocket() - Enabled cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2021-12-05 09:20:40,230 SSLConnectionSocketFactory.createLayeredSocket() - Starting handshake
+[DEBUG] 2021-12-05 09:20:40,430 SSLConnectionSocketFactory.verifySession() - Secure session established
+[DEBUG] 2021-12-05 09:20:40,431 SSLConnectionSocketFactory.verifySession() -  negotiated protocol: TLSv1.2
+[DEBUG] 2021-12-05 09:20:40,431 SSLConnectionSocketFactory.verifySession() -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+[DEBUG] 2021-12-05 09:20:40,432 SSLConnectionSocketFactory.verifySession() -  peer principal: CN=*.storage.googleapis.com
+[DEBUG] 2021-12-05 09:20:40,433 SSLConnectionSocketFactory.verifySession() -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
+[DEBUG] 2021-12-05 09:20:40,433 SSLConnectionSocketFactory.verifySession() -  issuer principal: CN=GTS CA 1C3, O=Google Trust Services LLC, C=US
+[DEBUG] 2021-12-05 09:20:40,434 DefaultHttpClientConnectionOperator.connect() - http-outgoing-1: connection established 192.168.1.13:54464<->142.250.185.208:443
+[DEBUG] 2021-12-05 09:20:40,434 PoolingHttpClientConnectionManager.connect() - ep-00000001: connected http-outgoing-1
+[DEBUG] 2021-12-05 09:20:40,435 InternalHttpClient.connectEndpoint() - ep-00000001: endpoint connected
+[DEBUG] 2021-12-05 09:20:40,436 MainClientExec.execute() - ex-00000002: executing GET /LATEST_RELEASE_96 HTTP/1.1
+[DEBUG] 2021-12-05 09:20:40,436 InternalHttpClient.execute() - ep-00000001: start execution ex-00000002
+[DEBUG] 2021-12-05 09:20:40,437 PoolingHttpClientConnectionManager.execute() - ep-00000001: executing exchange ex-00000002 over http-outgoing-1
+[DEBUG] 2021-12-05 09:20:40,438 headers.onRequestSubmitted() - http-outgoing-1 >> GET /LATEST_RELEASE_96 HTTP/1.1
+[DEBUG] 2021-12-05 09:20:40,438 headers.onRequestSubmitted() - http-outgoing-1 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2021-12-05 09:20:40,439 headers.onRequestSubmitted() - http-outgoing-1 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2021-12-05 09:20:40,439 headers.onRequestSubmitted() - http-outgoing-1 >> cache-control: max-age=0
+[DEBUG] 2021-12-05 09:20:40,439 headers.onRequestSubmitted() - http-outgoing-1 >> connection: keep-alive
+[DEBUG] 2021-12-05 09:20:40,440 headers.onRequestSubmitted() - http-outgoing-1 >> Host: chromedriver.storage.googleapis.com
+[DEBUG] 2021-12-05 09:20:40,440 wire.wire() - http-outgoing-1 >> "GET /LATEST_RELEASE_96 HTTP/1.1[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,440 wire.wire() - http-outgoing-1 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,441 wire.wire() - http-outgoing-1 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,441 wire.wire() - http-outgoing-1 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,442 wire.wire() - http-outgoing-1 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,442 wire.wire() - http-outgoing-1 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,443 wire.wire() - http-outgoing-1 >> "[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,523 wire.wire() - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,524 wire.wire() - http-outgoing-1 << "X-GUploader-UploadID: ADPycdsU8GjnrsTaRKssBL5nL2BEe7VZYQ42IjvHiM8x_9mjkboVm1gJnKwfBQmpVdGfg1JPogpPF77fVacDsxBXUcVcEhforA[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,524 wire.wire() - http-outgoing-1 << "Expires: Sun, 05 Dec 2021 07:33:06 GMT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,525 wire.wire() - http-outgoing-1 << "Date: Sun, 05 Dec 2021 06:33:06 GMT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,525 wire.wire() - http-outgoing-1 << "Last-Modified: Tue, 16 Nov 2021 09:36:03 GMT[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,526 wire.wire() - http-outgoing-1 << "ETag: "2aa8941e6db48cc78e86089c7e9e9dfc"[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,526 wire.wire() - http-outgoing-1 << "x-goog-generation: 1637055363777499[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,526 wire.wire() - http-outgoing-1 << "x-goog-metageneration: 1[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,527 wire.wire() - http-outgoing-1 << "x-goog-stored-content-encoding: identity[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,527 wire.wire() - http-outgoing-1 << "x-goog-stored-content-length: 12[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,528 wire.wire() - http-outgoing-1 << "Content-Type: text/plain[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,529 wire.wire() - http-outgoing-1 << "x-goog-hash: crc32c=xQfrLQ==[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,529 wire.wire() - http-outgoing-1 << "x-goog-hash: md5=KqiUHm20jMeOhgicfp6d/A==[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,530 wire.wire() - http-outgoing-1 << "x-goog-storage-class: STANDARD[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,530 wire.wire() - http-outgoing-1 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,530 wire.wire() - http-outgoing-1 << "Content-Length: 12[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,531 wire.wire() - http-outgoing-1 << "Server: UploadServer[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,531 wire.wire() - http-outgoing-1 << "Age: 2813[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,532 wire.wire() - http-outgoing-1 << "Cache-Control: public, max-age=3600[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,532 wire.wire() - http-outgoing-1 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,533 wire.wire() - http-outgoing-1 << "[\r][\n]"
+[DEBUG] 2021-12-05 09:20:40,534 wire.wire() - http-outgoing-1 << "96.0.4664.45"
+[DEBUG] 2021-12-05 09:20:40,535 headers.onResponseReceived() - http-outgoing-1 << HTTP/1.1 200 OK
+[DEBUG] 2021-12-05 09:20:40,535 headers.onResponseReceived() - http-outgoing-1 << X-GUploader-UploadID: ADPycdsU8GjnrsTaRKssBL5nL2BEe7VZYQ42IjvHiM8x_9mjkboVm1gJnKwfBQmpVdGfg1JPogpPF77fVacDsxBXUcVcEhforA
+[DEBUG] 2021-12-05 09:20:40,536 headers.onResponseReceived() - http-outgoing-1 << Expires: Sun, 05 Dec 2021 07:33:06 GMT
+[DEBUG] 2021-12-05 09:20:40,536 headers.onResponseReceived() - http-outgoing-1 << Date: Sun, 05 Dec 2021 06:33:06 GMT
+[DEBUG] 2021-12-05 09:20:40,536 headers.onResponseReceived() - http-outgoing-1 << Last-Modified: Tue, 16 Nov 2021 09:36:03 GMT
+[DEBUG] 2021-12-05 09:20:40,537 headers.onResponseReceived() - http-outgoing-1 << ETag: "2aa8941e6db48cc78e86089c7e9e9dfc"
+[DEBUG] 2021-12-05 09:20:40,537 headers.onResponseReceived() - http-outgoing-1 << x-goog-generation: 1637055363777499
+[DEBUG] 2021-12-05 09:20:40,538 headers.onResponseReceived() - http-outgoing-1 << x-goog-metageneration: 1
+[DEBUG] 2021-12-05 09:20:40,538 headers.onResponseReceived() - http-outgoing-1 << x-goog-stored-content-encoding: identity
+[DEBUG] 2021-12-05 09:20:40,539 headers.onResponseReceived() - http-outgoing-1 << x-goog-stored-content-length: 12
+[DEBUG] 2021-12-05 09:20:40,539 headers.onResponseReceived() - http-outgoing-1 << Content-Type: text/plain
+[DEBUG] 2021-12-05 09:20:40,539 headers.onResponseReceived() - http-outgoing-1 << x-goog-hash: crc32c=xQfrLQ==
+[DEBUG] 2021-12-05 09:20:40,540 headers.onResponseReceived() - http-outgoing-1 << x-goog-hash: md5=KqiUHm20jMeOhgicfp6d/A==
+[DEBUG] 2021-12-05 09:20:40,540 headers.onResponseReceived() - http-outgoing-1 << x-goog-storage-class: STANDARD
+[DEBUG] 2021-12-05 09:20:40,541 headers.onResponseReceived() - http-outgoing-1 << Accept-Ranges: bytes
+[DEBUG] 2021-12-05 09:20:40,541 headers.onResponseReceived() - http-outgoing-1 << Content-Length: 12
+[DEBUG] 2021-12-05 09:20:40,541 headers.onResponseReceived() - http-outgoing-1 << Server: UploadServer
+[DEBUG] 2021-12-05 09:20:40,542 headers.onResponseReceived() - http-outgoing-1 << Age: 2813
+[DEBUG] 2021-12-05 09:20:40,542 headers.onResponseReceived() - http-outgoing-1 << Cache-Control: public, max-age=3600
+[DEBUG] 2021-12-05 09:20:40,543 headers.onResponseReceived() - http-outgoing-1 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+[DEBUG] 2021-12-05 09:20:40,544 MainClientExec.execute() - ex-00000002: connection can be kept alive for 3 MINUTES
+[DEBUG] 2021-12-05 09:20:40,544 InternalHttpClient.releaseEndpoint() - ep-00000001: releasing valid endpoint
+[DEBUG] 2021-12-05 09:20:40,545 PoolingHttpClientConnectionManager.release() - ep-00000001: releasing endpoint
+[DEBUG] 2021-12-05 09:20:40,546 PoolingHttpClientConnectionManager.release() - ep-00000001: connection http-outgoing-1 can be kept alive for 3 MINUTES
+[DEBUG] 2021-12-05 09:20:40,547 PoolingHttpClientConnectionManager.release() - ep-00000001: connection released [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 2; route allocated: 1 of 5; total allocated: 2 of 25]
+[DEBUG] 2021-12-05 09:20:40,547 VersionDetector.getDriverVersionFromRepository() - Latest version of chromedriver according to https://chromedriver.storage.googleapis.com/LATEST_RELEASE_96 is 96.0.4664.45
+[INFO ] 2021-12-05 09:20:40,547 WebDriverManager.resolveDriverVersion() - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+[DEBUG] 2021-12-05 09:20:40,552 ResolutionCache.putValueInResolutionCacheIfEmpty() - Storing resolution chrome=96 in cache (valid until 10:20:40 05/12/2021 MSK)
+[DEBUG] 2021-12-05 09:20:40,554 ResolutionCache.putValueInResolutionCacheIfEmpty() - Storing resolution chrome96=96.0.4664.45 in cache (valid until 09:20:40 06/12/2021 MSK)
+[DEBUG] 2021-12-05 09:20:40,597 WebDriverManager.manage() - Driver chromedriver 96.0.4664.45 found in cache
+[INFO ] 2021-12-05 09:20:40,597 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+[INFO ] 2021-12-05 09:20:52,580 Bank Tfaxot Site.loginPositiveTest() - verify login with user name and password works fine for bank site
+[INFO ] 2021-12-05 09:20:52,850 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-12-05 09:20:53,324 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-12-05 09:20:53,581 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-12-05 09:20:54,328 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1990
+[INFO ] 2021-12-05 09:20:54,534 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button
+[INFO ] 2021-12-05 09:21:02,131 Bank Tfaxot Site.setup() - Bank Tfaxot Site
+[INFO ] 2021-12-05 09:21:02,131 Bank Tfaxot Site.createDriver() - Create driver: chrome
+[DEBUG] 2021-12-05 09:21:02,141 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome=96 in cache (valid until 10:20:40 05/12/2021 MSK)
+[DEBUG] 2021-12-05 09:21:02,142 ResolutionCache.checkKeyInResolutionCache() - Resolution chrome96=96.0.4664.45 in cache (valid until 09:20:40 06/12/2021 MSK)
+[INFO ] 2021-12-05 09:21:02,143 WebDriverManager.resolveDriverVersion() - Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+[DEBUG] 2021-12-05 09:21:02,149 WebDriverManager.manage() - Driver chromedriver 96.0.4664.45 found in cache
+[INFO ] 2021-12-05 09:21:02,150 WebDriverManager.exportDriver() - Exporting webdriver.chrome.driver as C:\Users\Vlad\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+[INFO ] 2021-12-05 09:21:11,012 Bank Tfaxot Site.loginNegativeTest() - verify error message is correct when typing incorrect password 
+[INFO ] 2021-12-05 09:21:11,032 Bank Tfaxot Site.clickOnLoginButton() -  clciking on login button
+[INFO ] 2021-12-05 09:21:11,599 Bank Tfaxot Site.switchToIframe() - swich to frame : Located by By.id: iframeLogIn
+[INFO ] 2021-12-05 09:21:13,438 Bank Tfaxot Site.type_user_ID() -  type user id: 5651575200
+[INFO ] 2021-12-05 09:21:14,136 Bank Tfaxot Site.type_user_pass() -  type user pass: genris1999
+[INFO ] 2021-12-05 09:21:14,339 Bank Tfaxot Site.clickEnterButton() -  clicking  on enter  button

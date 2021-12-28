@@ -1,0 +1,4 @@
+[INFO ] 2021-12-23 18:04:49,494 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-23 18:04:49,504 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-23 18:05:03,335 Whats up android.verifylongPressWorkingProperlyContactOption() - verifylongPressWorkingProperlyContactOption 
+[INFO ] 2021-12-23 18:05:40,736 Whats up android.verifylongPressWorkingProperlyGroupOption() - verifylongPressWorkingProperlyGroupOption 

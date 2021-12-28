@@ -1,0 +1,23 @@
+[INFO ] 2021-12-13 12:50:43,023 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-13 12:50:43,036 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-13 12:50:56,906 Whats up android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-12-13 12:50:59,771 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-13 12:51:02,447 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-12-13 12:51:13,887 Whats up android.backToFirstView() - clickOnSearchButton_CallsPage
+[INFO ] 2021-12-13 12:51:13,887 Whats up android.backToFirstView() - --------------  clicking 2 click  back ----------------------
+[INFO ] 2021-12-13 12:51:18,178 Whats up android.clickOnSearchButton_ChatsPage() - clickOnSearchButton_ChatPage 
+[INFO ] 2021-12-13 12:51:19,303 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-13 12:51:21,810 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-12-13 12:51:33,870 Whats up android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2021-12-13 12:51:44,126 Whats up android.click() - click(): FAILED
+Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.whatsapp:id/send}) (tried for 10 second(s) with 500 milliseconds interval)
+[INFO ] 2021-12-13 12:51:45,641 Whats up android.backToFirstView() - clickOnSearchButton_ChatsPage
+[INFO ] 2021-12-13 12:51:45,697 Whats up android.backToFirstView() - ------------- clicked one click ------------------
+[INFO ] 2021-12-13 12:51:45,703 Whats up android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-12-13 12:51:46,815 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-12-13 12:51:49,203 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-13 12:51:51,397 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-12-13 12:51:55,257 Whats up android.clickOnSearchButton_StatusPage() - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[INFO ] 2021-12-13 12:51:55,603 Whats up android.backToFirstView() - clickOnSearchButton_StatusPage
+[INFO ] 2021-12-13 12:51:55,664 Whats up android.backToFirstView() - ------------- clicked one click ------------------
