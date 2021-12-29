@@ -1,0 +1,13 @@
+[INFO ] 2021-12-29 11:07:19,614 Whats up android.setup() - Whats up android
+[INFO ] 2021-12-29 11:07:19,627 Whats up android.createDriver() - Create driver for android
+[INFO ] 2021-12-29 11:07:32,478 Whats up android.clickOnSearchButton_StatusPage() - clickOnSearchButton_StatusPage 
+[INFO ] 2021-12-29 11:07:33,807 Whats up android.click_StatusText() - clicking to statusText STATUS
+[INFO ] 2021-12-29 11:07:35,672 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - clicking on statusIcon 
+[INFO ] 2021-12-29 11:07:37,907 Whats up android.clickOnSearchButtonFromChatSectionAndTypeText() - typing text into searchIconSearch…
+[ERROR] 2021-12-29 11:07:42,086 Whats up android.clickOnSearchButton_StatusPage() - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[INFO ] 2021-12-29 11:07:42,473 Whats up android.backToFirstView() - clickOnSearchButton_StatusPage
+[INFO ] 2021-12-29 11:07:43,866 Whats up android.clickOnSearchButton_CallsPage() - clickOnSearchButton_CallsPage 
+[INFO ] 2021-12-29 11:07:46,625 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - clicking on callIcon 
+[INFO ] 2021-12-29 11:07:49,124 Whats up android.clickOnSearchButtonFromCallsSectionAndTypeText() - typing text into searchIconSearch…
+[INFO ] 2021-12-29 11:08:01,723 Whats up android.backToFirstView() - clickOnSearchButton_CallsPage
+[INFO ] 2021-12-29 11:08:01,724 Whats up android.backToFirstView() - clicking  back
