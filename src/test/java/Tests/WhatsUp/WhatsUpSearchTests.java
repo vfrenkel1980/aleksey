@@ -10,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -49,7 +48,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     @Description(" Verify search button works properly status page")
     public void clickOnSearchButton_StatusPage() throws InterruptedException {
 
-        softAssert= new SoftAssert();
+
         String searchedTextStatus = "Lior";
         log.info("clickOnSearchButton_StatusPage ");
         statusPage=wellcomePage.click_StatusText();
@@ -89,7 +88,7 @@ public class WhatsUpSearchTests  extends BaseTest {
     @Test (priority=3)
     @Description(" Verify search button works properly calls page")
     public void clickOnSearchButton_CallsPage() throws InterruptedException {
-        softAssert= new SoftAssert();
+
         String searchedTextCalls = "Oz";
         log.info("clickOnSearchButton_CallsPage ");
         callsPage=wellcomePage.click_CallsTextFromOtherpage();

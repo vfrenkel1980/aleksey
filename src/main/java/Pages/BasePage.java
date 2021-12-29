@@ -73,8 +73,8 @@ public class BasePage {
 
 
     protected boolean  longPress(WebElement el) {
-
-
+        if (el == null)
+            return false;
         try {
             TouchAction action = new TouchAction((PerformsTouchActions) driver);
 

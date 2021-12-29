@@ -25,7 +25,7 @@ public class BaseTest {
     public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
     private static AppiumDriverLocalService server;
     public static AppiumServer appium = new AppiumServer();
-    protected  SoftAssert softAssert ;
+    public 	SoftAssert softAssert;//=new SoftAssert();
 
 
     // protected SoftAssert softAssert;
@@ -171,16 +171,17 @@ public class BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        softAssert = new SoftAssert();
         //getDriver().get(URL);
 
     }
 
+    @BeforeMethod
+    public void  SoftAss() {
+        softAssert=new SoftAssert();
+    }
 
 
-//    public static synchronized AndroidDriver getDriver() {
-//        return tdriver.get();
-//    }
 
 
     public static synchronized WebDriver getDriver() {
