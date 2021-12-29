@@ -25,7 +25,7 @@ public class BaseTest {
     public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
     private static AppiumDriverLocalService server;
     public static AppiumServer appium = new AppiumServer();
-    protected  SoftAssert softAssert =new SoftAssert();
+    protected  SoftAssert softAssert ;
 
 
     // protected SoftAssert softAssert;

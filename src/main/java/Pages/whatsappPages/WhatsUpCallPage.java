@@ -56,7 +56,7 @@ public class WhatsUpCallPage  extends BasePage {
     public  void clickOnSearchButtonFromCallsSectionAndTypeText(String text)
     {
 
-        log.info("clicking on statusIcon " +  text(searchIcon));
+        log.info("clicking on callIcon " +  text(searchIcon));
         Assert.assertTrue(click(searchIcon)," click on icon failed");
         log.info("typing text into searchIcon" +  text(searchInput));
         type(searchInput,text);

@@ -6,11 +6,11 @@ import Pages.whatsappPages.WhatsUpStatusPage;
 import Pages.whatsappPages.WhatsUpWellcomPage;
 import Utils.TestUtilities;
 import io.qameta.allure.Description;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -30,23 +30,26 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test (priority=1)
-    @Description(" Verify search button works properly chats page ")
-    public void clickOnSearchButton_ChatsPage() throws InterruptedException {
-        String searchedTextChat = "Omry";
-        log.info("clickOnSearchButton_ChatPage ");
-        wellcomePage.clickOnSearchButtonFromChatSectionAndTypeText(searchedTextChat);
-        TestUtilities.AndroidBack(1);
-        String actual=wellcomePage.findSearchresults();
-      //  wellcomePage.clickOnBackButtonInSearch();
-        Assert.assertTrue (actual.contains(searchedTextChat),"searched text " + searchedTextChat + "isnt presented");
-        //Assert.assertTrue(1==1,"searched text " + inputText + "isnt presented");
-    }
+//    @Test (priority=1)
+//    @Description(" Verify search button works properly chats page ")
+//    public void clickOnSearchButton_ChatsPage() throws InterruptedException {
+//        String searchedTextChat = "Omry";
+//        log.info("clickOnSearchButton_ChatPage ");
+//        wellcomePage.clickOnSearchButtonFromChatSectionAndTypeText(searchedTextChat);
+//        TestUtilities.AndroidBack(1);
+//        String actual=wellcomePage.findSearchresults();
+//      //  wellcomePage.clickOnBackButtonInSearch();
+//        softAssert.assertTrue (actual.contains(searchedTextChat),"searched text " + searchedTextChat + "isnt presented");
+//        //Assert.assertTrue(1==1,"searched text " + inputText + "isnt presented");
+//        softAssert.assertAll();
+//    }
 
 
-    @Test (priority=3)
+    @Test (priority=2)
     @Description(" Verify search button works properly status page")
     public void clickOnSearchButton_StatusPage() throws InterruptedException {
+
+        softAssert= new SoftAssert();
         String searchedTextStatus = "Lior";
         log.info("clickOnSearchButton_StatusPage ");
         statusPage=wellcomePage.click_StatusText();
@@ -83,9 +86,10 @@ public class WhatsUpSearchTests  extends BaseTest {
     }
 
 
-    @Test (priority=2)
+    @Test (priority=3)
     @Description(" Verify search button works properly calls page")
     public void clickOnSearchButton_CallsPage() throws InterruptedException {
+        softAssert= new SoftAssert();
         String searchedTextCalls = "Oz";
         log.info("clickOnSearchButton_CallsPage ");
         callsPage=wellcomePage.click_CallsTextFromOtherpage();
