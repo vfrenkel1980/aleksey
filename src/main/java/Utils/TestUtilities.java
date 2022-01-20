@@ -31,26 +31,24 @@ import static Pages.BaseTest.getDriver;
 public class TestUtilities extends BasePage {
 
 
-
-
     public TestUtilities(WebDriver driver, Logger log) {
-        super(driver,log);
+        super(driver, log);
 
 
     }
 
 
-
-
-    /** Todays date in yyyyMMdd format */
+    /**
+     * Todays date in yyyyMMdd format
+     */
     private static String getTodaysDate() {
         return (new SimpleDateFormat("yyyyMMdd").format(new Date()));
     }
 
 
-
-
-    /** Current time in HHmmssSSS */
+    /**
+     * Current time in HHmmssSSS
+     */
     private static String getSystemTime() {
         return (new SimpleDateFormat("HHmmssSSS").format(new Date()));
     }
@@ -72,8 +70,7 @@ public class TestUtilities extends BasePage {
     }
 
 
-
-    public static List <String> compareTwoStringLists2 (List<String> list1, List<String> list2) {
+    public static List<String> compareTwoStringLists2(List<String> list1, List<String> list2) {
         List<String> differences = list1.stream()
                 .filter(element -> !list2.contains(element))
                 .collect(Collectors.toList());
@@ -90,9 +87,9 @@ public class TestUtilities extends BasePage {
     }
 
 
-    public static void AndroidBack  (int howMuch) {
+    public static void AndroidBack(int howMuch) {
 
-        for(int i=1 ;i<= howMuch ;i++) {
+        for (int i = 1; i <= howMuch; i++) {
             System.out.print("clicking on back button");
             ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
             ((AndroidDriver) getDriver()).pressKey(new KeyEvent(AndroidKey.DPAD_UP));
@@ -109,12 +106,11 @@ public class TestUtilities extends BasePage {
 //    }
 
 
+    public static List<String> getListOfOptionsFromMenu(int size) {
+        List<String> temp = new ArrayList<>();
 
-    public static  List<String> getListOfOptionsFromMenu(int  size){
-        List <String >  temp = new ArrayList<>();
-
-        for(int i=1;i <= size ;) {
-            AndroidElement element= (AndroidElement) getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+        for (int i = 1; i <= size; ) {
+            AndroidElement element = (AndroidElement) getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[" + i + "]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
             temp.add(element.getText());
             i = i + 1;
         }
@@ -131,13 +127,10 @@ public class TestUtilities extends BasePage {
 //    }
 
 
-
-
-    public static  List<String> convertFromWebElentsToString( List<WebElement> lst){
-        List <String >  listStrings = new ArrayList<String>();
+    public static List<String> convertFromWebElentsToString(List<WebElement> lst) {
+        List<String> listStrings = new ArrayList<String>();
         listStrings.clear();
-        for(WebElement a: lst)
-        {
+        for (WebElement a : lst) {
             listStrings.add(a.getText());
 
         }
@@ -146,7 +139,7 @@ public class TestUtilities extends BasePage {
 
 
     public static WebElement scrollToText_andLongPress(String text) throws InterruptedException {
-        AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+        AndroidElement getElementByText = (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
                 ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
 
 
@@ -156,16 +149,15 @@ public class TestUtilities extends BasePage {
 
     public static void scrollDown_Android() throws InterruptedException {
         Dimension dimension = getDriver().manage().window().getSize();
-        int scrollStart = (int) (dimension.getHeight()* 0.999);
+        int scrollStart = (int) (dimension.getHeight() * 0.999);
         int scrollEnd = (int) (dimension.getHeight() * 0.001);
 
 
-        new TouchAction((PerformsTouchActions) getDriver() )
+        new TouchAction((PerformsTouchActions) getDriver())
                 .press(PointOption.point(0, scrollStart))
                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
                 .moveTo(PointOption.point(0, scrollEnd))
                 .release().perform();
-
 
 
         int scrollEndtt = (int) (dimension.getHeight() * 0.1);
@@ -173,17 +165,15 @@ public class TestUtilities extends BasePage {
     }
 
 
-
-
     public static void scrollUp_Android() throws InterruptedException {
         Dimension dimension = getDriver().manage().window().getSize();
 
 
-        int scrollStart = dimension.height/2;
-        int scrollEnd = dimension.height -10;
+        int scrollStart = dimension.height / 2;
+        int scrollEnd = dimension.height - 10;
 
 
-        new TouchAction((PerformsTouchActions) getDriver() )
+        new TouchAction((PerformsTouchActions) getDriver())
                 .press(PointOption.point(0, scrollStart))
                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
                 .moveTo(PointOption.point(0, scrollEnd))
@@ -191,69 +181,61 @@ public class TestUtilities extends BasePage {
     }
 
 
-    public static List <String> CopyList(List <String> sourceList,List <String > searchResultsAggregate)
-    {
+    public static List<String> CopyList(List<String> sourceList, List<String> searchResultsAggregate) {
         searchResultsAggregate.addAll(sourceList);
-        return   searchResultsAggregate;
+        return searchResultsAggregate;
 
     }
 
-    public static void ScrollupFlingBackward ()throws InterruptedException {
+    public static void ScrollupFlingBackward() throws InterruptedException {
 
 
         try {
-//            AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator(
-//                    "new UiScrollable(new UiSelector().scrollable(true)).flingBackward()"));
 
-
-           getDriver().findElement(MobileBy.AndroidUIAutomator(
+            getDriver().findElement(MobileBy.AndroidUIAutomator(
                     "new UiScrollable(new UiSelector().scrollablee(true)).flingBackward()"));
         } catch (InvalidSelectorException e) {
 
         }
-        //log.error("invalid  selector ");
-        }
+    }
 
 
-    public static void ScrollupFlingToBeginning ()throws InterruptedException {
+    public static void ScrollupFlingToBeginning() throws InterruptedException {
 
 
-                try {
+        try {
             getDriver().findElement(MobileBy.AndroidUIAutomator(
                     "new UiScrollable(new UiSelector().scrollable(true)).flingToBeginning(10)"));
         } catch (InvalidSelectorException e) {
-          //  log.error("invalid  selector ");
         }
 
     }
 
 
-
     public static void scrollToText_AndroidEmpty(String text) throws InterruptedException {
-            for (int i = 0; i < 2; i++) { // 2 tries to make tap
-                try {
-                    AndroidElement  getElementByText= (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
-                            ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
-                    getElementByText.click();
+        for (int i = 0; i < 2; i++) { // 2 tries to make tap
+            try {
+                AndroidElement getElementByText = (AndroidElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+                        ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
+                getElementByText.click();
 
-                    break;
-                } catch (Exception e) {
-                    System.out.println(("find text(): FAILED\n" + e.getMessage()));
-
-                }
-                System.out.println("find text(): RETRY '" + i + "' ----------------");
+                break;
+            } catch (Exception e) {
+                System.out.println(("find text(): FAILED\n" + e.getMessage()));
 
             }
+            System.out.println("find text(): RETRY '" + i + "' ----------------");
+
         }
+    }
 
 
-    public static void scroll(AppiumDriver driver){
+    public static void scroll(AppiumDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         HashMap<String, String> scrollObject = new HashMap<String, String>();
         scrollObject.put("direction", "up");
         js.executeScript("mobile: scroll", scrollObject);
     }
-
 
 
     public static void scrollToText2(String text) throws InterruptedException {
@@ -262,10 +244,9 @@ public class TestUtilities extends BasePage {
                         + "new UiSelector().resourceIdMatches(\"*:id/com.whatsapp:id/conversations_row_contact_name\"), \"" + text + "\")"));
         getElementByText.click();
 
-    }
-
 
     }
+}
 
 
 
