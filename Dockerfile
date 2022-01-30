@@ -6,3 +6,4 @@ COPY  pom.xml  /home/vladfirst
 RUN   mvn clean install -Dsurefire.suiteXmlFiles=testng.xml
 
 
+вфывф
