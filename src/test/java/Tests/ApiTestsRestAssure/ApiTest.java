@@ -49,22 +49,22 @@ public class ApiTest extends BaseTest {
 
     }
 
-    
-//    @Test
-//    public void Test2()
-//    {
-//        log.info("Api2 ");
-//        given()
-//                .get(BaseApiUrl +"/api/users?page=2")
-//                .then()
-//                .statusCode(200)
-//                .body("data.id[1]",equalTo(8))
-//                .body("data.first_name",hasItems("Michael2","Lindsay2"))
-//                .log().all();
-//
-//
-//
-//    }
+
+    @Test
+    public void Test2()
+    {
+        log.info("Api2 ");
+        given()
+                .get(BaseApiUrl +"/api/users?page=2")
+                .then()
+                .statusCode(200)
+                .body("data.id[1]",equalTo(2))
+               // .body("data.first_name",hasItems("Michael2","Lindsay2"))
+                .log().all();
+
+
+
+    }
 
 
 }

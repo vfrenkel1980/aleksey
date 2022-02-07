@@ -1,78 +1,154 @@
-[INFO ] 2022-02-07 12:20:06,552 ApiTestsRestAssure.setup() - ApiTestsRestAssure
-[INFO ] 2022-02-07 12:20:12,549 ApiTestsRestAssure.Test1() - Api1 
-[DEBUG] 2022-02-07 12:20:13,718 BasicClientConnectionManager.getConnection() - Get connection for route {s}->https://reqres.in:443
-[DEBUG] 2022-02-07 12:20:13,812 DefaultClientConnectionOperator.openConnection() - Connecting to reqres.in:443
-[DEBUG] 2022-02-07 12:20:14,242 RequestAddCookies.process() - CookieSpec selected: ignoreCookies
-[DEBUG] 2022-02-07 12:20:14,245 RequestAuthCache.process() - Auth cache not set in the context
-[DEBUG] 2022-02-07 12:20:14,245 RequestTargetAuthentication.process() - Target auth state: UNCHALLENGED
-[DEBUG] 2022-02-07 12:20:14,246 RequestProxyAuthentication.process() - Proxy auth state: UNCHALLENGED
-[DEBUG] 2022-02-07 12:20:14,249 DefaultHttpClient.tryExecute() - Attempt 1 to execute request
-[DEBUG] 2022-02-07 12:20:14,250 DefaultClientConnection.sendRequestHeader() - Sending request: GET /api/users?page=2 HTTP/1.1
-[DEBUG] 2022-02-07 12:20:14,251 wire.wire() -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,252 wire.wire() -  >> "Accept: */*[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,253 wire.wire() -  >> "Host: reqres.in[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,253 wire.wire() -  >> "Connection: Keep-Alive[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,254 wire.wire() -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,254 wire.wire() -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,254 wire.wire() -  >> "[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,254 headers.sendRequestHeader() - >> GET /api/users?page=2 HTTP/1.1
-[DEBUG] 2022-02-07 12:20:14,255 headers.sendRequestHeader() - >> Accept: */*
-[DEBUG] 2022-02-07 12:20:14,255 headers.sendRequestHeader() - >> Host: reqres.in
-[DEBUG] 2022-02-07 12:20:14,255 headers.sendRequestHeader() - >> Connection: Keep-Alive
-[DEBUG] 2022-02-07 12:20:14,255 headers.sendRequestHeader() - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)
-[DEBUG] 2022-02-07 12:20:14,255 headers.sendRequestHeader() - >> Accept-Encoding: gzip,deflate
-[DEBUG] 2022-02-07 12:20:14,342 wire.wire() -  << "HTTP/1.1 200 OK[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,344 wire.wire() -  << "Date: Mon, 07 Feb 2022 10:17:59 GMT[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,344 wire.wire() -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,344 wire.wire() -  << "Transfer-Encoding: chunked[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,345 wire.wire() -  << "Connection: keep-alive[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,345 wire.wire() -  << "x-powered-by: Express[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,345 wire.wire() -  << "access-control-allow-origin: *[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,345 wire.wire() -  << "etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,346 wire.wire() -  << "via: 1.1 vegur[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,346 wire.wire() -  << "Cache-Control: max-age=14400[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,346 wire.wire() -  << "CF-Cache-Status: HIT[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,346 wire.wire() -  << "Age: 3712[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,346 wire.wire() -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,347 wire.wire() -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jEwLscSu%2BajdqeVNVUEsHaZmvkUsk8dGvu7bFkbM2rQdsAP0IhjaZ2nysI5F5raJwywJZvWl%2FRujYfScx9FmxKB6g%2BDN4XxvziRx91PtIH9LJrVeGnzGHZ0kza0%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,347 wire.wire() -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,347 wire.wire() -  << "Vary: Accept-Encoding[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,347 wire.wire() -  << "Server: cloudflare[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,348 wire.wire() -  << "CF-RAY: 6d9bdf252f3388b9-LHR[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,348 wire.wire() -  << "Content-Encoding: gzip[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,348 wire.wire() -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,348 wire.wire() -  << "[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,349 DefaultClientConnection.receiveResponseHeader() - Receiving response: HTTP/1.1 200 OK
-[DEBUG] 2022-02-07 12:20:14,350 headers.receiveResponseHeader() - << HTTP/1.1 200 OK
-[DEBUG] 2022-02-07 12:20:14,350 headers.receiveResponseHeader() - << Date: Mon, 07 Feb 2022 10:17:59 GMT
-[DEBUG] 2022-02-07 12:20:14,350 headers.receiveResponseHeader() - << Content-Type: application/json; charset=utf-8
-[DEBUG] 2022-02-07 12:20:14,350 headers.receiveResponseHeader() - << Transfer-Encoding: chunked
-[DEBUG] 2022-02-07 12:20:14,351 headers.receiveResponseHeader() - << Connection: keep-alive
-[DEBUG] 2022-02-07 12:20:14,351 headers.receiveResponseHeader() - << x-powered-by: Express
-[DEBUG] 2022-02-07 12:20:14,351 headers.receiveResponseHeader() - << access-control-allow-origin: *
-[DEBUG] 2022-02-07 12:20:14,351 headers.receiveResponseHeader() - << etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
-[DEBUG] 2022-02-07 12:20:14,351 headers.receiveResponseHeader() - << via: 1.1 vegur
-[DEBUG] 2022-02-07 12:20:14,352 headers.receiveResponseHeader() - << Cache-Control: max-age=14400
-[DEBUG] 2022-02-07 12:20:14,352 headers.receiveResponseHeader() - << CF-Cache-Status: HIT
-[DEBUG] 2022-02-07 12:20:14,352 headers.receiveResponseHeader() - << Age: 3712
-[DEBUG] 2022-02-07 12:20:14,352 headers.receiveResponseHeader() - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-[DEBUG] 2022-02-07 12:20:14,352 headers.receiveResponseHeader() - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jEwLscSu%2BajdqeVNVUEsHaZmvkUsk8dGvu7bFkbM2rQdsAP0IhjaZ2nysI5F5raJwywJZvWl%2FRujYfScx9FmxKB6g%2BDN4XxvziRx91PtIH9LJrVeGnzGHZ0kza0%3D"}],"group":"cf-nel","max_age":604800}
-[DEBUG] 2022-02-07 12:20:14,353 headers.receiveResponseHeader() - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-[DEBUG] 2022-02-07 12:20:14,353 headers.receiveResponseHeader() - << Vary: Accept-Encoding
-[DEBUG] 2022-02-07 12:20:14,353 headers.receiveResponseHeader() - << Server: cloudflare
-[DEBUG] 2022-02-07 12:20:14,353 headers.receiveResponseHeader() - << CF-RAY: 6d9bdf252f3388b9-LHR
-[DEBUG] 2022-02-07 12:20:14,353 headers.receiveResponseHeader() - << Content-Encoding: gzip
-[DEBUG] 2022-02-07 12:20:14,354 headers.receiveResponseHeader() - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-[DEBUG] 2022-02-07 12:20:14,361 DefaultHttpClient.execute() - Connection can be kept alive indefinitely
-[DEBUG] 2022-02-07 12:20:14,393 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsing response as: application/json; charset=utf-8
-[DEBUG] 2022-02-07 12:20:14,394 wire.wire() -  << "17b[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,395 wire.wire() -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
-[DEBUG] 2022-02-07 12:20:14,396 wire.wire() -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
-[DEBUG] 2022-02-07 12:20:14,396 wire.wire() -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
-[DEBUG] 2022-02-07 12:20:14,396 wire.wire() -  << "[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,397 wire.wire() -  << "0[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,397 wire.wire() -  << "[\r][\n]"
-[DEBUG] 2022-02-07 12:20:14,397 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-[DEBUG] 2022-02-07 12:20:14,618 BasicClientConnectionManager.releaseConnection() - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@832fcf9
-[DEBUG] 2022-02-07 12:20:14,618 BasicClientConnectionManager.releaseConnection() - Connection can be kept alive indefinitely
-[ERROR] 2022-02-07 12:20:15,560 ApiTestsRestAssure.tearDown() - Error quit the driver
+[INFO ] 2022-02-07 12:29:26,605 ApiTestsRestAssure.setup() - ApiTestsRestAssure
+[INFO ] 2022-02-07 12:29:32,564 ApiTestsRestAssure.Test1() - Api1 
+[DEBUG] 2022-02-07 12:29:33,739 BasicClientConnectionManager.getConnection() - Get connection for route {s}->https://reqres.in:443
+[DEBUG] 2022-02-07 12:29:33,756 DefaultClientConnectionOperator.openConnection() - Connecting to reqres.in:443
+[DEBUG] 2022-02-07 12:29:34,162 RequestAddCookies.process() - CookieSpec selected: ignoreCookies
+[DEBUG] 2022-02-07 12:29:34,164 RequestAuthCache.process() - Auth cache not set in the context
+[DEBUG] 2022-02-07 12:29:34,164 RequestTargetAuthentication.process() - Target auth state: UNCHALLENGED
+[DEBUG] 2022-02-07 12:29:34,166 RequestProxyAuthentication.process() - Proxy auth state: UNCHALLENGED
+[DEBUG] 2022-02-07 12:29:34,169 DefaultHttpClient.tryExecute() - Attempt 1 to execute request
+[DEBUG] 2022-02-07 12:29:34,169 DefaultClientConnection.sendRequestHeader() - Sending request: GET /api/users?page=2 HTTP/1.1
+[DEBUG] 2022-02-07 12:29:34,170 wire.wire() -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,172 wire.wire() -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,172 wire.wire() -  >> "Host: reqres.in[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,173 wire.wire() -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,173 wire.wire() -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,173 wire.wire() -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,173 wire.wire() -  >> "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,174 headers.sendRequestHeader() - >> GET /api/users?page=2 HTTP/1.1
+[DEBUG] 2022-02-07 12:29:34,174 headers.sendRequestHeader() - >> Accept: */*
+[DEBUG] 2022-02-07 12:29:34,174 headers.sendRequestHeader() - >> Host: reqres.in
+[DEBUG] 2022-02-07 12:29:34,174 headers.sendRequestHeader() - >> Connection: Keep-Alive
+[DEBUG] 2022-02-07 12:29:34,175 headers.sendRequestHeader() - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)
+[DEBUG] 2022-02-07 12:29:34,175 headers.sendRequestHeader() - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2022-02-07 12:29:34,257 wire.wire() -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,259 wire.wire() -  << "Date: Mon, 07 Feb 2022 10:27:19 GMT[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,259 wire.wire() -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,260 wire.wire() -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,260 wire.wire() -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,260 wire.wire() -  << "x-powered-by: Express[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,260 wire.wire() -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,260 wire.wire() -  << "etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,261 wire.wire() -  << "via: 1.1 vegur[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,261 wire.wire() -  << "Cache-Control: max-age=14400[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,261 wire.wire() -  << "CF-Cache-Status: HIT[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,261 wire.wire() -  << "Age: 4437[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,261 wire.wire() -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,262 wire.wire() -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=djGM%2B%2B7PP8zrxiZFwDHxTItxlbCPzuku3yihTPPR%2Bvddi3EZRfpa2%2BbEivx%2BJx6T%2BuO%2Bk9PEZHY8SGQnlFgKWY23ECJp3TpH9TtPHKNq6eVHQNN2O2fRHhu9%2BgU%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,262 wire.wire() -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,262 wire.wire() -  << "Vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,262 wire.wire() -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,263 wire.wire() -  << "CF-RAY: 6d9becd07ad7928d-FRA[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,263 wire.wire() -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,266 wire.wire() -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,267 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,268 DefaultClientConnection.receiveResponseHeader() - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2022-02-07 12:29:34,268 headers.receiveResponseHeader() - << HTTP/1.1 200 OK
+[DEBUG] 2022-02-07 12:29:34,268 headers.receiveResponseHeader() - << Date: Mon, 07 Feb 2022 10:27:19 GMT
+[DEBUG] 2022-02-07 12:29:34,269 headers.receiveResponseHeader() - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2022-02-07 12:29:34,269 headers.receiveResponseHeader() - << Transfer-Encoding: chunked
+[DEBUG] 2022-02-07 12:29:34,269 headers.receiveResponseHeader() - << Connection: keep-alive
+[DEBUG] 2022-02-07 12:29:34,269 headers.receiveResponseHeader() - << x-powered-by: Express
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << access-control-allow-origin: *
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << via: 1.1 vegur
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << Cache-Control: max-age=14400
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << CF-Cache-Status: HIT
+[DEBUG] 2022-02-07 12:29:34,270 headers.receiveResponseHeader() - << Age: 4437
+[DEBUG] 2022-02-07 12:29:34,271 headers.receiveResponseHeader() - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[DEBUG] 2022-02-07 12:29:34,271 headers.receiveResponseHeader() - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=djGM%2B%2B7PP8zrxiZFwDHxTItxlbCPzuku3yihTPPR%2Bvddi3EZRfpa2%2BbEivx%2BJx6T%2BuO%2Bk9PEZHY8SGQnlFgKWY23ECJp3TpH9TtPHKNq6eVHQNN2O2fRHhu9%2BgU%3D"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2022-02-07 12:29:34,271 headers.receiveResponseHeader() - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2022-02-07 12:29:34,271 headers.receiveResponseHeader() - << Vary: Accept-Encoding
+[DEBUG] 2022-02-07 12:29:34,272 headers.receiveResponseHeader() - << Server: cloudflare
+[DEBUG] 2022-02-07 12:29:34,272 headers.receiveResponseHeader() - << CF-RAY: 6d9becd07ad7928d-FRA
+[DEBUG] 2022-02-07 12:29:34,272 headers.receiveResponseHeader() - << Content-Encoding: gzip
+[DEBUG] 2022-02-07 12:29:34,272 headers.receiveResponseHeader() - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[DEBUG] 2022-02-07 12:29:34,279 DefaultHttpClient.execute() - Connection can be kept alive indefinitely
+[DEBUG] 2022-02-07 12:29:34,309 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2022-02-07 12:29:34,310 wire.wire() -  << "17b[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,311 wire.wire() -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+[DEBUG] 2022-02-07 12:29:34,311 wire.wire() -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+[DEBUG] 2022-02-07 12:29:34,312 wire.wire() -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+[DEBUG] 2022-02-07 12:29:34,312 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,312 wire.wire() -  << "0[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,313 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:34,313 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2022-02-07 12:29:34,531 BasicClientConnectionManager.releaseConnection() - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@68b57cf2
+[DEBUG] 2022-02-07 12:29:34,531 BasicClientConnectionManager.releaseConnection() - Connection can be kept alive indefinitely
+[INFO ] 2022-02-07 12:29:35,464 ApiTestsRestAssure.Test2() - Api2 
+[DEBUG] 2022-02-07 12:29:35,472 BasicClientConnectionManager.getConnection() - Get connection for route {s}->https://reqres.in:443
+[DEBUG] 2022-02-07 12:29:35,473 DefaultClientConnectionOperator.openConnection() - Connecting to reqres.in:443
+[DEBUG] 2022-02-07 12:29:35,783 RequestAddCookies.process() - CookieSpec selected: ignoreCookies
+[DEBUG] 2022-02-07 12:29:35,783 RequestAuthCache.process() - Auth cache not set in the context
+[DEBUG] 2022-02-07 12:29:35,783 RequestTargetAuthentication.process() - Target auth state: UNCHALLENGED
+[DEBUG] 2022-02-07 12:29:35,783 RequestProxyAuthentication.process() - Proxy auth state: UNCHALLENGED
+[DEBUG] 2022-02-07 12:29:35,784 DefaultHttpClient.tryExecute() - Attempt 1 to execute request
+[DEBUG] 2022-02-07 12:29:35,784 DefaultClientConnection.sendRequestHeader() - Sending request: GET /api/users?page=2 HTTP/1.1
+[DEBUG] 2022-02-07 12:29:35,784 wire.wire() -  >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,784 wire.wire() -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,785 wire.wire() -  >> "Host: reqres.in[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,785 wire.wire() -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,785 wire.wire() -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,785 wire.wire() -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,785 wire.wire() -  >> "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,786 headers.sendRequestHeader() - >> GET /api/users?page=2 HTTP/1.1
+[DEBUG] 2022-02-07 12:29:35,786 headers.sendRequestHeader() - >> Accept: */*
+[DEBUG] 2022-02-07 12:29:35,786 headers.sendRequestHeader() - >> Host: reqres.in
+[DEBUG] 2022-02-07 12:29:35,786 headers.sendRequestHeader() - >> Connection: Keep-Alive
+[DEBUG] 2022-02-07 12:29:35,786 headers.sendRequestHeader() - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_291)
+[DEBUG] 2022-02-07 12:29:35,787 headers.sendRequestHeader() - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2022-02-07 12:29:35,874 wire.wire() -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,875 wire.wire() -  << "Date: Mon, 07 Feb 2022 10:27:21 GMT[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,875 wire.wire() -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,875 wire.wire() -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,876 wire.wire() -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,876 wire.wire() -  << "x-powered-by: Express[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,876 wire.wire() -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,876 wire.wire() -  << "etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,876 wire.wire() -  << "via: 1.1 vegur[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,877 wire.wire() -  << "Cache-Control: max-age=14400[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,877 wire.wire() -  << "CF-Cache-Status: HIT[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,877 wire.wire() -  << "Age: 6372[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,877 wire.wire() -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,877 wire.wire() -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FiUvseEi9%2BwpLHCx3BYSGBDJYOy31x7JcHKlGegdJjKdaCyyc3B0s8a%2Fmy2haLbqqPnLQPuMEAwvcF1ud95Ba8%2BwGW01IEBZzNyJhudSfITq1jl3rgx9wRxb%2B38%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "Vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "CF-RAY: 6d9becda88036973-FRA[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,878 wire.wire() -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,879 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,879 DefaultClientConnection.receiveResponseHeader() - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2022-02-07 12:29:35,879 headers.receiveResponseHeader() - << HTTP/1.1 200 OK
+[DEBUG] 2022-02-07 12:29:35,879 headers.receiveResponseHeader() - << Date: Mon, 07 Feb 2022 10:27:21 GMT
+[DEBUG] 2022-02-07 12:29:35,879 headers.receiveResponseHeader() - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << Transfer-Encoding: chunked
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << Connection: keep-alive
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << x-powered-by: Express
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << access-control-allow-origin: *
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+[DEBUG] 2022-02-07 12:29:35,880 headers.receiveResponseHeader() - << via: 1.1 vegur
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << Cache-Control: max-age=14400
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << CF-Cache-Status: HIT
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << Age: 6372
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FiUvseEi9%2BwpLHCx3BYSGBDJYOy31x7JcHKlGegdJjKdaCyyc3B0s8a%2Fmy2haLbqqPnLQPuMEAwvcF1ud95Ba8%2BwGW01IEBZzNyJhudSfITq1jl3rgx9wRxb%2B38%3D"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2022-02-07 12:29:35,881 headers.receiveResponseHeader() - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2022-02-07 12:29:35,882 headers.receiveResponseHeader() - << Vary: Accept-Encoding
+[DEBUG] 2022-02-07 12:29:35,882 headers.receiveResponseHeader() - << Server: cloudflare
+[DEBUG] 2022-02-07 12:29:35,882 headers.receiveResponseHeader() - << CF-RAY: 6d9becda88036973-FRA
+[DEBUG] 2022-02-07 12:29:35,882 headers.receiveResponseHeader() - << Content-Encoding: gzip
+[DEBUG] 2022-02-07 12:29:35,882 headers.receiveResponseHeader() - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[DEBUG] 2022-02-07 12:29:35,882 DefaultHttpClient.execute() - Connection can be kept alive indefinitely
+[DEBUG] 2022-02-07 12:29:35,883 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2022-02-07 12:29:35,883 wire.wire() -  << "17b[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,883 wire.wire() -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd2][0xcd]n[0xa3]0[0x14][0x86][0xe1][q[0xcf]l](Y[0xf4][0xc7][0xab][0xaa][0xd2][0xcc]t[0xd1]n[0xa2][0xd9]U[0xa3][0xea][0x4][0xe][0xe0][0xd6][0xd8][0xee][0xb1]i[0xa6][0x8a]r[0xef]UM4T[0x88]D[0xec][0x0][0xbf][0x1f]z[0x84][0xd8][0x81][0xc7][0x86]@[0xad]$x[0xe2][0xe7][0xe1][0xe6]RBt[0x11][\r][0xa8]bu[0xb8]L'!u[0x15]F[0x4][0xf5][0xb4][0x3]][0x81][0xba][0x92]@[0x1d]j[0x3][\n]"
+[DEBUG] 2022-02-07 12:29:35,883 wire.wire() -  << ":][0xb6]H&3[0xb8][\r][0xce][0xde]2[0xbd]1[0x85]L[[0x90]Pk[0xe][0xf1][0xd9]bG[0xa0][0xe0]q[0xe8]@[0x82][0xc1][0xf1][0xe9]CZ[0x81][0x4]|[0xc7][0x88][0xc][\n]"
+[DEBUG] 2022-02-07 12:29:35,884 wire.wire() -  << "[0xda][0x18]}Py[0xfe][0xff]E[0xb9][0xee][0x9a][0xbc][0xc6][0x92]B~u[0xae];l({[0xf1][\r][0xec][0xe5]@[0xb9][0x1e])F[0xdb]*[0xe0]GV[0x13]7[0xfd]I[0xcc][0xc3]PN0[0xbf][0xe][0xbb][0xa5][0x9c][0xeb][0x19][0xce][0xcd][0xc8][0x89]n[0xa3]1duo_[0xe9]8[0xe5]O[0xaa][0xa6][0x92][0xaf][0xcd]R[0xc6][0xcd][0xc][0xa3][0xb8][0x18][0x1d][0x9b][0xf]v6[0xab]5[0x99]*[0x1c]w[0xdc]}USF[0xda],u[0x14][0x17]s[0x90]b[0x84]4[0xe4][0xb8][0xa1][0x8c][0xaa]-[0xf2])[0xca][0xef][0xd4]M,?[0x87][0xd5]bL1[0x87]Y[0x8d][0x18][0xc6][0xb2]%[0x93][0xb5]nK[0xc6][0x1c][0xb7][0xac]S6[0xb1][0xdc][0xa7][0xd1]b[0xca][0xea];[0xe5][0xaf][0x84][0xd0]{[0xef]8[0x82][0xda]A[0xcf]fv[0xfd][0xe3][0xd0][0x9c][0xb7][0x84][0x95][0xb6][\r]H[0x88][0xf4]/[0xa6][0xff]E[0xbc][0x12]y[0xb1][0xa6][0xb7]5[0x5]Q3[0x91][0x14][0xa5][0xb3][0x91][0xf5][0xa6][0x8f][0xda][0xd9] [0xa2]K[0x9f]J[0x4][0xe2]wbQ[0xba][0x10][0x83]@&[0x81][0xde]3[0x95][0x1a]#Ug[0xb0][0xdf][0x2][0xf6][0x16][0x88]W[0x6][0x4][0x0][0x0]"
+[DEBUG] 2022-02-07 12:29:35,884 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,884 wire.wire() -  << "0[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,884 wire.wire() -  << "[\r][\n]"
+[DEBUG] 2022-02-07 12:29:35,885 RequestSpecificationImpl$RestAssuredHttpBuilder.parseResponse() - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2022-02-07 12:29:35,887 BasicClientConnectionManager.releaseConnection() - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2141840a
+[DEBUG] 2022-02-07 12:29:35,887 BasicClientConnectionManager.releaseConnection() - Connection can be kept alive indefinitely
+[ERROR] 2022-02-07 12:29:35,963 ApiTestsRestAssure.tearDown() - Error quit the driver
