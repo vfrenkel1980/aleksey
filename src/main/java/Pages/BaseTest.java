@@ -27,6 +27,7 @@ public class BaseTest {
     public static AppiumServer appium = new AppiumServer();
     public 	SoftAssert softAssert;//=new SoftAssert();
 
+    public String  BaseApiUrl;
 
     // protected SoftAssert softAssert;
 //    @BeforeSuite(alwaysRun = true)
@@ -138,14 +139,16 @@ public class BaseTest {
 
 
 
-    @Parameters({"browser", "URL", "select_phone","UDID_phone","appPackage","appActivity","deviceName"})
+    @Parameters({"browser", "URL", "select_phone","UDID_phone","appPackage","appActivity","deviceName","BaseUrl"})
     @BeforeClass(alwaysRun = true)
-    public void setup(ITestContext ctx ,@Optional("chrome") String browser ,@Optional("https://www.amazon.com/") String URL,String select_phone, @Optional String UDID_phone,@Optional String appPackage,@Optional String appActivity,@Optional String deviceName) throws InterruptedException {
+    public void setup(ITestContext ctx ,@Optional("chrome") String browser ,@Optional("https://www.amazon.com/") String URL,@Optional String select_phone, @Optional String UDID_phone,@Optional String appPackage,@Optional String appActivity,@Optional String deviceName,@Optional String BaseUrl) throws InterruptedException {
         String testName = ctx.getCurrentXmlTest().getName();
         log = LogManager.getLogger(testName);
         log.info(testName);
 
-            switch (select_phone) {
+
+
+            switch (select_phone ) {
                 case "emulators":
                     BrowserDriverFactory emul_factory = new BrowserDriverFactory(browser, log);
                     tdriver.set(emul_factory.createDriver());
@@ -154,6 +157,9 @@ public class BaseTest {
                 case "realDevices":
                     MobileDriverFactory real_factory = new MobileDriverFactory(log, UDID_phone,appPackage,appActivity,deviceName);
                     tdriver.set(real_factory.createDriver());
+                    break;
+                case "ApiTests":
+                    BaseApiUrl = BaseUrl;
                     break;
             }
 
