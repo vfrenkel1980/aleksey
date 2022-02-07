@@ -3,23 +3,38 @@
 <suite name="MyTests"  parallel="tests" thread-count="3"
 >
 
-    <test name="Whats up android">
-       <!-- <parameter name="UDID_phone" value="192.168.1.15:5555"></parameter>-->
-        <parameter name="UDID_phone" value="7bd9500e"></parameter>
-        <parameter name="appPackage" value="com.whatsapp"></parameter>
-        <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>
-        <parameter name="deviceName" value="POCO X3 Pro"></parameter>
-        <parameter name="select_phone" value="realDevices"></parameter>
+<!--    <test name="Whats up android">-->
+<!--       &lt;!&ndash; <parameter name="UDID_phone" value="192.168.1.15:5555"></parameter>&ndash;&gt;-->
+<!--        <parameter name="UDID_phone" value="7bd9500e"></parameter>-->
+<!--        <parameter name="appPackage" value="com.whatsapp"></parameter>-->
+<!--        <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>-->
+<!--        <parameter name="deviceName" value="POCO X3 Pro"></parameter>-->
+<!--        <parameter name="select_phone" value="realDevices"></parameter>-->
+<!--        &lt;!&ndash;        <parameter name="browser" value="chrome"></parameter>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <parameter name="URL" value="https://www.amazon.com/"></parameter>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="Tests.WhatsUp.WhatsUpTests"> </class>-->
+<!--            <class name="Tests.WhatsUp.SendMessage"> </class>-->
+<!--            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>-->
+<!--            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>-->
+<!--            <class name="Tests.WhatsUp.WhatsUpChatsTests"> </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="ApiTestsRestAssure">
+<!--        &lt;!&ndash; <parameter name="UDID_phone" value="192.168.1.15:5555"></parameter>&ndash;&gt;-->
+<!--        <parameter name="UDID_phone" value="7bd9500e"></parameter>-->
+<!--        <parameter name="appPackage" value="com.whatsapp"></parameter>-->
+<!--        <parameter name="appActivity" value="com.whatsapp.HomeActivity"></parameter>-->
+<!--        <parameter name="deviceName" value="POCO X3 Pro"></parameter>-->
+<!--        <parameter name="select_phone" value="realDevices"></parameter>-->
         <!--        <parameter name="browser" value="chrome"></parameter>-->
         <!--        <parameter name="URL" value="https://www.amazon.com/"></parameter>-->
         <classes>
-            <class name="Tests.WhatsUp.WhatsUpTests"> </class>
-            <class name="Tests.WhatsUp.SendMessage"> </class>
-            <class name="Tests.WhatsUp.WhatsUpSearchTests"> </class>
-            <class name="Tests.WhatsUp.VertIcalScrolling"> </class>
-            <class name="Tests.WhatsUp.WhatsUpChatsTests"> </class>
+            <class name="Tests.ApiTestsRestAssure.ApiTest"> </class>
         </classes>
     </test>
+
 
 </suite>
 

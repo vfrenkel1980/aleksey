@@ -82,11 +82,11 @@
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>io.rest-assured</groupId>-->
-<!--            <artifactId>rest-assured</artifactId>-->
-<!--            <version>4.4.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.4.0</version>
+        </dependency>
 
 
     </dependencies>
