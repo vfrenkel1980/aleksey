@@ -37,7 +37,15 @@ public class First_Test {
         Thread.sleep(5000);
        // element.sendKeys(Keys.ENTER);
 
+        Thread.sleep(4000);
+        Thread.sleep(4000);
         driver.quit();
+
+
+
+
+
+
 
 
 
